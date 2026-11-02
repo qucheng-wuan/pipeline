@@ -1,0 +1,108 @@
+{
+  "calibrated_and_checked_counts": {
+    "evaluation": 173,
+    "train": 31798
+  },
+  "decoded_counts": {
+    "evaluation": 173,
+    "train": 45454
+  },
+  "discovered_counts": {
+    "evaluation": {
+      "calibration": 173,
+      "gt": 173,
+      "mask": 173,
+      "rgb": 173
+    },
+    "train": {
+      "calibration": 45454,
+      "gt": 45454,
+      "mask": 45454,
+      "rgb": 45454
+    }
+  },
+  "duplicate_rgb": {
+    "decoded": [],
+    "encoded": []
+  },
+  "frames_sha256": "5e4296060413ed3f322a7873ca4eb98400c778c77a0a9968f5750ea71e4a3239",
+  "gt_pixel_decode_scope": "EXR dimensions/channel/completeness/SHA256 for all; pixel decoding in smoke and mandatory Stage2 label-cache construction",
+  "historical_comparison": {
+    "exposure": "Frozen experts/V2/Laplacian have ClearGrasp training/validation history; synthetic-val and real-val are not unseen by the complete pipeline. Stage2 splits remain isolated.",
+    "partitions": {
+      "evaluation": {
+        "additional_paths": [],
+        "changed_rgb_paths": [],
+        "current_rgb_decoded": 173,
+        "historical_inventory": 173,
+        "historical_roles": {
+          "val,evaluation": 173
+        },
+        "historical_stage1_selection_rgb_sha_matches": 173,
+        "missing_or_failed_paths": []
+      },
+      "train": {
+        "additional_paths": [
+          "square-plastic-bottle-train/rgb-imgs/000004501-rgb.jpg"
+        ],
+        "changed_rgb_paths": [],
+        "current_rgb_decoded": 45454,
+        "historical_inventory": 45453,
+        "historical_roles": {
+          "train": 45453
+        },
+        "historical_stage1_selection_rgb_sha_matches": 0,
+        "missing_or_failed_paths": []
+      }
+    },
+    "reference_sha256": "7cdfd8ba449c7dbd2898bbcec3f8e7ece5e945d3fee1beb7c1925e3b88ff1951"
+  },
+  "native_sizes": {
+    "evaluation": {
+      "720x1280": 173
+    },
+    "train": {
+      "1080x1920": 37150,
+      "576x1024": 8304
+    }
+  },
+  "optional_camera_normals": "Not used/read as labels; original loss derives normals from GT256/K256, valid current/right/down stencil. Optional file existence recorded.",
+  "pairing_errors": [],
+  "preprocessing": {
+    "augmentation": "none",
+    "coordinate": "optical_z",
+    "coverage_epsilon": 1e-08,
+    "coverage_threshold": 0.5,
+    "depth_range_application": "inclusive_after_valid_positive_area_integration",
+    "depth_range_m": [
+      0.1,
+      2.0
+    ],
+    "field_of_view": "full_resize_no_crop_no_pad",
+    "gt_interpolation": "valid_weighted_INTER_AREA",
+    "intrinsics_resize": "half_pixel_once",
+    "mask_interpolation": "nearest_exact_pixel_centres",
+    "model_hw": [
+      256,
+      256
+    ],
+    "pixel_convention": "integer_pixel_centres",
+    "prediction_interpolation": "INTER_LINEAR",
+    "rgb_interpolation": "INTER_AREA",
+    "schema": "rgb_fusion_cleargrasp_fullfield256_v1",
+    "unit": "m"
+  },
+  "raw_data_mutated": false,
+  "schema": "cleargrasp256_audit_v1",
+  "source_sha256": "2af4431b83bc970bd8df406f16eddf425c78a7bdefd8516b6c3beac93d6aac4e",
+  "stage1_prediction_executed": false,
+  "status": "blocked",
+  "full_audit_sha256": "706707271d17a8e94aeb01f398d798afba039cd66b7042902b4779f00a16cae0",
+  "decode_or_calibration_error_count": 13656,
+  "error_counts": {
+    "calibration: KeyError: 'image'": 13656
+  },
+  "missing_calibration_list": "cleargrasp256_missing_calibration.jsonl.gz",
+  "full_audit_work_directory": "work/cleargrasp256/train-only-audit-v2",
+  "note": "Metadata-only summary. Full per-frame observations stay in work; rerun read-only audit after moving or supplementing calibration."
+}

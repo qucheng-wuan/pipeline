@@ -1,0 +1,17 @@
+{
+  "status": "blocked",
+  "missing_per_frame_calibration": 13656,
+  "by_scene": {
+    "heart-bath-bomb-train": 4461,
+    "square-plastic-bottle-train": 4501,
+    "stemless-plastic-champagne-glass-train": 4694
+  },
+  "missing_fields": [
+    "image",
+    "camera.field_of_view"
+  ],
+  "list": "cleargrasp256_missing_calibration.jsonl.gz",
+  "list_sha256": "a0978488e9583d6e0c7392b519b7f1dcb7d8f71889bf16be490dd78f01d651d7",
+  "fallback_k_used": false,
+  "raw_json_modified": false
+}

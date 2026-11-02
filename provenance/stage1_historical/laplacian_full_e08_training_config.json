@@ -1,0 +1,28 @@
+{
+  "autocast": false,
+  "batch_size": 8,
+  "batch_size_per_rank": 8,
+  "effective_batch_size": 64,
+  "epochs": 8,
+  "frozen_backbones_and_v2": true,
+  "gradient_clip": 1.0,
+  "init": "exact fixed L6 alpha0.5 global fusion",
+  "learning_rate": 0.0003,
+  "model_settings": {
+    "gate_height": 24,
+    "gate_width": 32,
+    "hidden_channels": 32,
+    "levels": 6
+  },
+  "optimizer": "AdamW",
+  "protocol_sha256": "be7f2ec587b25d5c55f9b5ce06558551eb6bc9ff4f96707bcfd91a3c01a27241",
+  "pyramid_weight": 0.05,
+  "sample_presentations_per_epoch": 45456,
+  "sampler": "DistributedSampler shuffle seed+epoch drop_last=False",
+  "sampler_padding_per_epoch": 3,
+  "samples_per_epoch": 45453,
+  "scope": "full",
+  "seed": 20261023,
+  "weight_decay": 0.0001,
+  "world_size": 8
+}

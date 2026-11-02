@@ -1,0 +1,86 @@
+{
+  "schema_version": "moge_transparent_tomnet_full_v1",
+  "seed": 20261004,
+  "canvas_hw": [384, 512],
+  "feature_blocks_0based": [7, 15, 23, 31],
+  "train_scenes": [
+    "cup-with-waves-train",
+    "flower-bath-bomb-train",
+    "heart-bath-bomb-train",
+    "square-plastic-bottle-train",
+    "stemless-plastic-champagne-glass-train"
+  ],
+  "known_duplicate_train_sample": "square-plastic-bottle-train/000004501",
+  "known_duplicate_eval_rgb": "/ssd/polyu/cleargrasp-dataset-test-val/synthetic-val/square-plastic-bottle-val/rgb-imgs/000000114-rgb.jpg",
+  "paths": {
+    "artifact_root": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004",
+    "moge_project": "/ssd/polyu/moge_cleargrasp_finetune_20261003",
+    "moge_checkpoint": "/ssd/polyu/moge_cleargrasp_finetune_20261003/checkpoints/moge3_vitl_cleargrasp_ft_step0299.pt",
+    "moge_checkpoint_sha256": "7f293312b7f388edfb5bb00fc13758b0cd005fd634f402d207f289127ca6e133",
+    "moge_train_manifest": "/ssd/polyu/moge_cleargrasp_finetune_20261003/data/cleargrasp_moge/manifest.jsonl",
+    "moge_internal_predictions": "/ssd/polyu/moge_cleargrasp_finetune_20261003/results/internal_validation_step0299_live/predictions/predictions.jsonl",
+    "moge_eval_predictions": "/ssd/polyu/moge_cleargrasp_finetune_20261003/results/final_step0299_all_inference/predictions/predictions.jsonl",
+    "moge_eval_results": "/ssd/polyu/moge_cleargrasp_finetune_20261003/results/final_step0299_all_inference",
+    "dinov3_repo": "/ssd/polyu/TransDepth/vendor/dinov3",
+    "dinov3_repo_commit": "6876159a11b4df116f30f667f8c9888617df0751",
+    "dinov3_checkpoint": "/ssd/polyu/TransDepth/models/dinov3/hf-vith16plus-lvd1689m/model.safetensors",
+    "dinov3_checkpoint_sha256": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d",
+    "transdepth_source": "/home/hengxianli/TransDepth_FeatureGeometry_Integrated/src",
+    "transdepth_dinov3_loader": "/home/hengxianli/TransDepth_FeatureGeometry_Integrated/src/transdepth/models/backbone/dinov3.py",
+    "transdepth_dinov3_loader_sha256": "aa6a9aca2882527211ea682b90b9dd222d9730376d74811f0195b047956de628",
+    "cleargrasp_test_root": "/ssd/polyu/cleargrasp-dataset-test-val",
+    "tomnet_source": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/vendor/TOM-Net",
+    "tomnet_source_commit": "f4c60113653ea6f73e0a20a944691888bfb3065e",
+    "tomnet_t7_checkpoint": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/vendor/models/extracted/TOM-Net_model/CoarseNet.t7",
+    "tomnet_t7_checkpoint_sha256": "258d91c9ea379607f68d7a9015c85216ee486c972fe0e053113178ae6cdb369b",
+    "tomnet_checkpoint": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/runs/tomnet_mask/checkpoints/best.pt",
+    "tomnet_calibration": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/runs/tomnet_mask/calibration.json"
+  },
+  "tomnet_training": {
+    "epochs": 8,
+    "batch_size_per_gpu": 2,
+    "num_workers_per_gpu": 4,
+    "learning_rate": 0.00001,
+    "minimum_learning_rate": 0.000001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "trainable_scope": "all",
+    "amp_dtype": "bf16",
+    "horizontal_flip_probability": 0.5,
+    "scale_weights": [0.125, 0.25, 0.5, 1.0],
+    "loss_weights": {
+      "cross_entropy": 1.0,
+      "dice": 1.0,
+      "boundary": 0.25
+    },
+    "boundary_radius": 2,
+    "calibration_pixels_per_image": 4096
+  },
+  "model": {
+    "variant_order": ["o2_tom", "o4_tom"],
+    "hidden_channels": 128,
+    "dense_channels_per_layer": 32,
+    "token_channels_per_layer": 32,
+    "max_log_delta": 0.35,
+    "pixel_edge_radius": 5,
+    "pixel_ring_inner_radius": 7,
+    "pixel_ring_outer_radius": 23,
+    "soft_region_masks": true,
+    "residual_gate": "calibrated_probability_deadzone"
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size_per_gpu": 4,
+    "num_workers_per_gpu": 2,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "loss_weights": {
+      "depth": 1.0,
+      "gradient": 0.25,
+      "ranking": 0.1,
+      "smoothness": 0.01,
+      "background": 0.25
+    }
+  }
+}

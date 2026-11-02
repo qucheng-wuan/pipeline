@@ -1,0 +1,198 @@
+{
+  "actual_cli_seconds": 280.7034697532654,
+  "cached_validation": {
+    "original_numeric_thresholds_changed": false,
+    "original_strict_evaluation": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/evaluation.complete.json",
+      "sha256": "99878dc6391db34cf129558e30992b736cbb58fce2a677c1d4f5c3c3ab44824c"
+    },
+    "policy": "root_reviewed_approximate_quality",
+    "quality_acceptance": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_quality_acceptance/quality_acceptance.json",
+      "sha256": "293755700ca998acfd98c142a96c0d6d19f7c485b1fb29ba3262d17799963d3d"
+    },
+    "quality_helper": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/build_release_report.py",
+      "sha256": "4ccf0d3f6db775ec0819b4e1ce30926742bc9cb5e0687760679c1c94f0f6748b"
+    },
+    "strict_numerical_parity_passed": false
+  },
+  "classification_review": {
+    "authorized_by": "/root",
+    "binary": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/v2_lidf_ray_aabb.so",
+      "sha256": "ea7ef559059918b826cd14c08cffee80662cf8f5d01b8d0a528962e56195af80"
+    },
+    "build_ninja": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/build.ninja",
+      "sha256": "48f8afb3930d72bcaac9a01a2c753686c8c9367990d7a021ae320e520e711ffb"
+    },
+    "build_products": [
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/ray_aabb_cuda.o",
+        "sha256": "6e30e16d7213c71933fd10c79f1e19d0dd161e7ae8872a07567328c075b871c1"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/ray_aabb_cuda_kernel.cuda.o",
+        "sha256": "09b1c944ba5d57f1bd7bc6d1fd4068c30a6dfe043b3c146139382efcfc71c2f0"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/v2_lidf_ray_aabb.so",
+        "sha256": "ea7ef559059918b826cd14c08cffee80662cf8f5d01b8d0a528962e56195af80"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions/v2_lidf_ray_aabb/.ninja_log",
+        "sha256": "c011751660255d92d7245c40c6b1eb023d5ad3aefec78fbc721f8aee6622b91b"
+      }
+    ],
+    "declared_torch_extensions_dir": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/runtime_cache/stage2_extensions",
+    "denied_reads": [],
+    "in_memory_changes_only": [
+      "status",
+      "foreign_project_modules"
+    ],
+    "module_name": "v2_lidf_ray_aabb",
+    "numerical_sources": [
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/checkout/src/v2_lidf/vendor/lidf/extensions/ray_aabb/ray_aabb_cuda.cpp",
+        "sha256": "c6bddfc3481d7760e8b916ec0e24be249bdaf764a739d79f83f0e1085e3daeeb"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/checkout/src/v2_lidf/vendor/lidf/extensions/ray_aabb/ray_aabb_cuda_kernel.cu",
+        "sha256": "ef16dc71b245395e2b7ce6669310c5c4a00a3efdfc5da4092db2cb0b542e0403"
+      }
+    ],
+    "other_foreign_modules": [],
+    "raw_files_modified": false,
+    "raw_observation": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_21054.json",
+      "sha256": "4fd22542ee63becdc46ae7426aa344e5a180bb742e9855219899209129a7601e"
+    },
+    "scope": "Only the exact observed local JIT extension is declared runtime",
+    "toolchain": {
+      "gcc": "11.4.0",
+      "gxx": "11.4.0",
+      "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Tue_Feb__7_19:32:13_PST_2023\nCuda compilation tools, release 12.1, V12.1.66\nBuild cuda_12.1.r12.1/compiler.32415258_0\n"
+    }
+  },
+  "completed_unix": 1793559910.970398,
+  "controller": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/run_cli_integration_quality_isolated.py",
+    "sha256": "b17a3c7ae43d36a282726fa739fd3dadeb97581b6d92ff1c3269c51b50659dd4"
+  },
+  "execution": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/execution.json",
+    "sha256": "4795102475af0735fbdde275f08afd1b448af05f584f2b983658d9d35b36ee78"
+  },
+  "full_live_1226_regression_claimed": false,
+  "gate": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/posthoc_verification/gate.json",
+    "sha256": "d41f82c5eedb470c35cbb935036be185a8e2f40c420c174d4a3e98e2f1d0d069"
+  },
+  "gpu_admission": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/gpu_admission.json",
+    "sha256": "88a313b5e573d535fd939a4bdf713c5a637c84a9eca4096f3d46d14860313667"
+  },
+  "input": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/input.json",
+    "sha256": "1c4664873f290ab28684ce68fffa9074e5c9234f7b1536de16b6a467d23e1eeb"
+  },
+  "launch_receipt": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/controller_quality_attempt04.launch.json",
+    "sha256": "c246076d9c0e4a7c78bd929463c0b35e6e7ecbebe3f202f7e50800d881134776"
+  },
+  "model_executed_during_posthoc": false,
+  "model_or_numeric_tolerance_changed": false,
+  "original_project_promoted": false,
+  "posthoc_cpu_only": true,
+  "published": false,
+  "raw_artifact_sha256": {
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/checkout.copy.json": "16dc308bb7162629a5ff6c233c8ae2de4ae0b1f24385dd913faf070d9f2bed1a",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.json": "192874cea90b9e5c8095c9defd438335eb185bd64bca8be3e35b79da460d0752",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.npy": "4b9615335ed3a0c7fe2a189f209f3692158699d3ef8851f868adda29381d7327",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.npy.json": "5f297f02866a27b1817fa6f949ba7ce88c884102f891d6d99d1a2594bb0a294b",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/execution.json": "4795102475af0735fbdde275f08afd1b448af05f584f2b983658d9d35b36ee78",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/failure.json": "bc5cbb4e9d0f16afc2de7e320d6d3bdb85d6a3b44dbee48fdaf0824eda6d8139",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/gate.json": "fac182341fde9e81eb3d1fdba36267d1170d97fecd0e9f64c6918b682b40d2da",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/gpu_admission.json": "88a313b5e573d535fd939a4bdf713c5a637c84a9eca4096f3d46d14860313667",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/input.json": "1c4664873f290ab28684ce68fffa9074e5c9234f7b1536de16b6a467d23e1eeb",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_19254.json": "544e5546a7a1fd157430c809fdde5dc423d15e1233593625700d43ff811638af",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_19266.json": "5ce79f6314090ad74a7a133e87a2a1d0fa4640e4b813000f642e557fcd39c1e8",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_21054.json": "4fd22542ee63becdc46ae7426aa344e5a180bb742e9855219899209129a7601e"
+  },
+  "raw_controller_failure": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/failure.json",
+    "sha256": "bc5cbb4e9d0f16afc2de7e320d6d3bdb85d6a3b44dbee48fdaf0824eda6d8139"
+  },
+  "raw_observer_classification_failed": true,
+  "real_gpu_execution": true,
+  "result": {
+    "asset_identities": {
+      "stage1_assets_manifest_sha256": "01b4578f7c76e0ab2e59a116cba4c3997e757856eb728751574536e2aa7a6489",
+      "stage2_bundle_manifest_sha256": "512bf141702734d4433fbe22b1893095bd1e524b95c4715602d80fe762d4ca2c",
+      "stage2_weights_sha256": "3a2b7b8aa5864309b07bed592506170de239e70abf658e608425a713dddd29bb"
+    },
+    "cli_metadata": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.json",
+      "sha256": "192874cea90b9e5c8095c9defd438335eb185bd64bca8be3e35b79da460d0752"
+    },
+    "dtype": "float32",
+    "max_depth_m": 1.2150018215179443,
+    "min_depth_m": 0.47777870297431946,
+    "module_observations": [
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/metadata_19254_0.json",
+        "sha256": "192874cea90b9e5c8095c9defd438335eb185bd64bca8be3e35b79da460d0752"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/metadata_19254_1.json",
+        "sha256": "5f297f02866a27b1817fa6f949ba7ce88c884102f891d6d99d1a2594bb0a294b"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/metadata_19266_0.json",
+        "sha256": "4669f3d532511defe1d3b97064881d1b802fc0a131ef2d14c36aacad2fe30cdf"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/metadata_21054_0.json",
+        "sha256": "5f297f02866a27b1817fa6f949ba7ce88c884102f891d6d99d1a2594bb0a294b"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_19254.json",
+        "sha256": "544e5546a7a1fd157430c809fdde5dc423d15e1233593625700d43ff811638af"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_19266.json",
+        "sha256": "5ce79f6314090ad74a7a133e87a2a1d0fa4640e4b813000f642e557fcd39c1e8"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/module_observations/modules_21054.json",
+        "sha256": "4fd22542ee63becdc46ae7426aa344e5a180bb742e9855219899209129a7601e"
+      }
+    ],
+    "original_checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+    "output": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.npy",
+      "sha256": "4b9615335ed3a0c7fe2a189f209f3692158699d3ef8851f868adda29381d7327"
+    },
+    "selected_epoch": 58,
+    "shape": [
+      720,
+      1280
+    ],
+    "stage2_metadata": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/depth.npy.json",
+      "sha256": "5f297f02866a27b1817fa6f949ba7ce88c884102f891d6d99d1a2594bb0a294b"
+    }
+  },
+  "schema": "portable_final_cli_actual_integration_v1",
+  "source_copy": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/checkout.copy.json",
+    "sha256": "16dc308bb7162629a5ff6c233c8ae2de4ae0b1f24385dd913faf070d9f2bed1a"
+  },
+  "status": "passed_candidate_cli_test_after_runtime_classification_review",
+  "verification_use": "candidate_cli_test_only_not_published",
+  "verifier": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt04/posthoc_verification/verify_cli_runtime_classification.py",
+    "sha256": "95762f5d6a527907488b8ce0acc9a4fef81c8fdda43a97f9fecdfc909b0eebec"
+  }
+}

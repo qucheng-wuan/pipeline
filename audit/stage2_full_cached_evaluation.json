@@ -1,0 +1,80 @@
+{
+  "bootstrap_scope": "paired images; excludes scene correlation and 80-checkpoint selection uncertainty",
+  "cached_input_parity_passed": false,
+  "cached_transparent_mae_agrees": true,
+  "cached_transparent_mae_tolerance_mm": 2e-05,
+  "finished_unix": 1793557963.1545904,
+  "historical_cached_winner_transparent_mae_mm": 55.91037394069383,
+  "images": 1226,
+  "independent_test_performance_claimed": false,
+  "labels": {
+    "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+    "sha256": "fce605f8e0a05e83cce21ec9b45b7e440d423e8ba56aa5dec9baa32b2d9e05e8"
+  },
+  "metric_shards": {
+    "0": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank00.complete.json",
+      "sha256": "f83286fd2f5741575b00261fc377fcc08226a29c2c7e77e882208efa270199aa"
+    },
+    "1": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank01.complete.json",
+      "sha256": "84b0a793942aef8bce69429c4136c189ca65553a68ad380f8e8c9ad2798416cb"
+    },
+    "2": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank02.complete.json",
+      "sha256": "bcec2c87586e5ef7e3c1b3b52a9d2d58af4611e14db573f9707595e2a624af3e"
+    },
+    "3": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank03.complete.json",
+      "sha256": "0cadaaba1637b90f4911ee6684dff4cb5b35e64c827d0b7dff2f2e77d0f8bfea"
+    },
+    "4": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank04.complete.json",
+      "sha256": "3ddb7abd3da0590849620267b9401659adfc3fe7dc6409a8fff2523cf1fd3124"
+    },
+    "5": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank05.complete.json",
+      "sha256": "b81e8301677e6bcef4ba756ba70c5879191fb328aa732c0f76e733416a2d2fae"
+    },
+    "6": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank06.complete.json",
+      "sha256": "27f9eee189eda733ddfb94a0a2455277a98d6c1cc5574ec03085dbcc2a1c2027"
+    },
+    "7": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank07.complete.json",
+      "sha256": "932e224b05b1a5a944f5f56381e99da71c120767dbcaa0cf8462117e486d57d3"
+    }
+  },
+  "mode": "cached",
+  "model_inputs_included_gt_or_mask": false,
+  "predictions_seal": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/predictions.complete.json",
+    "sha256": "d986ed8e714c320f4d4c4ceb65495ba4fd741bbd565846024b93ec4dd22b6e28"
+  },
+  "reports": {
+    "comparison.csv": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/comparison.csv",
+      "sha256": "42f8c7c10aba135cb2da0dcb2df3c7f15d4bb5765f196a46cebaabb526028945"
+    },
+    "metrics.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/metrics.json",
+      "sha256": "9ac2fbf4c7c5ae1a53e88eab51cd2514ad4c1ecac396f5e307a0bec7933fc05a"
+    },
+    "paired_differences.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/paired_differences.json",
+      "sha256": "126406f4075bd549328bf1ad2cfa467739beed1516b73ebab504e1697eadf530"
+    },
+    "per_image.jsonl": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/per_image.jsonl",
+      "sha256": "fd57ffe8fe4082818db43d70bf8f10b94c6825ad175a51445f2ac89211aee544"
+    }
+  },
+  "schema": "portable_stage2_full_roster_v1",
+  "selected_checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+  "selected_epoch": 58,
+  "status": "failed_cached_input_numerical_parity",
+  "test_images": 521,
+  "test_informed_selection": true,
+  "transparent_mae_change_vs_historical_mm": 5.029710195003645e-07,
+  "transparent_mae_mm": 55.91037444366485
+}

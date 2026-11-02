@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transparent-depth-fusion"
+version = "0.1.0"
+description = "RGB plus calibrated intrinsics depth estimation with frozen fusion, learned Laplacian, LIDF and SPVNAS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+transparent-depth = "transparent_depth.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+v2_lidf = ["assets/**/*", "vendor/**/*.cpp", "vendor/**/*.cu", "vendor/**/*.h", "vendor/**/*.hpp", "vendor/**/*.json", "vendor/**/LICENSE", "vendor/**/NOTICE.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+

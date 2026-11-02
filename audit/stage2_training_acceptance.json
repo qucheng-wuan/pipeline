@@ -1,0 +1,21 @@
+{
+  "ddp": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/acceptance.complete.json",
+    "sha256": "ba337396fadf7a3a0aaec8776a3a2a09f69c4be22da37316a721b22208a6a607"
+  },
+  "diagnostic_smoke_only": true,
+  "executions": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_acceptance_controller/executions.json",
+    "sha256": "367486b82ecbb1f2d6d714e2b6bc049648402adb66451b07cbdb00ff627d867d"
+  },
+  "finished_unix": 1793552236.0591674,
+  "gates": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_acceptance_controller/gates.json",
+    "sha256": "b93e2d3b4a04b47358bd277548aff02685034f116eaa524acaf15d09860b8ee7"
+  },
+  "single": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke/acceptance.complete.json",
+    "sha256": "caa3a3d3604f20474bde834a28a71e8e5902b62bc709c3e1221dc5a0a181bdd0"
+  },
+  "status": "passed"
+}

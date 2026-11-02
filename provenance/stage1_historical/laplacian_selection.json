@@ -1,0 +1,27 @@
+{
+  "frozen": true,
+  "models": [
+    {
+      "checkpoint": "/mnt/gluster_dcpu/hengxianli/fusion_v2_laplacian_train_20261023/runs/full_pyramid_s20261023/epoch08.pt",
+      "name": "full_pyramid_s20261023_e08",
+      "sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256"
+    }
+  ],
+  "promotion_policy_amendment_sha256": "3b30ee58be81522ecc9059406689197e025a30015de195629a3bf2ee4ed323f9",
+  "promotion_sha256": "81a5f1c380eee43ba4bc1cc26d025beed5b5b01bb2655a9443a85f8939f6dfe5",
+  "protocol_sha256": "be7f2ec587b25d5c55f9b5ce06558551eb6bc9ff4f96707bcfd91a3c01a27241",
+  "reported_trained_candidates": "best trained checkpoint per endpoint is evaluated even when the fixed baseline remains preferable",
+  "retrospective_test": true,
+  "selected_by_endpoint": {
+    "depth": "full_pyramid_s20261023_e08",
+    "normal": "full_pyramid_s20261023_e08"
+  },
+  "selection_rule": "minimum complete-validation endpoint score across all eight formal epochs and fixed baselines",
+  "test_labels_used_for_selection": false,
+  "trained_candidates_by_endpoint": {
+    "depth": "full_pyramid_s20261023_e08",
+    "normal": "full_pyramid_s20261023_e08"
+  },
+  "validation_summary_path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_laplacian_train_20261023/evaluation/formal/validation_summary.json",
+  "validation_summary_sha256": "27d2e4354f69a71398dce6e55206f681bb009b18df51e20f33a04ad88db60902"
+}

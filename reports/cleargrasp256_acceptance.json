@@ -1,0 +1,464 @@
+{
+  "schema": "cleargrasp256_acceptance_v1",
+  "status": "code_and_data_smoke_validated_end_to_end_blocked",
+  "end_to_end_passed": false,
+  "latest_user_protocol": {
+    "training_dataset": "ClearGrasp train only",
+    "synthetic_val_used": false,
+    "selection_validation": null,
+    "model_selection": "none; fixed completed final epoch",
+    "epochs": 60,
+    "input_hw": [
+      256,
+      256
+    ],
+    "curriculum": [
+      20,
+      20,
+      20
+    ],
+    "final_checkpoint": "final.pt",
+    "real_val_use": "final evaluation only; smoke is diagnostic, never tuning"
+  },
+  "formal_training_started": false,
+  "full_P_cache_generated": false,
+  "other_existing_jobs_stopped": false,
+  "GT_or_random_P_used_as_production_prior": false,
+  "fake_producer_seal_used": false,
+  "real_data_checks": {
+    "train_frames": 45454,
+    "real_val_frames": 173,
+    "strict_pairing": true,
+    "all_RGB_and_mask_decoded": true,
+    "all_GT_EXR_dimensions_R_channel_chunk_completeness_and_SHA_checked": true,
+    "all_native_GT_pixels_decoded": false,
+    "all_modalities_native_dimensions_match": true,
+    "duplicate_encoded_RGB_groups": 0,
+    "duplicate_decoded_RGB_groups": 0,
+    "native_sizes_hw": {
+      "evaluation": {
+        "720x1280": 173
+      },
+      "train": {
+        "1080x1920": 37150,
+        "576x1024": 8304
+      }
+    },
+    "complete_calibration_counts": {
+      "evaluation": 173,
+      "train": 31798
+    },
+    "missing_calibration_frames": 13656,
+    "full_roster_correctly_rejected_without_silent_exclusion": true,
+    "smoke_supervision_frames": 4,
+    "extra_training_frame_GT_fully_decoded": true,
+    "smoke_samples": [
+      {
+        "camera": "synthetic_renderer",
+        "decoded_rgb_sha256": "c90e1ef964ec9902243f8e3ef2b715caa4115d75cb0f767120eaa36300186f3b",
+        "depth_conversion": false,
+        "depth_coordinate": "optical_z",
+        "depth_unit": "m",
+        "domain": "synthetic",
+        "exr_complete": true,
+        "gt_native_positive_range_m": [
+          0.2100830078125,
+          1.3134765625
+        ],
+        "gt_pixel_decode": true,
+        "intrinsics256": [
+          [
+            184.85547007749577,
+            0.0,
+            127.5
+          ],
+          [
+            0.0,
+            328.631934579052,
+            127.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics_native": [
+          [
+            1386.4160255812183,
+            0.0,
+            959.5
+          ],
+          [
+            0.0,
+            1386.4159740053753,
+            539.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "mask_encoding": [
+          0,
+          255
+        ],
+        "native_hw": [
+          1080,
+          1920
+        ],
+        "native_positive_valid": 2073600,
+        "normals_used": "existing_loss_GT256_K256_dx_cross_dy_valid_current_right_down",
+        "official_split": "train",
+        "optional_normal_present": true,
+        "rgb_relative": "cup-with-waves-train/rgb-imgs/000000000-rgb.jpg",
+        "role": "train",
+        "sample_id": "cleargrasp/train/cup-with-waves-train/000000000",
+        "scene": "cup-with-waves-train",
+        "source_sha256": {
+          "calibration": "00e08cf03bf4ed9173728212276cd0e8bc3935551edaf87e266c6b5b3c7711f3",
+          "gt": "e52c2dd9ec6219f7c627c6ad0b5b0f5d23710189bb2641de6df5e149db97a92f",
+          "mask": "87aa4978fd5a21aa274bd68f0ace5d6f7fa595159cd378ea77b1161f5fd0d9da",
+          "rgb": "ca98b4533e32702665a1f9da78d18ee14f890d146757ca26edf3bd9dd0e7b89b"
+        },
+        "status": "ok",
+        "transparent_valid256": 7530,
+        "valid256": 65536,
+        "zero_coverage256": 0
+      },
+      {
+        "camera": "synthetic_renderer",
+        "decoded_rgb_sha256": "6dcaae14b682a2ad280e2c0fc0a09897d9f2113423e568638a360dd75bd29270",
+        "depth_conversion": false,
+        "depth_coordinate": "optical_z",
+        "depth_unit": "m",
+        "domain": "synthetic",
+        "exr_complete": true,
+        "gt_native_positive_range_m": [
+          0.333740234375,
+          1.044921875
+        ],
+        "gt_pixel_decode": true,
+        "intrinsics256": [
+          [
+            184.85547007749577,
+            0.0,
+            127.5
+          ],
+          [
+            0.0,
+            328.6319345790519,
+            127.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics_native": [
+          [
+            739.4218803099831,
+            0.0,
+            511.5
+          ],
+          [
+            0.0,
+            739.4218528028669,
+            287.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "mask_encoding": [
+          0,
+          255
+        ],
+        "native_hw": [
+          576,
+          1024
+        ],
+        "native_positive_valid": 589824,
+        "normals_used": "existing_loss_GT256_K256_dx_cross_dy_valid_current_right_down",
+        "official_split": "train",
+        "optional_normal_present": true,
+        "rgb_relative": "cup-with-waves-train/rgb-imgs/000001891-rgb.jpg",
+        "role": "train",
+        "sample_id": "cleargrasp/train/cup-with-waves-train/000001891",
+        "scene": "cup-with-waves-train",
+        "source_sha256": {
+          "calibration": "5de1edc7ee742b0b4ff9466f3ecaae3f26ca07a7cae463f942b6c9e9f66f9648",
+          "gt": "77bd560c8e9b5df3e3c026b31f617869ff29a2f2ba82069b832550caf3637beb",
+          "mask": "6e0b0563dbc987730cade848385fab5c04a279f9db73a2ae79c916d5be2c444c",
+          "rgb": "a2085c4bcbdff12bd59efd594145b022b441820263e89c4c9ec6651f676f0cb6"
+        },
+        "status": "ok",
+        "transparent_valid256": 4957,
+        "valid256": 65536,
+        "zero_coverage256": 0
+      },
+      {
+        "camera": "D435",
+        "decoded_rgb_sha256": "a026523b2fd2d06d19ac48b77d1e3ed8bd2d70b87b2810b41656138b52e8ae25",
+        "depth_conversion": false,
+        "depth_coordinate": "optical_z",
+        "depth_unit": "m",
+        "domain": "real",
+        "exr_complete": true,
+        "gt_native_positive_range_m": [
+          0.47998046875,
+          1.0361328125
+        ],
+        "gt_pixel_decode": true,
+        "intrinsics256": [
+          [
+            184.20000000000002,
+            0.0,
+            128.0
+          ],
+          [
+            0.0,
+            327.4666666666667,
+            127.32222222222222
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics_native": [
+          [
+            921.0,
+            0.0,
+            642.0
+          ],
+          [
+            0.0,
+            921.0,
+            359.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "mask_encoding": [
+          0,
+          255
+        ],
+        "native_hw": [
+          720,
+          1280
+        ],
+        "native_positive_valid": 909112,
+        "normals_used": "existing_loss_GT256_K256_dx_cross_dy_valid_current_right_down",
+        "official_split": "real-val",
+        "optional_normal_present": false,
+        "rgb_relative": "d435/000000000-transparent-rgb-img.jpg",
+        "role": "evaluation",
+        "sample_id": "cleargrasp/real-val/d435/000000000",
+        "scene": "d435",
+        "source_sha256": {
+          "calibration": "844bcf80a0267bb3d21e573696964dd1a0460e1e16778b3e41a1d4aa9f29e871",
+          "gt": "7a84c4fe6b055dead1475d96e50c2484c936f1f3befe22e91fe616cc1b8dcd1a",
+          "mask": "68b3f7d4b51265e4999c2156e9e28c28d0f1f65fc9073116df82643190a7397c",
+          "rgb": "b968b285c822adc86ed1ef3dad3d918474d4c056a749b4b34036b1bacd7b637c"
+        },
+        "status": "ok",
+        "transparent_valid256": 2490,
+        "valid256": 64712,
+        "zero_coverage256": 487
+      },
+      {
+        "camera": "D435",
+        "decoded_rgb_sha256": "85c1e60e74949b75ec6e02cba34f09da89372d6f7019fbd3e810cae3591508b4",
+        "depth_conversion": false,
+        "depth_coordinate": "optical_z",
+        "depth_unit": "m",
+        "domain": "real",
+        "exr_complete": true,
+        "gt_native_positive_range_m": [
+          0.489013671875,
+          1.0322265625
+        ],
+        "gt_pixel_decode": true,
+        "intrinsics256": [
+          [
+            184.20000000000002,
+            0.0,
+            128.0
+          ],
+          [
+            0.0,
+            327.4666666666667,
+            127.32222222222222
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics_native": [
+          [
+            921.0,
+            0.0,
+            642.0
+          ],
+          [
+            0.0,
+            921.0,
+            359.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "mask_encoding": [
+          0,
+          255
+        ],
+        "native_hw": [
+          720,
+          1280
+        ],
+        "native_positive_valid": 907237,
+        "normals_used": "existing_loss_GT256_K256_dx_cross_dy_valid_current_right_down",
+        "official_split": "real-val",
+        "optional_normal_present": false,
+        "rgb_relative": "d435/000000001-transparent-rgb-img.jpg",
+        "role": "evaluation",
+        "sample_id": "cleargrasp/real-val/d435/000000001",
+        "scene": "d435",
+        "source_sha256": {
+          "calibration": "844bcf80a0267bb3d21e573696964dd1a0460e1e16778b3e41a1d4aa9f29e871",
+          "gt": "e98699f7f4da5b7fdec42a29b7966f6a593701a5637430fc466d71c506743393",
+          "mask": "a9c1b58e2228653a2745108db1500034cf20f8b2737b405b480a84707487322e",
+          "rgb": "6c8590d4900a0396c5de47df216689f69522113894bf64b787ea088b3b0006bb"
+        },
+        "status": "ok",
+        "transparent_valid256": 2263,
+        "valid256": 64576,
+        "zero_coverage256": 578
+      }
+    ],
+    "coverage_and_validity_artifacts_verified": true,
+    "data_visualizations": "reports/cleargrasp256_data_visualizations",
+    "visual_inspection": "synthetic 1024x576 and real 1280x720 panels inspected; GT/mask spatial correspondence and retained GT holes visible"
+  },
+  "training_count_difference": {
+    "current": 45454,
+    "historical": 45453,
+    "sample": "square-plastic-bottle-train/000004501",
+    "RGB_decode_GT_decode_mask_and_per_frame_K": "passed",
+    "historical_duplicate_of": "synthetic-val/square-plastic-bottle-val/000000114",
+    "duplicate_evidence": "provenance/stage1_historical/tomnet_full_v1.json plus matching reference RGB SHA256",
+    "current_handling": "retain because synthetic-val is excluded from this experiment; no train/real-val duplicates"
+  },
+  "tests": {
+    "stage2_environment_full_CPU_suite": {
+      "passed": 125,
+      "log": "reports/cleargrasp256_cpu_pytest.txt"
+    },
+    "stage1_environment_CPU_suite": {
+      "passed": 15,
+      "log": "reports/cleargrasp256_stage1_cpu_pytest.txt"
+    },
+    "final_cleargrasp_config_focused_suite": {
+      "passed": 11,
+      "log": "reports/cleargrasp256_config_tests.txt"
+    },
+    "covered": [
+      "geometry/half-pixel K and weighted GT coverage",
+      "strict frame pairing, missing calibration, corruption and duplicates",
+      "no-validation partition policy and final checkpoint receipts",
+      "curriculum endpoints and transition, transparent/invalid-GT fallback",
+      "label/input separation and post-prediction metric access",
+      "256 cache identity and invalidation, portable paths, bundle grid protocol",
+      "legacy 240x320 and transCG regressions, unchanged numerical model/loss core"
+    ]
+  },
+  "5090_attempts": {
+    "stage1_source_inventory_verified": true,
+    "stage1_assets_verified": 17,
+    "stage1_assets_total": 20,
+    "stage2_initialization_files_verified": true,
+    "GPU_initially_busy_then_available": true,
+    "real_Stage2_initialization_attempted": true,
+    "official_SPVNAS_topology_dummy_forward_attempted": true,
+    "model_construction_passed": false,
+    "synchronous_diagnostic_reproduced_failure": true,
+    "failure_location": "official SPVNAS determinize -> TorchSparse sparse convolution, before dataset forward",
+    "failure": "CUDA illegal memory access",
+    "trace": "reports/cleargrasp256_stage2_construction_trace.txt"
+  },
+  "blocking_conditions": [
+    {
+      "kind": "calibration",
+      "detail": "13656 training JSON files lack both image and camera.field_of_view; no default FOV or guessed K used",
+      "list": "reports/cleargrasp256_missing_calibration.jsonl.gz"
+    },
+    {
+      "kind": "stage1_assets",
+      "missing": [
+        "stage1/dinov3/model.safetensors",
+        "stage1/dinov3/config.json",
+        "stage1/dinov3/preprocessor_config.json"
+      ],
+      "detail": "genuine frozen native P and producer seal cannot be produced without these pinned assets"
+    },
+    {
+      "kind": "5090_runtime",
+      "detail": "current torch2.11.0+cu130 / TorchSparse environment fails during official topology construction; checks and numerical sources retained"
+    }
+  ],
+  "not_validated": [
+    "real Stage1 high-resolution P prediction and producer seal",
+    "real Stage2 256 input cache from authenticated native P",
+    "real pipeline forward/loss/backward/optimizer update at any alpha",
+    "real model/Adam/StepLR checkpoint resume and continued update",
+    "real P256-vs-Stage2 evaluation or prediction visualization",
+    "A100 execution and target CUDA extension builds",
+    "full GT EXR compressed-payload pixel decoding across all training data"
+  ],
+  "historical_stage1_exposure": {
+    "real_val_RGB_hashes_seen_in_historical_validation": 173,
+    "current_real_val_count": 173,
+    "unseen_complete_pipeline_test_claimed": false
+  },
+  "migration": {
+    "guide": "docs/CLEARGRASP256.zh-CN.md",
+    "path_variables": [
+      "CLEARGRASP_TRAIN_ROOT",
+      "CLEARGRASP_REAL_VAL_ROOT",
+      "ASSETS",
+      "INIT",
+      "WORK",
+      "AUDIT",
+      "CUDA_HOME",
+      "TORCH_EXTENSIONS_DIR"
+    ],
+    "a100_profile": "reference / torch2.1.2+cu121 / GCC11 / nvcc12.1 / TORCH_CUDA_ARCH_LIST=8.0; build extensions from source and rerun smoke",
+    "stage1_environment": "Python3.11 / torch2.8.0+cu128; pinned full assets required",
+    "precondition_for_full_roster": "supplement authoritative per-frame calibration; rerun audit in a new directory; do not silently exclude frames"
+  },
+  "evidence_sha256": {
+    "reports/cleargrasp256_data_audit.json": "ad43fb898a3486ea1d65c818a1430c132137498958ee1e5278046bc57120fd6b",
+    "reports/cleargrasp256_smoke_data.json": "b9dbcffd445ba74c920f21eaecbbc647a3c5e7cf848fbba0cc0370ef2acb5b16",
+    "reports/cleargrasp256_missing_calibration.jsonl.gz": "a0978488e9583d6e0c7392b519b7f1dcb7d8f71889bf16be490dd78f01d651d7",
+    "reports/cleargrasp256_asset_verification.json": "b9a05905f207124b9d52687865c7b2c73ed7ab3505eff9ebcc0d422085f0cf22",
+    "reports/cleargrasp256_cpu_pytest.txt": "83498df96dca8898a30e0a3f08c423284a8b1888f0f03b792e45ebc5a488a6bc",
+    "reports/cleargrasp256_stage1_cpu_pytest.txt": "c8159399dd8054acede31239943c282710e8b730b27e9d053b9ade30afc5b41c",
+    "reports/cleargrasp256_formal_roster_block.txt": "575342ed2cec68c8f400ce5d035820f62d26793370f1862635266a479c458ea6",
+    "reports/cleargrasp256_stage2_construction_trace.txt": "a827f5165218ee973652e1813b7ce1ef5ee483ca36cf7e3c520a49fe06435a57",
+    "provenance/cleargrasp256_source_snapshot.json": "9b1bde93761e51cde10695c065550cff17abc2f14be439e9e86b3b3d5a3e9feb"
+  }
+}

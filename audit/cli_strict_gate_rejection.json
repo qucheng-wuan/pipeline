@@ -1,0 +1,40 @@
+{
+  "schema": "strict_cached_cli_gate_rejection_v1",
+  "status": "rejected_before_cli_gpu_execution",
+  "controller_pid": 16423,
+  "process_absent_observed_unix": 1793558063.9191637,
+  "actual_exit_code_reaped_by_this_agent": null,
+  "original_gate_preserved": true,
+  "failure": {
+    "controller": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/run_cli_integration.py",
+      "sha256": "c6fae1135c5702b17bfed9075ec37e4cbf2c355e0251ce5822e15e2a8b696668"
+    },
+    "error": "ValueError('Full cached-P winner validation has not passed unchanged limits')",
+    "evidence_preserved": true,
+    "observed_unix": 1793557972.1909003,
+    "original_project_promoted": false,
+    "published": false,
+    "status": "failed"
+  },
+  "evidence": {
+    "failure": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/attempt01/failure.json",
+      "sha256": "6a88339b0aa0d772eb224dcd46644e367df82f89805aaa7117964d5886508667"
+    },
+    "log": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/controller.log",
+      "sha256": "74eccf55499fcc505b364026db82cdf59911a95d62d41ec163d4bd855d668d20"
+    },
+    "original_controller": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cli_integration/run_cli_integration.py",
+      "sha256": "c6fae1135c5702b17bfed9075ec37e4cbf2c355e0251ce5822e15e2a8b696668"
+    },
+    "failed_cached_metric": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/evaluation.complete.json",
+      "sha256": "99878dc6391db34cf129558e30992b736cbb58fce2a677c1d4f5c3c3ab44824c"
+    }
+  },
+  "published": false,
+  "original_project_promoted": false
+}

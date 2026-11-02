@@ -1,0 +1,73 @@
+Traceback (most recent call last):
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/random.py", line 213, in fork_rng
+    yield
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/spvnas_fusion.py", line 180, in load_specialized
+    model = zoo.spvnas_specialized(model_id, pretrained=config.pretrained)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/vendor/spvnas/model_zoo.py", line 44, in spvnas_specialized
+    model = model.determinize()
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/vendor/spvnas/core/models/semantic_kitti/spvnas.py", line 296, in determinize
+    x = self.forward(x)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/vendor/spvnas/core/models/semantic_kitti/spvnas.py", line 320, in forward
+    x1 = self.downsample[0](x1)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/vendor/spvnas/core/modules/layers.py", line 341, in forward
+    out = self.net(x)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/vendor/spvnas/core/modules/dynamic_sparseop.py", line 84, in forward
+    return spf.conv3d(inputs, cur_kernel, self.ks, None, stride=self.s, dilation=self.d, transposed=self.t)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torchsparse/nn/functional/conv/conv.py", line 115, in conv3d
+    feats = ConvolutionFunction.apply(
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/autograd/function.py", line 596, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torchsparse/nn/functional/conv/func/implicit_gemm.py", line 51, in forward
+    weight = weight.contiguous()
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/transparent_depth/stage2.py", line 184, in build_stage2
+    model = LIDFStage1(**cfg).to(target)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/model.py", line 106, in __init__
+    self.spvnas_branch = SPVNASFusion(config, config.variant, 128, audit)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/spvnas_fusion.py", line 217, in __init__
+    self.backbone, channels = load_specialized(config, variant, audit_path)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/v2_lidf/spvnas_fusion.py", line 179, in load_specialized
+    with torch.random.fork_rng(devices=devices):
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/random.py", line 217, in fork_rng
+    device_mod.set_rng_state(device_rng_state, device)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/cuda/random.py", line 76, in set_rng_state
+    _lazy_call(cb)
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/cuda/__init__.py", line 409, in _lazy_call
+    callable()
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/torch/cuda/random.py", line 74, in cb
+    default_generator.set_state(new_state)
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+

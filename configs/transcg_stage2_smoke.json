@@ -1,0 +1,173 @@
+{
+  "seed": 23,
+  "epochs": 4,
+  "batch_per_gpu": 1,
+  "expected_world_size": 1,
+  "distributed": {
+    "strategy": "single_gradient_bucket_after_backward",
+    "torch_version": "2.1.2",
+    "bucket_cap_mb": 512,
+    "first_bucket_cap_mb": 512,
+    "find_unused_parameters": false,
+    "broadcast_buffers": true,
+    "gradient_as_bucket_view": false,
+    "static_graph": false
+  },
+  "workers_per_gpu": 0,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "scheduler": {
+    "step_size": 2,
+    "gamma": 0.1
+  },
+  "model": {
+    "grid_resolution": 8,
+    "valid_sample_num": 10000,
+    "train_query_num": 20000,
+    "query_chunk_size": 4096,
+    "maxpool_label_epochs": 6,
+    "pos_weight": 100.0,
+    "prob_weight": 0.5,
+    "normal_weight": 10.0,
+    "spvnas": {
+      "variant": "spvnas_fusion_20g",
+      "pretrained": true,
+      "voxel_size": 0.05,
+      "coordinate_scale": 1.0,
+      "spatial_shape": [
+        64,
+        64,
+        64
+      ],
+      "runtime_checks": true,
+      "allow_tf32": false
+    },
+    "rgb_pretrained": true,
+    "dense_allow_tf32": false,
+    "input_hw": [
+      256,
+      256
+    ]
+  },
+  "input_hw": [
+    256,
+    256
+  ],
+  "selection": "diagnostic only, never a formal selected model",
+  "input_contract": "native RGB frozen Stage1; full-field AREA RGB, LINEAR P; half-pixel K256; valid weighted-area GT; no geometry augmentation",
+  "evaluation_note": "ClearGrasp real-val final evaluation only; historically seen by frozen Stage1 validation selection",
+  "stage1": {
+    "checkpoint_sha256": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d",
+    "adapter_checkpoint_sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256",
+    "adapter": {
+      "kind": "learned_laplacian",
+      "levels": 6,
+      "hidden_channels": 32,
+      "gate_height": 24,
+      "gate_width": 32
+    },
+    "frozen": true,
+    "expected_asset_sha256": {
+      "v2": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d",
+      "laplacian_e08": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256",
+      "r5": "70e5b33f7bf2c7f0a65b427b58688506b8bf8bcd2366eaf89d788e4bd7dce648",
+      "o2": "cbd0ca2258e870708c0325884010879a362963af49f578f1c8bbeca979451de1",
+      "o4": "ce135c1853973ed777a5fab204b28fc6d7d2d76adca4fd600fdc67e13abf5629",
+      "far": "221daf822f081685277fc6b9b5c03db88b2e33e89a10b2e3cca72b53244e6d3f",
+      "moge": "7f293312b7f388edfb5bb00fc13758b0cd005fd634f402d207f289127ca6e133",
+      "tom": "a1541a8d14a9bffd211376821f198a0d1950d91d3d595be3d35510cab2496b02",
+      "tom_calibration": "e88062e11415f4bad39311a359753573935e0d7ab4d4a4c6b90d37fe82e4e66e",
+      "transnormal_unet": "4d7f8e2935af42a18c6a7b2351b84c4f4dae042e08e133ef19bde6cc82584bf1",
+      "transnormal_vae": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+      "transnormal_projector": "d8d607cc08ece6620e1caa7af375a7656596e190e9070bb28c87eef077aa2386",
+      "dinov3": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d",
+      "transnormal_model_index_json": "cb42f168f368a312924233ac6d0d82b8512f90b30966f560578908cc6382624c",
+      "transnormal_unet_config_json": "f25c31a2af50385156282b0002237fc56a36a4134fa68c3cd306f2725049a20a",
+      "transnormal_vae_config_json": "6b194a1bad5f6ab0431cc254088949b814f75d0c3230483ad8fc6be2cc1495a0",
+      "transnormal_scheduler_scheduler_config_json": "d38e01c6b084c8db8c16411d955f17974e6c3d83ef6dc9c6b7b576329d6907a9",
+      "dinov3_config_json": "35770e98e425c9383534bcbfa7f3b7a3cb1d943f6d26a37d7d19fea0735eab57",
+      "dinov3_preprocessor_config_json": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7",
+      "flex_gemm_autotune_cache": "e40097daa6f432754cc1a27762ae5910a114df5034d9d218a61109f4021a39cd"
+    }
+  },
+  "experiment": "frozen high-resolution RGB experts + V2 + Laplacian E08 -> transCG 256 LIDF/SPVNAS",
+  "curriculum": {
+    "stage_epochs": [
+      1,
+      2,
+      1
+    ],
+    "steps_per_epoch": null,
+    "alpha_index": "committed_optimizer_updates_before_next_step",
+    "transition": "two-epoch smoke transition with 4 optimizer updates; alpha=1,2/3,1/3,0",
+    "mix_resolution": [
+      256,
+      256
+    ],
+    "mix": "valid nontransparent pixels: alpha*GT+(1-alpha)*P; all other pixels: P",
+    "invalid_gt_fallback": "P",
+    "transparent_gt_depth_input": false,
+    "training_gt_mask_for_input_composition": true,
+    "validation_alpha": 0.0,
+    "evaluation_alpha": 0.0,
+    "selection_start_epoch": 4,
+    "optimizer_continuous_across_stages": true,
+    "fixed_pure_p_validation_alpha": 0.0
+  },
+  "query_protocol": "uniform circular contiguous 20000 raster indices per training image; every pixel has equal direct-query probability; full-image validation/inference",
+  "initialization": "fresh verified ImageNet ResNet34 + official SPVNAS20G; fresh LIDF/adapters; no historical ClearGrasp Stage2 checkpoint. --resume restores last.pt model/Adam/StepLR/RNG/update count.",
+  "augmentation": "none; retain comparison settings",
+  "candidate_selection": "detached raw-score argmax with deterministic lowest-pair-index exact tie break; teacher positives use same tie rule; classification log-softmax unchanged",
+  "precision": "Stage two uses float32 forward tensors with autocast disabled; cuDNN TF32, CUDA matmul TF32, TorchSparse TF32 and TorchSparse FP16 are explicitly disabled in training, validation and deployment. This does not change frozen E08 stage-one caches or the reference argmax rule.",
+  "gradient_accumulation_steps": 1,
+  "effective_global_batch": 1,
+  "learning_rate_factors": {
+    "lidf": 0.1,
+    "spvnas": 0.1,
+    "adapters": 1.0
+  },
+  "accumulation_protocol": "mean of the existing per-microbatch support-normalized losses, divided by the actual number of microbatches in the optimizer window; SyncBN synchronizes each microbatch only, not the accumulated optimizer batch",
+  "checkpoint_policy": "diagnostic epochs1-4 plus last.pt; never promoted",
+  "torchsparse_commit": "385f5ce8718fcae93540511b7f5832f4e71fd835",
+  "data_protocol": "transcg256",
+  "preprocessing": {
+    "schema": "rgb_fusion_transcg_fullfield256_v1",
+    "model_hw": [
+      256,
+      256
+    ],
+    "field_of_view": "full_resize_no_crop_no_pad",
+    "rgb_interpolation": "INTER_AREA",
+    "prediction_interpolation": "INTER_LINEAR",
+    "gt_interpolation": "valid_weighted_INTER_AREA",
+    "mask_interpolation": "nearest_exact_pixel_centres",
+    "coverage_threshold": 0.5,
+    "coverage_epsilon": 1e-08,
+    "depth_range_m": [
+      0.1,
+      2.0
+    ],
+    "depth_range_application": "inclusive_after_valid_positive_area_integration",
+    "unit": "m",
+    "coordinate": "optical_z",
+    "pixel_convention": "integer_pixel_centres",
+    "intrinsics_resize": "half_pixel_once",
+    "augmentation": "none"
+  },
+  "selection_metric": "transparent_mae_m",
+  "phase_matched_validation": false,
+  "scheduler_note": "Diagnostic only: decay after epoch2; resume verifies state.",
+  "counts_source": "authenticated input_manifest; includes both cameras as independent samples",
+  "paths": {
+    "transcg_root_env": "TRANSCG_ROOT",
+    "cleargrasp_root_env": "CLEARGRASP_ROOT",
+    "info_root": "data/transcg_info"
+  },
+  "diagnostic_smoke": true,
+  "acceptance": {
+    "expected_train_samples": 2,
+    "expected_val_samples": 2,
+    "expected_cleargrasp_samples": 2,
+    "formal_schedule_boundary_check": true
+  }
+}

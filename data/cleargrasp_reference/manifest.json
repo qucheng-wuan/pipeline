@@ -1,0 +1,46 @@
+{
+  "arrays_included": false,
+  "calibration_source_counts_unique": {
+    "official_default_fov_for_legacy_missing_metadata": 13656,
+    "released_real_yaml_integer_centres_plus_half_pixel": 286,
+    "released_synthetic_per_frame_fov_boundary_centres": 32737
+  },
+  "dataset_directory_names": [
+    "cleargrasp-dataset-train",
+    "cleargrasp-dataset-test-val"
+  ],
+  "distinct_rgb_sha_intersection_train_evaluation": 0,
+  "files": {
+    "calibration_provenance.jsonl.gz": {
+      "bytes": 2195696,
+      "sha256": "31045ec2761e3fcfffb5a5332ab473db41362bd3b877422bd1da5421143647f0"
+    },
+    "labels.jsonl.gz": {
+      "bytes": 563645,
+      "sha256": "94dbe35b4fbe8c9dd16bd71991bccbb52f62483cf3a6434d7ee612223c23eccf"
+    },
+    "rgb_k.jsonl.gz": {
+      "bytes": 2274035,
+      "sha256": "7cdfd8ba449c7dbd2898bbcec3f8e7ece5e945d3fee1beb7c1925e3b88ff1951"
+    }
+  },
+  "gt_arrays_opened": false,
+  "gt_depth_semantics": "already_rectified_optical_z_m",
+  "native_intrinsics_pixel_convention": "integer_pixel_centres",
+  "original_input_rows": 47383,
+  "rgb_sha_fields_recomputed_during_metadata_export": false,
+  "roles": {
+    "evaluation": 1226,
+    "train": 45453,
+    "val": 704
+  },
+  "sample_order": "first occurrence in authenticated original input manifest",
+  "sample_order_sha256": "f28796596e4636489256fb24b0378453e80f10ef7819e9c194908719538db444",
+  "schema": "cleargrasp_audited_metadata_reference_v1",
+  "source_manifest_sha256": {
+    "input": "131877505a7a872be5603707954524955b2db30180ae2c7876f3268d6ca7a0c4",
+    "labels": "fce605f8e0a05e83cce21ec9b45b7e440d423e8ba56aa5dec9baa32b2d9e05e8"
+  },
+  "training_sample_ids_overlap_other_roles": false,
+  "unique_samples": 46679
+}

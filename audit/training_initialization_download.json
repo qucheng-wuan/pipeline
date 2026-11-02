@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "scope": "fresh downloads from official URLs through project training-initialization downloader; all source-declared SHA256 verified",
+  "gpu_used": false,
+  "images_or_gt_used": false,
+  "assets": [
+    {
+      "id": "resnet34-333f7ec4.pth",
+      "path": "resnet34-333f7ec4.pth",
+      "sha256": "333f7ec4c6338da2cbed37f1fc0445f9624f1355633fa1d7eab79a91084c6cef",
+      "bytes": 87306240,
+      "kind": "training_initialization",
+      "download_url": "https://download.pytorch.org/models/resnet34-333f7ec4.pth"
+    },
+    {
+      "id": "SemanticKITTI_val_SPVNAS@20GMACs/net.config",
+      "path": "SemanticKITTI_val_SPVNAS@20GMACs/net.config",
+      "sha256": "3bedf00c36f4ba926504fcc05cc00734b01d74f0803a4563583e315ec4f3c72d",
+      "bytes": 3225,
+      "kind": "training_initialization",
+      "download_url": "https://hanlab18.mit.edu/files/SPVNAS/spvnas_specialized/SemanticKITTI_val_SPVNAS@20GMACs/net.config"
+    },
+    {
+      "id": "SemanticKITTI_val_SPVNAS@20GMACs/init",
+      "path": "SemanticKITTI_val_SPVNAS@20GMACs/init",
+      "sha256": "d8f8e53ab5774f610c33a9d7d023beb82fdc3f846276162b205906112a27af85",
+      "bytes": 13937690,
+      "kind": "training_initialization",
+      "download_url": "https://hanlab18.mit.edu/files/SPVNAS/spvnas_specialized/SemanticKITTI_val_SPVNAS@20GMACs/init"
+    }
+  ],
+  "manifest_sha256": "d631d09b1851bfa3d2c2bc20953274ed0159d2519dc8d85b7852a887e7eefa65",
+  "script_sha256": "68d06eddd82a0ec724f4e9175e761e215f16b6ad6f4f106a8eca9929b91ec8c5",
+  "completed_unix": 1793549298.2926838
+}

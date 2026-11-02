@@ -1,0 +1,391 @@
+{
+  "assets": [
+    {
+      "bytes": 2996781,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 2996781,
+            "name": "trained-stage1--v2_best_eligible.pt",
+            "sha256": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "v2",
+      "kind": "trained_checkpoint",
+      "path": "stage1/v2_best_eligible.pt",
+      "sha256": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 181185,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 181185,
+            "name": "trained-stage1--laplacian_epoch08.pt",
+            "sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "laplacian_e08",
+      "kind": "trained_checkpoint",
+      "path": "stage1/laplacian_epoch08.pt",
+      "sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 16552391,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 16552391,
+            "name": "trained-stage1--r5.pt",
+            "sha256": "70e5b33f7bf2c7f0a65b427b58688506b8bf8bcd2366eaf89d788e4bd7dce648"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "r5",
+      "kind": "trained_checkpoint",
+      "path": "stage1/r5.pt",
+      "sha256": "70e5b33f7bf2c7f0a65b427b58688506b8bf8bcd2366eaf89d788e4bd7dce648",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 5604147,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 5604147,
+            "name": "trained-stage1--o2.pt",
+            "sha256": "cbd0ca2258e870708c0325884010879a362963af49f578f1c8bbeca979451de1"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "o2",
+      "kind": "trained_checkpoint",
+      "path": "stage1/o2.pt",
+      "sha256": "cbd0ca2258e870708c0325884010879a362963af49f578f1c8bbeca979451de1",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 6921087,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 6921087,
+            "name": "trained-stage1--o4.pt",
+            "sha256": "ce135c1853973ed777a5fab204b28fc6d7d2d76adca4fd600fdc67e13abf5629"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "o4",
+      "kind": "trained_checkpoint",
+      "path": "stage1/o4.pt",
+      "sha256": "ce135c1853973ed777a5fab204b28fc6d7d2d76adca4fd600fdc67e13abf5629",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 38625663,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 38625663,
+            "name": "trained-stage1--far_dpt.pt",
+            "sha256": "221daf822f081685277fc6b9b5c03db88b2e33e89a10b2e3cca72b53244e6d3f"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "far",
+      "kind": "trained_checkpoint",
+      "path": "stage1/far_dpt.pt",
+      "sha256": "221daf822f081685277fc6b9b5c03db88b2e33e89a10b2e3cca72b53244e6d3f",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 1481381121,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 1481381121,
+            "name": "trained-stage1--moge_step0299.pt",
+            "sha256": "7f293312b7f388edfb5bb00fc13758b0cd005fd634f402d207f289127ca6e133"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "moge",
+      "kind": "trained_checkpoint",
+      "path": "stage1/moge_step0299.pt",
+      "sha256": "7f293312b7f388edfb5bb00fc13758b0cd005fd634f402d207f289127ca6e133",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 35697799,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 35697799,
+            "name": "trained-stage1--tomnet.pt",
+            "sha256": "a1541a8d14a9bffd211376821f198a0d1950d91d3d595be3d35510cab2496b02"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "tom",
+      "kind": "trained_checkpoint",
+      "path": "stage1/tomnet.pt",
+      "sha256": "a1541a8d14a9bffd211376821f198a0d1950d91d3d595be3d35510cab2496b02",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 5673,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 5673,
+            "name": "trained-stage1--tom_calibration.json",
+            "sha256": "e88062e11415f4bad39311a359753573935e0d7ab4d4a4c6b90d37fe82e4e66e"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "tom_calibration",
+      "kind": "calibration",
+      "path": "stage1/tom_calibration.json",
+      "sha256": "e88062e11415f4bad39311a359753573935e0d7ab4d4a4c6b90d37fe82e4e66e",
+      "source": "user experiment; distribute original bytes with provenance"
+    },
+    {
+      "bytes": 3470311272,
+      "download": {
+        "filename": "unet/diffusion_pytorch_model.safetensors",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_unet",
+      "kind": "official_weight",
+      "path": "stage1/transnormal/unet/diffusion_pytorch_model.safetensors",
+      "sha256": "4d7f8e2935af42a18c6a7b2351b84c4f4dae042e08e133ef19bde6cc82584bf1",
+      "source": "hf:Longxiang-ai/TransNormal@796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+    },
+    {
+      "bytes": 334643276,
+      "download": {
+        "filename": "vae/diffusion_pytorch_model.safetensors",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_vae",
+      "kind": "official_weight",
+      "path": "stage1/transnormal/vae/diffusion_pytorch_model.safetensors",
+      "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+      "source": "hf:Longxiang-ai/TransNormal@796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+    },
+    {
+      "bytes": 2625220,
+      "download": {
+        "filename": "cross_attention_projector.pt",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_projector",
+      "kind": "official_weight",
+      "path": "stage1/transnormal/cross_attention_projector.pt",
+      "sha256": "d8d607cc08ece6620e1caa7af375a7656596e190e9070bb28c87eef077aa2386",
+      "source": "hf:Longxiang-ai/TransNormal@796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+    },
+    {
+      "bytes": 3362432800,
+      "download": {
+        "filename": "model.safetensors",
+        "kind": "huggingface",
+        "repository": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+        "revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc"
+      },
+      "id": "dinov3",
+      "kind": "official_weight",
+      "path": "stage1/dinov3/model.safetensors",
+      "sha256": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d",
+      "source": "hf:facebook/dinov3-vith16plus-pretrain-lvd1689m@c807c9eeea853df70aec4069e6f56b28ddc82acc"
+    },
+    {
+      "bytes": 377,
+      "download": {
+        "filename": "model_index.json",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_model_index_json",
+      "kind": "model_configuration",
+      "path": "stage1/transnormal/model_index.json",
+      "sha256": "cb42f168f368a312924233ac6d0d82b8512f90b30966f560578908cc6382624c",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 1894,
+      "download": {
+        "filename": "unet/config.json",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_unet_config_json",
+      "kind": "model_configuration",
+      "path": "stage1/transnormal/unet/config.json",
+      "sha256": "f25c31a2af50385156282b0002237fc56a36a4134fa68c3cd306f2725049a20a",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 716,
+      "download": {
+        "filename": "vae/config.json",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_vae_config_json",
+      "kind": "model_configuration",
+      "path": "stage1/transnormal/vae/config.json",
+      "sha256": "6b194a1bad5f6ab0431cc254088949b814f75d0c3230483ad8fc6be2cc1495a0",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 308,
+      "download": {
+        "filename": "scheduler/scheduler_config.json",
+        "kind": "huggingface",
+        "repository": "Longxiang-ai/TransNormal",
+        "revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f"
+      },
+      "id": "transnormal_scheduler_scheduler_config_json",
+      "kind": "model_configuration",
+      "path": "stage1/transnormal/scheduler/scheduler_config.json",
+      "sha256": "d38e01c6b084c8db8c16411d955f17974e6c3d83ef6dc9c6b7b576329d6907a9",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 744,
+      "download": {
+        "filename": "config.json",
+        "kind": "huggingface",
+        "repository": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+        "revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc"
+      },
+      "id": "dinov3_config_json",
+      "kind": "model_configuration",
+      "path": "stage1/dinov3/config.json",
+      "sha256": "35770e98e425c9383534bcbfa7f3b7a3cb1d943f6d26a37d7d19fea0735eab57",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 585,
+      "download": {
+        "filename": "preprocessor_config.json",
+        "kind": "huggingface",
+        "repository": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+        "revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc"
+      },
+      "id": "dinov3_preprocessor_config_json",
+      "kind": "model_configuration",
+      "path": "stage1/dinov3/preprocessor_config.json",
+      "sha256": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7",
+      "source": "same immutable HF snapshot as weight"
+    },
+    {
+      "bytes": 6963,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 6963,
+            "name": "runtime-stage1--flex_gemm_autotune_cache.json",
+            "sha256": "e40097daa6f432754cc1a27762ae5910a114df5034d9d218a61109f4021a39cd"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "flex_gemm_autotune_cache",
+      "kind": "runtime_configuration",
+      "path": "stage1/flex_gemm_autotune_cache.json",
+      "sha256": "e40097daa6f432754cc1a27762ae5910a114df5034d9d218a61109f4021a39cd",
+      "source": "Frozen original FlexGEMM RTX 3090 kernel-selection seed; 14 kernel entries; copied per predictor to a private writable cache"
+    },
+    {
+      "bytes": 100664578,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 100664578,
+            "name": "trained-stage2--model.pt",
+            "sha256": "3a2b7b8aa5864309b07bed592506170de239e70abf658e608425a713dddd29bb"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "stage2_model_pt",
+      "kind": "selected_stage2_bundle",
+      "path": "stage2/model.pt",
+      "sha256": "3a2b7b8aa5864309b07bed592506170de239e70abf658e608425a713dddd29bb",
+      "source": "model-only export of authenticated epoch 58, original checkpoint SHA256 b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381"
+    },
+    {
+      "bytes": 6828,
+      "download": {
+        "kind": "github_release",
+        "parts": [
+          {
+            "bytes": 6828,
+            "name": "trained-stage2--model.json",
+            "sha256": "512bf141702734d4433fbe22b1893095bd1e524b95c4715602d80fe762d4ca2c"
+          }
+        ],
+        "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+        "tag": "v0.1.0"
+      },
+      "id": "stage2_model_json",
+      "kind": "selected_stage2_bundle",
+      "path": "stage2/model.json",
+      "sha256": "512bf141702734d4433fbe22b1893095bd1e524b95c4715602d80fe762d4ca2c",
+      "source": "model-only export of authenticated epoch 58, original checkpoint SHA256 b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381"
+    }
+  ],
+  "cached_strict_numerical_parity_passed": false,
+  "official_assets_note": "Pinned upstream sources retain original access requirements and licenses; user-trained integration assets are private GitHub release files.",
+  "release_tag": "v0.1.0",
+  "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+  "schema": "transparent_depth_release_assets_v1",
+  "status": "verified_release",
+  "verification_profile": "training_release"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "scope": "actual fresh-environment tiny training/committed-epoch resume only; not formal model-quality results",
+  "formal_training_claimed": false,
+  "stage1_acceptance_sha256": "af7ee53a552e658438748bfd2dee7be34dbc7cab852566782c6148816b820ae3",
+  "fresh_stage1_predictions_sha256": "f760a2a8d227e1e8e1bec5d2932ed72ee3aebc12066945b778ca0eef116c08ad",
+  "validator_script_sha256": "0798d73077bd70cf93fab56ae283877e10ac6755b1148ddf9c5721d2ecda4a4c",
+  "verified_runs": [
+    {
+      "world_size": 1,
+      "epochs": 3,
+      "updates": 9,
+      "acceptance_sha256": "caa3a3d3604f20474bde834a28a71e8e5902b62bc709c3e1221dc5a0a181bdd0",
+      "resume_exact_all_ranks": true,
+      "three_parameter_groups_changed_all_ranks": true,
+      "finite_loss_and_gradients_all_updates": true,
+      "input_alphas": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pure_p_and_phase_matched_validation_verified": true,
+      "processes_exited_zero": true
+    },
+    {
+      "world_size": 2,
+      "epochs": 3,
+      "updates": 9,
+      "acceptance_sha256": "ba337396fadf7a3a0aaec8776a3a2a09f69c4be22da37316a721b22208a6a607",
+      "resume_exact_all_ranks": true,
+      "three_parameter_groups_changed_all_ranks": true,
+      "finite_loss_and_gradients_all_updates": true,
+      "input_alphas": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pure_p_and_phase_matched_validation_verified": true,
+      "processes_exited_zero": true
+    }
+  ],
+  "fresh_lidf_extension_binaries": [
+    {
+      "extension": "v2_lidf_pcl_aabb",
+      "filename": "v2_lidf_pcl_aabb.so",
+      "sha256": "f19071634e929cc8f6f6d10dc06ac2366fb90f32bfb37ec388c1d6f99f862d56",
+      "bytes": 1374536
+    },
+    {
+      "extension": "v2_lidf_ray_aabb",
+      "filename": "v2_lidf_ray_aabb.so",
+      "sha256": "6eed46a5e4081b7274be15b0f57a266e6b5386723fd4406aef583d58d63a44ce",
+      "bytes": 1390424
+    }
+  ],
+  "evidence_files_verified": 72,
+  "finished_unix": 1793552300.369683
+}

@@ -1,0 +1,385 @@
+{
+  "cleargrasp_real_val": 173,
+  "counts": {
+    "evaluation": 2,
+    "train": 2,
+    "val": 2
+  },
+  "full_transcg_counts": {
+    "evaluation": 23524,
+    "train": 30899,
+    "val": 3292
+  },
+  "no_sensor_depth_read": true,
+  "preprocessing": {
+    "augmentation": "none",
+    "coordinate": "optical_z",
+    "coverage_epsilon": 1e-08,
+    "coverage_threshold": 0.5,
+    "depth_range_application": "inclusive_after_valid_positive_area_integration",
+    "depth_range_m": [
+      0.1,
+      2.0
+    ],
+    "field_of_view": "full_resize_no_crop_no_pad",
+    "gt_interpolation": "valid_weighted_INTER_AREA",
+    "intrinsics_resize": "half_pixel_once",
+    "mask_interpolation": "nearest_exact_pixel_centres",
+    "model_hw": [
+      256,
+      256
+    ],
+    "pixel_convention": "integer_pixel_centres",
+    "prediction_interpolation": "INTER_LINEAR",
+    "rgb_interpolation": "INTER_AREA",
+    "schema": "rgb_fusion_transcg_fullfield256_v1",
+    "unit": "m"
+  },
+  "roster_sha256": {
+    "inputs": "8d0c4a5f70d02745561aec391784b5e524ac200f7be11e406250608988fecd3f",
+    "labels": "bbd09a39d9be8855e107a0afe6bfd557acc5473180783a62097ac025b9a88033",
+    "rgb": "b4d67f95d0f93939dfb92a0dbaaf5e73fdc2251524c2e51c71b4302dec53029c"
+  },
+  "samples": 6,
+  "samples_audit": [
+    {
+      "camera": "D435",
+      "depth_divisor": 1000,
+      "gt_valid_m_range": [
+        0.44406670331954956,
+        0.5817333459854126
+      ],
+      "intrinsics256": [
+        [
+          185.434,
+          0.0,
+          129.864
+        ],
+        [
+          0.0,
+          329.7315555555556,
+          123.98711111111112
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          927.17,
+          0.0,
+          651.32
+        ],
+        [
+          0.0,
+          927.37,
+          349.62
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "train",
+      "sample_id": "transcg/scene1/perspective0/camera1",
+      "transparent_valid256": 6759,
+      "valid256": 64945,
+      "zero_coverage256": 249
+    },
+    {
+      "camera": "L515",
+      "depth_divisor": 4000,
+      "gt_valid_m_range": [
+        0.4899999797344208,
+        1.9999921321868896
+      ],
+      "intrinsics256": [
+        [
+          180.4806,
+          0.0,
+          129.7922
+        ],
+        [
+          0.0,
+          320.99662222222224,
+          129.61235555555555
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          902.403,
+          0.0,
+          650.961
+        ],
+        [
+          0.0,
+          902.803,
+          365.441
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "train",
+      "sample_id": "transcg/scene1/perspective0/camera2",
+      "transparent_valid256": 7582,
+      "valid256": 50146,
+      "zero_coverage256": 10182
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1000,
+      "gt_valid_m_range": [
+        0.46699994802474976,
+        0.5794711709022522
+      ],
+      "intrinsics256": [
+        [
+          185.434,
+          0.0,
+          129.864
+        ],
+        [
+          0.0,
+          329.7315555555556,
+          123.98711111111112
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          927.17,
+          0.0,
+          651.32
+        ],
+        [
+          0.0,
+          927.37,
+          349.62
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "val",
+      "sample_id": "transcg/scene14/perspective0/camera1",
+      "transparent_valid256": 11726,
+      "valid256": 65273,
+      "zero_coverage256": 57
+    },
+    {
+      "camera": "L515",
+      "depth_divisor": 4000,
+      "gt_valid_m_range": [
+        0.4747577905654907,
+        1.999866247177124
+      ],
+      "intrinsics256": [
+        [
+          180.4806,
+          0.0,
+          129.7922
+        ],
+        [
+          0.0,
+          320.99662222222224,
+          129.61235555555555
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          902.403,
+          0.0,
+          650.961
+        ],
+        [
+          0.0,
+          902.803,
+          365.441
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "val",
+      "sample_id": "transcg/scene14/perspective0/camera2",
+      "transparent_valid256": 8926,
+      "valid256": 50908,
+      "zero_coverage256": 10099
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1,
+      "gt_valid_m_range": [
+        0.4799804091453552,
+        1.0350433588027954
+      ],
+      "intrinsics256": [
+        [
+          184.20000000000002,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          327.4666666666667,
+          127.32222222222222
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          921.0,
+          0.0,
+          642.0
+        ],
+        [
+          0.0,
+          921.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        255
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "evaluation",
+      "sample_id": "cleargrasp/real-val/d435/000000000",
+      "transparent_valid256": 2490,
+      "valid256": 64712,
+      "zero_coverage256": 487
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1,
+      "gt_valid_m_range": [
+        0.489013671875,
+        1.028059959411621
+      ],
+      "intrinsics256": [
+        [
+          184.20000000000002,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          327.4666666666667,
+          127.32222222222222
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          921.0,
+          0.0,
+          642.0
+        ],
+        [
+          0.0,
+          921.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        255
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "evaluation",
+      "sample_id": "cleargrasp/real-val/d435/000000001",
+      "transparent_valid256": 2263,
+      "valid256": 64576,
+      "zero_coverage256": 578
+    }
+  ],
+  "scene_counts": {
+    "official_test": 52,
+    "train": 70,
+    "val": 8
+  },
+  "split_sha256": "40fd6d25db56a1f14c1dfbb53f6ebab194d216c8c6362c01cae52ed9a836bc38",
+  "stage1_prediction_executed": false,
+  "roster_contract_sha256": "08975a8fe3d6dc14eff4e83cd3f959a42b2b3f86eb697170da799016926117d9",
+  "source_inventory_only_no_predictions": true
+}

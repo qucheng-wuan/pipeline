@@ -1,0 +1,1315 @@
+{
+  "schema_version": "full1226_transparent_mae_checkpoint_sweep_v1",
+  "status": "complete",
+  "selection_policy": {
+    "epochs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "selection_images": 1226,
+    "primary_metric": "full1226/combined/transparent/image_macro/mae_mm",
+    "tie_break": "smaller_epoch",
+    "empty_region": "null_per_image_excluded_from_macro",
+    "uses_test_labels_for_checkpoint_selection": true,
+    "independent_test_performance_claimed": false,
+    "original_val704_selection_is_preserved_separately": true,
+    "gt_or_mask_used_as_prediction_input": false,
+    "input_alpha": 0.0
+  },
+  "completed_epochs": 80,
+  "contract": {
+    "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/contract.json",
+    "sha256": "dcec326d71f660937b6d23c10bcf0061dc19104f53537fbb4b20b048849d217c"
+  },
+  "ranking": [
+    {
+      "epoch": 58,
+      "checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 55.91037394069383,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch058/metrics.json",
+        "sha256": "78b8547e1a5ccf855597d1b90be139abdab68339f9a6e2d3b4a9032cb513b855"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch058/per_image.jsonl",
+        "sha256": "f501bb51f7b6d1baed963972961d938b8fd15b40b080fa52196dcd55c41655a2"
+      }
+    },
+    {
+      "epoch": 41,
+      "checkpoint_sha256": "986765b8a51d2da8719cdb19d60811b1ba43473a92500408db66e07bfb7c4347",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 55.97595503468161,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch041/metrics.json",
+        "sha256": "64b5acb83968c7cab22c9e4defe3ff00f1c5b6130526cafed11dbef3707f577e"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch041/per_image.jsonl",
+        "sha256": "95a168e814a250d4bb08692e542052c024d2e45a79624a99adcda63030c01abe"
+      }
+    },
+    {
+      "epoch": 28,
+      "checkpoint_sha256": "c0eb5871c23710cf64936294605baf2ce0bcc58063c12f600de3f9dc3432a6aa",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.287848607873585,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch028/metrics.json",
+        "sha256": "3a0ba89a42e2a37a64068b5a638e58e6ec81460cad4ec4664cb4aa9ff6a0ece8"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch028/per_image.jsonl",
+        "sha256": "3b0e0707ded4c76f57e6dabfe527ffb369d32bf8079c32a73ae8747c5c925239"
+      }
+    },
+    {
+      "epoch": 76,
+      "checkpoint_sha256": "de39e5d89ecebd6378cdde46993f8d0ba3a3776e89d10784f1199c604c9b36cc",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.2900985719171,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch076/metrics.json",
+        "sha256": "5f539c8e933c9e25aea575771ce8ea6f363f8bb690ebb82119cf147292810ecf"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch076/per_image.jsonl",
+        "sha256": "2e98af0dbf8a18993433615d2a37c080f383b2ef2ca4f3ba98506f90a882f034"
+      }
+    },
+    {
+      "epoch": 18,
+      "checkpoint_sha256": "619d43f2116b737b713751fe482fe670c4f44849a85891a077c958cf3bde4885",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.35903605054642,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch018/metrics.json",
+        "sha256": "53729f8fa5eeac527b05c8a3e7940fe4034013d20145c66366b8145f179d93c8"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch018/per_image.jsonl",
+        "sha256": "e4ba8822b66d70139bbcae46878cc717288cb2960c7facb617e954b93ad2615c"
+      }
+    },
+    {
+      "epoch": 75,
+      "checkpoint_sha256": "15ada4b7b25a8e5112f48b3354204dbf1a4f99a29b2d05bb35f922fbf074ccd0",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.409279347569175,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch075/metrics.json",
+        "sha256": "7916359cdcc8d79e58c0d29f4ae16f2b45059775d33e4121d2e4a4c734d50db8"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch075/per_image.jsonl",
+        "sha256": "742c1810a1fde65d2dbf38cce340f6d3d78671fe545009fd6ce6b53cac25ec49"
+      }
+    },
+    {
+      "epoch": 32,
+      "checkpoint_sha256": "74159c25e2308697a041dd027b9d2e8c7bacbb7e0ca4ae2149772548de091584",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.420760715313214,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch032/metrics.json",
+        "sha256": "2331e9534803b2939fb52d9dde5fbbe051e939b560777fad3f2d30e121cae83f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch032/per_image.jsonl",
+        "sha256": "2c950521071b27bbb5eac45b11ef2a6a81e977d2bb723463461c9e94dfb7aea2"
+      }
+    },
+    {
+      "epoch": 13,
+      "checkpoint_sha256": "fe81f6c3c7a0d7643cd1b28f1081030d6cda40e674a5c9f581c07512addb05d4",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.452848764215936,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch013/metrics.json",
+        "sha256": "c9f2beeceed3898322e21fb4a49e8949fa02888e2c6dd05ad38c72b21dc78e6f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch013/per_image.jsonl",
+        "sha256": "58f5ea556c4e8650b065bff957804d71c05c9c128d75b29ec9a5bdb158060995"
+      }
+    },
+    {
+      "epoch": 78,
+      "checkpoint_sha256": "c2c5cdc726e7c912afd711fb62bf60d12a97672c178cd4d6400ba54e87d27c44",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.465597898447335,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch078/metrics.json",
+        "sha256": "48255e95fde396e5d4f3235570904716b0f69320eebea4d081ede54b43c6090a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch078/per_image.jsonl",
+        "sha256": "7e3fe577585bdd92e06a1a18f5eb8f78060c6a975c30ef5542ae3b5d1debf81e"
+      }
+    },
+    {
+      "epoch": 36,
+      "checkpoint_sha256": "9d1b906bb025d608d954aef907e1c941a9b0be4e977512758a0744cf9a6b2452",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.54502447662978,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch036/metrics.json",
+        "sha256": "3bc9ea3831a08c74c8cb851709f905d13b3dd97d76097a31dc76c591c318918b"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch036/per_image.jsonl",
+        "sha256": "41fb6363b396c41bab8135d4d328f1947339ddc099ba73af58d1cfc23dfe2b6e"
+      }
+    },
+    {
+      "epoch": 72,
+      "checkpoint_sha256": "d4a503276f22d9047e9c7ad1f3eb72bc1a76f386f5e9b98cdd52248793e09660",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.57337347408119,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch072/metrics.json",
+        "sha256": "dd8306accfc65e431ed0ecf89284c1502f2ad37f72c44b9d36461a4a657ff4ae"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch072/per_image.jsonl",
+        "sha256": "fe093d5828224472ce2409cc80aa2f3ee36f88d31e2657cb12d8071c4a897c2f"
+      }
+    },
+    {
+      "epoch": 68,
+      "checkpoint_sha256": "c84e538dfd27b35f71bf7c62b1654eb111b77b2c186f6b0c40853815b0728796",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.63570253821851,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch068/metrics.json",
+        "sha256": "ea5b69667ddb5cdf35fff68584d829be3c0bd2dd8c62a89f175f4855385a3cd0"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch068/per_image.jsonl",
+        "sha256": "7db226a7f4e09fb8e7a704e53ca9ef08d551733522f8313c7366bae2b44205e0"
+      }
+    },
+    {
+      "epoch": 17,
+      "checkpoint_sha256": "e0711f3744108d770a660f8d699b1c0afda03f1fba4db90799a52bd8d429ca72",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.67224491186173,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch017/metrics.json",
+        "sha256": "4f6e1036482e6bc23fbaf27a3f1c005f610e6c167e7be9f7f7e6751a78a490ba"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch017/per_image.jsonl",
+        "sha256": "41ed2bec9b49a544249d06159d5994708b3a21d63d231ccfcc5a68a0fdb5505b"
+      }
+    },
+    {
+      "epoch": 51,
+      "checkpoint_sha256": "b209aaf4ef509ccca86bb8b7a605582f323724613109a28571c2a6a797925de9",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.67702526405919,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch051/metrics.json",
+        "sha256": "e8094d6cd9679ba6c731c33c23b634ad476ba0e2aed3f23b17093f1e1810970f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch051/per_image.jsonl",
+        "sha256": "9f15b5f5c7ea5881f780915c3a1fa8c849f6c5645298388fe9b129703e542166"
+      }
+    },
+    {
+      "epoch": 62,
+      "checkpoint_sha256": "20386ae45d0d52ce812dc576f617dc3f680915daf8aa1fa40b6af5ab33970d5f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.69951197255185,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch062/metrics.json",
+        "sha256": "a3ba025377e90d4d0ec1591390b579925dda314bd9949f72e5e80f27eae142f2"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch062/per_image.jsonl",
+        "sha256": "6d7f07bbb58ff8508fc171d9cc3dbd969214b5681fc0c6d139e652238579b8b0"
+      }
+    },
+    {
+      "epoch": 74,
+      "checkpoint_sha256": "ab875eb0177df10c01ff198dac241ec107eb02255f8934c7ccdf889469005146",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.708740076821876,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch074/metrics.json",
+        "sha256": "245b013d45cdf63d1f724e0e1bf8d9efcb50c8697ee491b7e2c051ddd0ab0639"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch074/per_image.jsonl",
+        "sha256": "86376c84c284fa8a726c817bc28f210e05357e08202f1c00ffa51ed427d75e83"
+      }
+    },
+    {
+      "epoch": 80,
+      "checkpoint_sha256": "a0979859b6bd168dc64cf9ef523b777dee62bcdbc1cd331ee671388020fbd3c6",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.78040734472089,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch080/metrics.json",
+        "sha256": "fb4b36b00c9450459adf017121a9199fdb515cd032ac489e633f4ab8ea0d3fd9"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch080/per_image.jsonl",
+        "sha256": "9088dc2465aa9af7a0e60b68b4a1a24ea17bbb2b485547d1f7750a3393ba4ca5"
+      }
+    },
+    {
+      "epoch": 79,
+      "checkpoint_sha256": "78cae60af35be05a09eb0ed054b5a4b104e743b9d2957423a09a8cf4948d218d",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.78423615879128,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch079/metrics.json",
+        "sha256": "ca8bb78e703a2acdecfee17286976450cfb1eea1bad5d94f59f80713f3505405"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch079/per_image.jsonl",
+        "sha256": "e300b48fe92227ffbc441e89dc97738e950bb59edfdbfce7fe31550f38b571c8"
+      }
+    },
+    {
+      "epoch": 77,
+      "checkpoint_sha256": "dcae6cac705a31d8955998b79bad14036728cafb7420027cde925f5ba8a277e8",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.78589885337938,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch077/metrics.json",
+        "sha256": "9ebdfb7e54f5915bfe72aefbeee5eebcdba6adaf78f1dfacf791e9b42b8f41bf"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch077/per_image.jsonl",
+        "sha256": "1b7e7b2513a34478a1a380d62737c504769b6628a14910f6a900518d00fdb07b"
+      }
+    },
+    {
+      "epoch": 40,
+      "checkpoint_sha256": "624c0aaf0d9ed7bd6ce0abb6fc835601bbfe1a51ec4ba148cf63dfa2ac6e5fa6",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.79822020081987,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch040/metrics.json",
+        "sha256": "659a7035b2e44d9699049c1086e7d9752ea4ea4bc206b0a58d1aae4c975f6300"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch040/per_image.jsonl",
+        "sha256": "53bdb81b0e5f1f5be8c8501ed542abeb0f02e2924f8d8c2d38eccf4aba23c9a6"
+      }
+    },
+    {
+      "epoch": 37,
+      "checkpoint_sha256": "5803cf91cc671d9c8c0d3e2a143d83967521e665d3d45782ad8c8beab50d5df2",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.813452038095626,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch037/metrics.json",
+        "sha256": "f452d8b4c9606cdfdb345f7f64ecce3fc11ed2d02bc92c42e8ea8d24ef391555"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch037/per_image.jsonl",
+        "sha256": "e2e9761940f5e5ea36a2d037720969339ec37ccb4ed107d496dd33e43339b057"
+      }
+    },
+    {
+      "epoch": 67,
+      "checkpoint_sha256": "b4df3bbdcbd7e4a1db547a4ebf27c16352cd878015a6d75d69090ae16356c1e3",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.82974788296908,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch067/metrics.json",
+        "sha256": "c107ee5bc950fa171a860e8770d78e070289d83bcdd433f8924282086f5adf82"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch067/per_image.jsonl",
+        "sha256": "2e0c78181cbc7a92ed7fa072df2ec5259e61d696b14d1bde0ddefc4d60b93ce5"
+      }
+    },
+    {
+      "epoch": 11,
+      "checkpoint_sha256": "305e9624694c8a2e12ec742ddbf782300847a0c8619bb8a10bef3d40ff5fe173",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.833948698884626,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch011/metrics.json",
+        "sha256": "4912e76d49ef0c0a9af6860b209fcc030dc95d92c3263e953a918632b4ecdf95"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch011/per_image.jsonl",
+        "sha256": "c8bc6da0193b063fa33f38b714eae55c06663fcb89787d35d56ea685073cd052"
+      }
+    },
+    {
+      "epoch": 29,
+      "checkpoint_sha256": "af1eeab33101f7b5fb87f2b6270e4639dd4a049fc131a7caf607c29245cb6332",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.861787543087495,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch029/metrics.json",
+        "sha256": "ecb3d3871ecd70ad1e872e0c33e54c5c8e2eba5a1752850b1a426e75ae0904ce"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch029/per_image.jsonl",
+        "sha256": "c45c16e7e4dba520ff1345795666be196086e45ca8d5cfb27a011784f01a31b0"
+      }
+    },
+    {
+      "epoch": 71,
+      "checkpoint_sha256": "4dc1ccc3f8279157089bb5793d197b00bca557bc61358f04980f4f705cfd731c",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.8832199449036,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch071/metrics.json",
+        "sha256": "fc9b22d0d410d38fbdfd67cf0c4584c95c4e5c485dc1e71c3f2504eb44649e5d"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch071/per_image.jsonl",
+        "sha256": "0f95ba70686e86318eca34eb962a34e9437e5d1a46bf606893244635cab3e8ef"
+      }
+    },
+    {
+      "epoch": 65,
+      "checkpoint_sha256": "be3f88d286d448b5f160d5e8a692baceb3b33b4c5c476d88050fc04b70af9b3b",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.89065621863215,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch065/metrics.json",
+        "sha256": "d3fafdc4b52b334e36cb966621e02d050a6448ba6ba5a152b8cd8332f599e1e2"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch065/per_image.jsonl",
+        "sha256": "a236fba71f2684b7e3025559fe363acb5fac0afc8b29819dd608b317bb80b44e"
+      }
+    },
+    {
+      "epoch": 63,
+      "checkpoint_sha256": "a942fd8b61159f43235c7ede1d311513f1094a7cab67c67b7d5a09c41b99c112",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.91013782455243,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch063/metrics.json",
+        "sha256": "b0db6f38c06b56c918a5ec81228b80de5b911f5e175cc3d281c241600fec7906"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch063/per_image.jsonl",
+        "sha256": "160b7e10bf4f5559a7ae23739375080bc682da1e02bcbf1daf18d9907faa1729"
+      }
+    },
+    {
+      "epoch": 38,
+      "checkpoint_sha256": "2c7d3a30e89a61bd08c12f16ab7e98f60e3e631db34802067ed1f4e92c255a3c",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.92926649394744,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch038/metrics.json",
+        "sha256": "3c86705aa93d347981b7f18a2058d27868b0ce4d8ba201b110e51ba2a60fe80b"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch038/per_image.jsonl",
+        "sha256": "02d59ec4902bbdc04f95acffcef924681c51bc8eced9fa363b1bdde53826ea9b"
+      }
+    },
+    {
+      "epoch": 66,
+      "checkpoint_sha256": "f8208ecdf536039a4eeebd81c85e36e23ec5403750e8151d305769f4549717de",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.931277379876185,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch066/metrics.json",
+        "sha256": "1deb086aba848a11dcca1586e20f5f59006e14468b9505ed0c1b446a785d9d43"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch066/per_image.jsonl",
+        "sha256": "b3c9007f31d620a4d8147bbfd63bbb0f4d5a7c974a65c83d1750800cc1ac0ef0"
+      }
+    },
+    {
+      "epoch": 64,
+      "checkpoint_sha256": "4a32db84a13d59dbecb9717bf2ba84772a7a46f13c6d3bb05dd29dc307d77e64",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.94135435630181,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch064/metrics.json",
+        "sha256": "ee090e4a16fc3fa70ca49a21fb9e520cc2a3285648dfbeb6c96049ecc9072293"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch064/per_image.jsonl",
+        "sha256": "a49220648d243643c5ec8db0d8a20fe66a32aeba21bea44fdd6a64d57b25ec2e"
+      }
+    },
+    {
+      "epoch": 61,
+      "checkpoint_sha256": "61e4bc2f1b2932c66fa9b68b100fe47ddd8b713bef46db52950689f5d9613c9d",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.95484484279259,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch061/metrics.json",
+        "sha256": "f91e9033c59df0a7b16414d5b5ff87f8b2f4b76a6851408fb72bd5bdc3afbf70"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch061/per_image.jsonl",
+        "sha256": "ad1065a12441f33f3d4ad62ed2f6801fd283068f354be7dd499e1490287c6d42"
+      }
+    },
+    {
+      "epoch": 10,
+      "checkpoint_sha256": "9cabc899731f2ddb2bd2db903b64eabfacdefa2264076a17ed078566f15d54ab",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.967744456008916,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch010/metrics.json",
+        "sha256": "13b31be16951c7dda5b6f9e3355e00652def5c6b1b765fd4d4cf6efb23868928"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch010/per_image.jsonl",
+        "sha256": "4d8be45f35858d25ca184894e2c09c01f9d78ce08d779b52a37ecc36da82df00"
+      }
+    },
+    {
+      "epoch": 73,
+      "checkpoint_sha256": "a24c8312343035cccc0b54ddb886e9e41bff8ccdc7e2e804c85a251e53757b6e",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.978670690861684,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch073/metrics.json",
+        "sha256": "6544a37d86c19c97c942d552315f8646e749ffc8e2b348823aa9ef9164c76e51"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch073/per_image.jsonl",
+        "sha256": "835d7ebcf7965998d8450549cb3eeee8596ecd7310a79a479d6bbf1b3caeaabf"
+      }
+    },
+    {
+      "epoch": 31,
+      "checkpoint_sha256": "869185bc928c051e2baafaddbfb1d4bcc0e8d24f68ba4a9aa2340ac95d32c55e",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 56.99248029256112,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch031/metrics.json",
+        "sha256": "a79466bd3b0634718bfa5842b2d2b40d914def03e73c8f56bfb7cd5a4cb88514"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch031/per_image.jsonl",
+        "sha256": "761c2bcb994c434e5eaf1f1824761aeb741fb852a9bb71907ed09c3becb38814"
+      }
+    },
+    {
+      "epoch": 69,
+      "checkpoint_sha256": "898e57f791851092f52ce49459bbb8730a54de6f2c9be672d4f455b1e3bb3f6a",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.005310848947005,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch069/metrics.json",
+        "sha256": "faa93b548de4368d0674dc4f7411b7cf00e848451a6f9c206323a103d29207ff"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch069/per_image.jsonl",
+        "sha256": "7685c3863d59c280c931b07c63087801619497babed6e37fbf91a65402395a81"
+      }
+    },
+    {
+      "epoch": 45,
+      "checkpoint_sha256": "307963507379b57ac463395d09078f85617eaa07370ab97b541509cc88c9ca24",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.018122305729904,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch045/metrics.json",
+        "sha256": "1c2dc8e8e634c89ade3eba4c9df49aef482a8e064677dedb0d71fd5100cb30d9"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch045/per_image.jsonl",
+        "sha256": "0fac4b57ba5b4ca09042b55f9234420eb30bb9c4e9d1b2143e95a36a109e5b51"
+      }
+    },
+    {
+      "epoch": 70,
+      "checkpoint_sha256": "11139dd59b3019c5c481c6f2b157fd6339cde95feb164536d56122f8e1b49f1c",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.03024020257618,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch070/metrics.json",
+        "sha256": "73201a5973d9efa6978d698757107529f6f6c19711e3393a71ffee9abe07bf12"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch070/per_image.jsonl",
+        "sha256": "7ec8fa2d99d9b04e53633479bc3c210ff16c2940500d3fc4d5ceb638a9af80c1"
+      }
+    },
+    {
+      "epoch": 42,
+      "checkpoint_sha256": "48011294ff35da02d8762413f0a05d401a9767f3540448ed0d00291b6f363e8a",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.073559291643456,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch042/metrics.json",
+        "sha256": "90ac6f309c3b749201fdac316b8fa78d3fbff133bb066a6ad253d7a89549d432"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch042/per_image.jsonl",
+        "sha256": "ba6b207640a5f0ac381d23925f9eed028e50257692662c141638006b265f392f"
+      }
+    },
+    {
+      "epoch": 26,
+      "checkpoint_sha256": "22ee3ccf8f1cafe502b55f3387de405e528a8c2352b0bd086d8aab8fc5f0c282",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.09288159350831,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch026/metrics.json",
+        "sha256": "a05d74c9cb8ce599a9b4c75a3ff70693617eceae799e1d1ef1cac5b392547699"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch026/per_image.jsonl",
+        "sha256": "61d5ba3a1a877b9582acfde96382c6d5cad190a2d66843cb4a0ae57442ed2c7c"
+      }
+    },
+    {
+      "epoch": 52,
+      "checkpoint_sha256": "0eed7b73e83010b1e194b4ab4b9d76826af6cffa6400d64b37af775e1dbf27cd",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.1040982946007,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch052/metrics.json",
+        "sha256": "75bf1a997fc1d8ce4f5238d23d4ff7284dc5155ecc999814246c0ecc00f5f49f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch052/per_image.jsonl",
+        "sha256": "a89760a7c50aa693d31f421df090488f2fc503c977802122a8d2b72b3a13c8fb"
+      }
+    },
+    {
+      "epoch": 12,
+      "checkpoint_sha256": "f80d8dd262eb4c25d111ace934015486aaba76656c7a721f6a02ea1ae4d96a7f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.11874541572932,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch012/metrics.json",
+        "sha256": "011b2285f9589dd6c3079374c7a2e55cf338f5a8aebf9172338217ce0c2d5e1e"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch012/per_image.jsonl",
+        "sha256": "0f0997cdf466fa905db00958b50cc0be7c61e1581759970388e283b50f999944"
+      }
+    },
+    {
+      "epoch": 46,
+      "checkpoint_sha256": "2329b17ac995ddddebb33b4b69ff290909356e74f0b26c1f5fd0b3e117a61bb8",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.12631624983781,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch046/metrics.json",
+        "sha256": "1ed25f3250b101d71f8690e23772f0b2b01b0f096cd1746d8b5ef2d85b0317ce"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch046/per_image.jsonl",
+        "sha256": "50ff9e04c830c08613a367d74a54ccd7bfa7b068d45c84ebb946bd11196566e8"
+      }
+    },
+    {
+      "epoch": 59,
+      "checkpoint_sha256": "b01ff3d23dd03ab4e4e94dd867de9d4a3fb7dba6152e75921b0f20d498fd266d",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.152053132033295,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch059/metrics.json",
+        "sha256": "723508ec0dee0888290023a1550bd8bce30c151a4dc7855fd7070f6e2dfa61c8"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch059/per_image.jsonl",
+        "sha256": "8532eb5c5992b7c80a5ad275e1c4591f647b606dc1d9400043e53d36058b39c3"
+      }
+    },
+    {
+      "epoch": 47,
+      "checkpoint_sha256": "78ad1e72c61e122d5074c87f03a17aa9dbee56711780364899c17b42a2e14112",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.169583007159176,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch047/metrics.json",
+        "sha256": "ab02cc5e8680b84de6d1a28647bb157fea9b7fd6bb190acb250b95a0fb13c1ca"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch047/per_image.jsonl",
+        "sha256": "3e2db3a7814d88c9f474ea023cebb06db27e6af651185e0e0833c5d9480d435d"
+      }
+    },
+    {
+      "epoch": 50,
+      "checkpoint_sha256": "040522a6541c5a0954efa8f5e408fc9b6792617eacd4f42d097b5cb4c3e9899c",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.18940559743437,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch050/metrics.json",
+        "sha256": "75c4dd0502591e766c9970c52084b7360bad273bad0872cc73ad00d6a9191e9f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch050/per_image.jsonl",
+        "sha256": "d7de54017ecbe84374f72a3df76ed3f448414c2209598944b586c2ee88d6d11b"
+      }
+    },
+    {
+      "epoch": 30,
+      "checkpoint_sha256": "3db02bf72042a93cd0664278ea05772531e421128408b0bba71e6df4a093dd6d",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.2015144598168,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch030/metrics.json",
+        "sha256": "554012b94820155083c3c675bd22aa6693eaa0a78bb0c3d36d751cf5f42349df"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch030/per_image.jsonl",
+        "sha256": "1578301d4c21a048c6ee21cacae63f56574f0ade04f8cc8a2f189e2321a51616"
+      }
+    },
+    {
+      "epoch": 25,
+      "checkpoint_sha256": "c14bb3b899f015b8806b3bd5d603d76671e41aaa9d5d696d59a1c4271743b3ad",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.41164395946942,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch025/metrics.json",
+        "sha256": "e9e6d542d44d508b0caeb1eb439bfb06ed701f8fc0c76034d50c30b643d7559f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch025/per_image.jsonl",
+        "sha256": "b79312752b9178197cd6ce2468617c16ebfbe041b3656f0b0f5c2178d97df4f0"
+      }
+    },
+    {
+      "epoch": 15,
+      "checkpoint_sha256": "00ef07cf9203c0ae0775c9d46187c1de0b3ee8da3a1cb569aa144c850e1c437f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.44806015675591,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch015/metrics.json",
+        "sha256": "e0d97c01b006e4060b13a2cb677f2dc3ace3b19a9d24d8c51dfd42c1abbdee71"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch015/per_image.jsonl",
+        "sha256": "c6aea4bdb10d9e1fe7be9aff5557c1b8c509a837513d3bf1ffd88530891a8104"
+      }
+    },
+    {
+      "epoch": 9,
+      "checkpoint_sha256": "c35367982f8fe96873e227c685dd73bbc27e7f26e5ecdbf731e9902cb0a65d0b",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.4955316100981,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch009/metrics.json",
+        "sha256": "45262a54162a71696a588e21521246699b338f2504310b7ec05e0c160f0695cd"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch009/per_image.jsonl",
+        "sha256": "ad5c4c494f418e639bbc2df4ca1f0e317a42fc9825626adc1164e7e5b81277b0"
+      }
+    },
+    {
+      "epoch": 22,
+      "checkpoint_sha256": "0761c9198d6302476140e5a1c4a91c267ad47faab2c6439e102dfc2e2fe7f056",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.500920632876124,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch022/metrics.json",
+        "sha256": "0934304dc4b50b858d91f237ce221b33ead824d0e4b9e46e450abf3664c0222a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch022/per_image.jsonl",
+        "sha256": "79b9d41119b76eb6ebfa30404ee5cd1c4904e3165e29a1bceada962e8d8c6f2f"
+      }
+    },
+    {
+      "epoch": 8,
+      "checkpoint_sha256": "8206e6131fda93433cb320656720aefb15228c17ca3ed10c64a5435d0865219b",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.6242980218999,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch008/metrics.json",
+        "sha256": "bab5d01367be62a71f42a6d2304fd0ba2d4ef22e24681553118ea9eba9d60563"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch008/per_image.jsonl",
+        "sha256": "d1ffda3b49b242201fd25f6a4f0cc1d52a9ae7906a44d6e9b2b58233ea461d3d"
+      }
+    },
+    {
+      "epoch": 21,
+      "checkpoint_sha256": "c1011778dc815ff7ee74efe4b90f055fa5473d41b8e118375dc37eb9be8ce159",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.626493483077184,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch021/metrics.json",
+        "sha256": "2c14ca020fee9eaf56555bd039843dee25eb04a44118de81987188183a5f646a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch021/per_image.jsonl",
+        "sha256": "b500cb18b5a1c66bb553c8d5613f5e0d3a1b6e962d0acee568641163b87ed790"
+      }
+    },
+    {
+      "epoch": 20,
+      "checkpoint_sha256": "b189bf69de8ed12dc44e65a0062d98c0a4b69e1831b69882fbbe1b47397e6951",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.701166617567914,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch020/metrics.json",
+        "sha256": "97c31252cb4fe8a26c6e5a87fa0e6eb5710dfaabf4c60e86604bf037aac0749a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch020/per_image.jsonl",
+        "sha256": "722d5e567921a9db4d1425180fd163965fb3ffef7d5717fd10fb6115b3c4bd3a"
+      }
+    },
+    {
+      "epoch": 34,
+      "checkpoint_sha256": "2966b0002f92447ecd0a2e2c0220490807944798124274b4557b67db8ddda598",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.75897754820527,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch034/metrics.json",
+        "sha256": "eb79590ce74340a8672e33e773adad7bb4efb4e882688e5e37932855bc34f76f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch034/per_image.jsonl",
+        "sha256": "e2729ef37411d9cb5f012f167dc2961d2df69ae4733b396dfcb8e268cf8830f5"
+      }
+    },
+    {
+      "epoch": 24,
+      "checkpoint_sha256": "e672120ecee08a18f372c89bf353a1d9500f887c356a9d429b41ec39272f68b3",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.80487697249331,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch024/metrics.json",
+        "sha256": "25eda1e26b954e7e1b57b187f72d2ec4e5443106b26451be91787465472801e8"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch024/per_image.jsonl",
+        "sha256": "2442ba647aae44f0450ecbec67a1774202dbe5c6027f8b58731f3deda179ec8c"
+      }
+    },
+    {
+      "epoch": 27,
+      "checkpoint_sha256": "b4f41e8bc151ea4e041a17fbdc2f6d45782a2d69a8dc7f19145ed1691bcd8675",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.81008316927132,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch027/metrics.json",
+        "sha256": "dcc77d09ff6884c0d7a08ac3a7685cd92e7f15841c0fb4f2e60a92f9057ceafc"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch027/per_image.jsonl",
+        "sha256": "fd0a36e2222e98e5bed4a5c32060f27bcaf1c4ef73391848893dd3bbdc43cf42"
+      }
+    },
+    {
+      "epoch": 55,
+      "checkpoint_sha256": "fd80f42ca75c79cb3ea4f3b25d00e980383578c305ab1ef1f879c1a743d7f0bf",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.85270304788039,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch055/metrics.json",
+        "sha256": "4b9b6c9424471f3190305b90df7fbcc8dd55d7afb5bab0519c7ac3f01b8e6898"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch055/per_image.jsonl",
+        "sha256": "61ec7cad730f01d7ab8d809bae10ef25bbc541e1559a3e73f2f91e9997641b23"
+      }
+    },
+    {
+      "epoch": 23,
+      "checkpoint_sha256": "362da1430b70db3b5f3a658a0fc6e4daac0905b2745b5a4d6f27d3cd92a811bd",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.896706648226434,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch023/metrics.json",
+        "sha256": "9dce6c15fd85e89ad46baf795c213599e165adf7ade817eda4184fe25550569c"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch023/per_image.jsonl",
+        "sha256": "3d5a1372faf21fa999f7f556e83e98ecf1bd42723d64601f88be56cc25f23576"
+      }
+    },
+    {
+      "epoch": 49,
+      "checkpoint_sha256": "5d78695b6a79ce77cb9c093c7ed773529b154e1fcd8125d0359db51b4b7917d7",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.918616082203684,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch049/metrics.json",
+        "sha256": "3c9e8601b70508cb15b112844d1ece9573426eea73d8089d37886730655d7827"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch049/per_image.jsonl",
+        "sha256": "5596d58b35973a58785b6743a8472e5fdeb93a00c3aa91f7602702d81980c2fb"
+      }
+    },
+    {
+      "epoch": 33,
+      "checkpoint_sha256": "1a7eb2e858034df67753dad46213199cd8d1a4f7beff736442404bf015f58ed9",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.92014131741421,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch033/metrics.json",
+        "sha256": "a1b112563e4268226afef00a3a47051d56fcacb31affe53b15325e5f19798787"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch033/per_image.jsonl",
+        "sha256": "801668372403a1f9f2139a54b48aea11c7b1de7a72574916cb640128b0c2d03e"
+      }
+    },
+    {
+      "epoch": 7,
+      "checkpoint_sha256": "ac87327e5dc52b04f9e9e3f186e968d31cdb2adc25cae4e8936db677dccf950f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 57.937826600307005,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch007/metrics.json",
+        "sha256": "0cb4cfe88b75e9e1e8eab5df5703fa2180564b734df31916f30d32f43fba1321"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch007/per_image.jsonl",
+        "sha256": "f4e5f635747656d97675a8cafca873c96ed50d6c543799c1192dc4c2f342fa10"
+      }
+    },
+    {
+      "epoch": 39,
+      "checkpoint_sha256": "dbe66979b09cfdea25937900bd8995498f9d1bf08578f8d024eefbdbc4288c24",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.00939502452603,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch039/metrics.json",
+        "sha256": "e80da88cdc4bb1f41ccda65d0221f3182329102db4287acc765fc1a007bcd7f2"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch039/per_image.jsonl",
+        "sha256": "05b904a6c17a3e320a2f2bd57945294701b2c5df75e3a6d087361ec8ed155b93"
+      }
+    },
+    {
+      "epoch": 19,
+      "checkpoint_sha256": "a472b40dff4b692abc9f782d2e505ca93a1d975ea7e6d36fb85d375e021e2e2a",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.03949284121281,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch019/metrics.json",
+        "sha256": "a7b4b77554d39965b2494cf3f76ad4690925270e451db316a524463d36543ece"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch019/per_image.jsonl",
+        "sha256": "ed29789740f616f16c467b6a3b3d2e7dc5d9525f05ae8e728e281f474b4a57d3"
+      }
+    },
+    {
+      "epoch": 56,
+      "checkpoint_sha256": "b3900f77095a18cc8bf346397d37d55600cb9408c5b47fbfa3d9e0053bf4a162",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.157577416779446,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch056/metrics.json",
+        "sha256": "f732f4bf148b177f0475e4b54a53ced71bab9a2485d8e58b9d8b29a9d153ebe2"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch056/per_image.jsonl",
+        "sha256": "ffea9288950573f51e769c0a9943407f8f4e1420975a8de6bf091d21cfe554e0"
+      }
+    },
+    {
+      "epoch": 14,
+      "checkpoint_sha256": "ff76b692f2e891c53b1ab58af893d8778646a02be6b240c84d1b4e39300ea68c",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.19537085840369,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch014/metrics.json",
+        "sha256": "2234ff82a6cabb39755a7843c0a14bf320d5601510b346af2467af84daf01fc9"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch014/per_image.jsonl",
+        "sha256": "a276fa9acab4b46ddd8eb63d498650d98b83abfd0e63a42183ef532554bb8ec8"
+      }
+    },
+    {
+      "epoch": 16,
+      "checkpoint_sha256": "53dc6198f0b2cffe6b4e3b487304890de8246e272c167d691271f306ca8fdfa2",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.21920710894582,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch016/metrics.json",
+        "sha256": "069802619801810575363aced3f468a6aa523e6d01549e2786074a3891ac4a69"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch016/per_image.jsonl",
+        "sha256": "29d5ecbddc2b3d6c7f6ff6ce354c5746f7108bfac14fc21b9d2560f5766d9c32"
+      }
+    },
+    {
+      "epoch": 57,
+      "checkpoint_sha256": "34ccd049dc49e75dc3b66ff542ba22604266774b3fa3902be2af6d22d839b1af",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.41538246513243,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch057/metrics.json",
+        "sha256": "99038a0851da34e29808181e55c590240b722f986930d8a4bed74d6ae52c7ff3"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch057/per_image.jsonl",
+        "sha256": "5a79acfd5c3f98b159d62ad42103439284f00fc23395d9e1fb95b5749b18b8c9"
+      }
+    },
+    {
+      "epoch": 53,
+      "checkpoint_sha256": "ff87591656a6661fbefad82851008fc9602af02f0e19931f62cc0fc5fda516b4",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.60356714056089,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch053/metrics.json",
+        "sha256": "8f7265ec3c690f4ae06565962755e3bd278ec8d4fb7f152a7837fb8ffc836050"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch053/per_image.jsonl",
+        "sha256": "9fdc0603c920763f5f7bfbd764de018746b6cdc4567b0b82f49e914de7842e9b"
+      }
+    },
+    {
+      "epoch": 5,
+      "checkpoint_sha256": "1f5570ab0ae6afa5bb192f1b1eb2312d493a51db9b9f390e0d4af0ed582a1126",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.63813739363844,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch005/metrics.json",
+        "sha256": "c92ef39af14134442dc70b5a3c241c55bd3ab0d392a2ecfd7cbb2432cb568684"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch005/per_image.jsonl",
+        "sha256": "1736346452ee4ac99190092afc8054d0d28011bbd422dc20baf805e26218f34d"
+      }
+    },
+    {
+      "epoch": 43,
+      "checkpoint_sha256": "f89e9f88a2aa6665ebd0480b73839f37f3675b5b963b41c461db09387baf0f65",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.752988068845795,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch043/metrics.json",
+        "sha256": "71e27439208c3dfac0f4b6170e0b58db484812c7defe0e846892d6db1927e3ff"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch043/per_image.jsonl",
+        "sha256": "c02f760b39d936dd8a6071ef30e3aa3bd3e082ce57be4421387d1dd0ed7918c2"
+      }
+    },
+    {
+      "epoch": 35,
+      "checkpoint_sha256": "d1ceec9511bf09623590124c39e15c09f894bdbf8844047d813b9a40923dbf33",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.78783500669165,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch035/metrics.json",
+        "sha256": "4c941d03d26a0f0c39cbcf7fd45707a2f6bb556a1090a912995071fc7992810f"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch035/per_image.jsonl",
+        "sha256": "42faf729d15b2069a8d08340f156cb512ee01e766eaddfba511bd99af8b76d1a"
+      }
+    },
+    {
+      "epoch": 54,
+      "checkpoint_sha256": "d3bd7ea9b358d3ace8235a2bc044d3e2dda59870e5af92234993b6c92a99b59b",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 58.86229893295399,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch054/metrics.json",
+        "sha256": "deb76d5f6bfa90d4899c2ec44b837ec25cc90edeae0dc7e3e920a48a3a6a3b2c"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch054/per_image.jsonl",
+        "sha256": "0c4a4228a1f0df43f2f3396e9767f26d94a3e0aa33d5082e385e95dc840f67de"
+      }
+    },
+    {
+      "epoch": 6,
+      "checkpoint_sha256": "c6fc6128aadd3849a0d617e0bc8f2de2612a80872a8b5dd34714ed2fd48a5ba3",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 59.58120005530078,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch006/metrics.json",
+        "sha256": "98bfa68631e77dbf1781e283abed2a6e4200a96506cf7b9c4baefcca970e4267"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch006/per_image.jsonl",
+        "sha256": "90a8e3451e4a73ba648e406a3c144826f32321a2018233132ed905326c1fe8f4"
+      }
+    },
+    {
+      "epoch": 44,
+      "checkpoint_sha256": "8d83686ce74b535dcc82096212592c99559fca391bded4ee0c8ff29febe4babc",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 59.6364043124965,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch044/metrics.json",
+        "sha256": "cede976296d47c10f5bc8908ec9274d90bbe477f7b171dd895609bdc3ef26371"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch044/per_image.jsonl",
+        "sha256": "59030caa38697bca60333986eb07e09f2ed0cae15e6fb5724bf057006bd36ba0"
+      }
+    },
+    {
+      "epoch": 48,
+      "checkpoint_sha256": "41ce5165b9ed64b6ba4731d54e93e2211300ead78f4633fd9bf0d48fd1b0f79f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 59.69300782899865,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch048/metrics.json",
+        "sha256": "f3141c061c3d350fe3b48c98f0b09df954eb8e88dd3367cf67c297f7080d8407"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch048/per_image.jsonl",
+        "sha256": "1a385aac5852579c9e5e54c1e1ed9e0fe3e2063925a6a1e42936ba3334b594fb"
+      }
+    },
+    {
+      "epoch": 3,
+      "checkpoint_sha256": "17863382708b17b017132f28f020b0753cff958b739199cdfcc893314d3345fa",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 59.89769004069796,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch003/metrics.json",
+        "sha256": "a6854205edb979396c5acb5daf3e3b67bed829e3074c73dd5bf07ad40d883c0a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch003/per_image.jsonl",
+        "sha256": "c3920c9f7ca9351b498557de1281b13d3844ee6abc238e6f4d8dcffb8cabba87"
+      }
+    },
+    {
+      "epoch": 4,
+      "checkpoint_sha256": "7d7582294ae2cad9a1cd952345f2939b73b0d5a28e25ecdd56faf4fc095f3225",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 59.900355410735116,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch004/metrics.json",
+        "sha256": "2f0ec8fcc6c4f008cab0154b0b070f66203d98b705dbe2ceb2387fe479ec770a"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch004/per_image.jsonl",
+        "sha256": "7da5e68d1aec9e6e4a583f41a53f4e9efd87d100cc4e818bc6aa84d6c0982163"
+      }
+    },
+    {
+      "epoch": 60,
+      "checkpoint_sha256": "9d6c7ef6762c71fc82b6de4d435fda853e394864c5ce8b909b2d12c6f2f9217f",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 60.05597456923296,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch060/metrics.json",
+        "sha256": "abefa597b72655655c01ca49299f432f6e74e04552e6f46e20b77c01dbd39143"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch060/per_image.jsonl",
+        "sha256": "c0c302cff5890a27b1e1f0ef229d0e41a18863ffaa0a17bb33defad3cccc544e"
+      }
+    },
+    {
+      "epoch": 2,
+      "checkpoint_sha256": "b76da26f2b39bc63363e8466e4aac24c3afab08b165093871663098606d37e8a",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 60.31662726583719,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch002/metrics.json",
+        "sha256": "1643a0470b5bf7a4221f3b85a739e2e2437c52545c48f5fa3e928b10724bdc65"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch002/per_image.jsonl",
+        "sha256": "fff568d4f6381a44818412b3d897e0b079a0b2c55c09cec9b38e4b4f34da6272"
+      }
+    },
+    {
+      "epoch": 1,
+      "checkpoint_sha256": "a91c283e73b087a31380ed089543e981144bfceb88514c8ead52c424ecbba7fe",
+      "images": 1226,
+      "smoke": false,
+      "transparent_mae_mm": 62.9749049321583,
+      "metrics": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch001/metrics.json",
+        "sha256": "b5954c5cc3c16730d79172bfd3547fe507b85be3365b3a3c24560453e8b8ec95"
+      },
+      "per_image": {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch001/per_image.jsonl",
+        "sha256": "59d64f361d0c2ff9f2adbabf0fd69d068fe7e8dda496b2fa6ca91698e264379f"
+      }
+    }
+  ],
+  "finished_unix": 1793553120.6249018,
+  "selected_epoch": 58,
+  "selected_checkpoint": {
+    "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training/epoch058.pt",
+    "sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381"
+  },
+  "selected_metrics": {
+    "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/epoch058/metrics.json",
+    "sha256": "78b8547e1a5ccf855597d1b90be139abdab68339f9a6e2d3b4a9032cb513b855"
+  },
+  "full_geometry_required": true
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "pipeline_publication_verification_v1",
+  "checked_at_utc": "2026-11-02T16:20:47.848158+00:00",
+  "status": "code_and_cpu_regressions_passed_real_GPU_pipeline_blocked",
+  "public_repository": "https://github.com/qucheng-wuan/pipeline",
+  "selection_policy": {
+    "cleargrasp256": {
+      "validation_dataset": "real-val",
+      "synthetic_val_used": false,
+      "training_gradient_uses_real_val": false,
+      "metric": "per-image mean transparent valid MAE in metres on 256x256",
+      "epochs_eligible": [
+        1,
+        60
+      ],
+      "ties": "retain earlier epoch",
+      "inference_alpha": 0,
+      "delivery": "best.pt",
+      "resume": "last.pt",
+      "test_set_selection": true,
+      "independent_held_out_accuracy_claimed": false
+    },
+    "transcg256": {
+      "validation_dataset": "seed23 scene-split internal transCG val",
+      "epochs_eligible": [
+        41,
+        60
+      ],
+      "metric": "per-image mean transparent valid MAE in metres on 256x256",
+      "delivery": "best.pt",
+      "real_val_used_for_stage2_selection": false
+    }
+  },
+  "tests": {
+    "clean_publication_directory_full_CPU_suite": {
+      "passed": 128,
+      "log": "reports/publication_cpu_pytest.txt"
+    },
+    "stage1_environment_CPU_suite": {
+      "passed": 15,
+      "log": "reports/publication_stage1_cpu_pytest.txt"
+    },
+    "stage1_source_inventory_verified_entries": 312,
+    "numerical_core_unchanged": true,
+    "shell_scripts_syntax_passed": true,
+    "publication_secret_pattern_scan_matches": 0,
+    "files_over_10MiB": 0,
+    "documented_CLI_help_entrypoints_passed": 7,
+    "initial_import_preserves_upstream_whitespace_and_historical_report_bytes": true
+  },
+  "asset_urls": {
+    "catalog": "provenance/download_catalog.json",
+    "required_files": 23,
+    "resolved_public_endpoints": 20,
+    "gated_DINO_files": 3,
+    "large_weight_bodies_downloaded_for_this_link_check": false
+  },
+  "prior_data_evidence": {
+    "cleargrasp": "reports/cleargrasp256_acceptance.json",
+    "transcg": "reports/transcg256_acceptance.json",
+    "notice": "Historical source snapshots and GPU/data evidence are preserved; older final.pt policy is superseded. Regenerate audit/roster/cache after code/protocol changes."
+  },
+  "current_blockers": [
+    "13656 ClearGrasp training JSON files lack image size and camera.field_of_view; no guessed calibration or silent exclusion",
+    "Pinned DINOv3 model.safetensors/config.json/preprocessor_config.json missing locally; official authorized access required",
+    "Prior 5090 cu130 official SPVNAS constructor failed with CUDA illegal memory access; no real pipeline forward/backward has passed"
+  ],
+  "not_run": [
+    "60-epoch training",
+    "full native-P cache",
+    "real native Stage1 P and producer seal",
+    "real Stage2 cache/forward/loss/backward/optimizer/resume after current changes",
+    "real P256-vs-D256 accuracy or prediction visualizations",
+    "A100 target-toolchain build and execution"
+  ],
+  "other_tasks_stopped": false,
+  "production_fake_P_or_seal_used": false,
+  "historical_stage1_real_val_exposure": {
+    "matched_RGB_frames": 173,
+    "entire_pipeline_unseen_test_claimed": false
+  },
+  "evidence_sha256": {
+    "reports/publication_cpu_pytest.txt": "28dda2f87d1cd44ea2352aca36e0489094afee525a91e466d0b0716d6d90cff4",
+    "reports/publication_stage1_cpu_pytest.txt": "9edcb59f2c2d3c416115de67033ef8de7017845a5bcaea0cb4b185e3dec82502",
+    "provenance/publication_source_snapshot.json": "2c2ec151f46679d41bee1059f4c17a9c6be4f9d97833e991d636feea643217a0",
+    "provenance/download_catalog.json": "8959c7facae9b171162d6c739ca19e820d2a4d07ec9a99a5c2062c81a07d050e"
+  }
+}

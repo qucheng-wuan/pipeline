@@ -1,0 +1,12 @@
+{
+  "schema": "transcg256_data_source_amendment_v1",
+  "execution_verified_on_gpu": false,
+  "changes": {
+    "src/v2_lidf/data.py": {
+      "original_sha256": "c467ecd893540ccdc4f346cb1ec9ea3e3f603dc51e1f930644a8ef38bd65d933",
+      "sha256": "b56ef674f43fbd16327b1fd691c1222012d8b9e96ec7c5ffe1408303da1c8843",
+      "reason": "Authorized transCG PNG units, portable root binding, versioned valid-weighted-area GT256 and coverage; legacy nearest-exact path retained."
+    }
+  },
+  "numerical_core": "model.py, geometry.py, spvnas_fusion.py, vendor CUDA kernels and loss mathematics remain byte-identical to original source inventory."
+}

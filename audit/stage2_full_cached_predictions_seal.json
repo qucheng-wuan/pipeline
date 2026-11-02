@@ -1,0 +1,95 @@
+{
+  "all_arrays_sha256_verified": true,
+  "cached_input_parity_passed": false,
+  "cached_input_parity_required": true,
+  "completed_unix": 1793557309.568794,
+  "contract_sha256": "411060d8c997677f0d6e5a79550e4b48113f034043aa4860077fd5e2f7a4ec29",
+  "different_from_historical_cached_input_images": 5,
+  "different_image_ids": [
+    "evaluation_c414bc76776ccdf4f55fc375",
+    "evaluation_e375a15f43a7fd47a7b6d78a",
+    "evaluation_f57cac3d333e84d8cd8fc471",
+    "evaluation_ba067d4033d181309cab9576",
+    "evaluation_a55778db2d9d498258c58162"
+  ],
+  "images": 1226,
+  "labels_used_as_prediction_input": false,
+  "mode": "cached",
+  "original_producer_attempts": {
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank00_1793556434840695771_4261.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank00_1793556434840695771_4261.json",
+      "sha256": "ee6e9d07c25ff87a5c9d58c26ced47e8de49c5a3706213e729d6f70a73d75461"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank01_1793556435016184867_4262.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank01_1793556435016184867_4262.json",
+      "sha256": "31008a7e591d4ab0e8024d1eba84c9b8675d3d6e42ad66b48f739d3ce0105b72"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank02_1793556434812571295_4263.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank02_1793556434812571295_4263.json",
+      "sha256": "1e27681b2d561aa21d13e55d25db8576c1b59813af53d4dc17b2532ace29053e"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank03_1793556433382326864_4264.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank03_1793556433382326864_4264.json",
+      "sha256": "beacb1b9104cda310caf0c3852af7be8e1f9b45eb74c6b9969e111980570d33b"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank04_1793556434991724877_4265.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank04_1793556434991724877_4265.json",
+      "sha256": "0b224c366465eecb9cc96d5ed6668fd71ed1aa3dec5122ab8d6384cc1aa3bb73"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank05_1793556434912924063_4266.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank05_1793556434912924063_4266.json",
+      "sha256": "67c0f620e6ee1b03c954d2c054f16cd80794c08856b14a6f5e2b6c76bf5fa853"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank06_1793556434751386079_4291.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank06_1793556434751386079_4291.json",
+      "sha256": "4db9f3cedaa00b0bbf37f0d16529c7f47d448f45c616e3a7d88f2d2bf935a234"
+    },
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank07_1793556434043029816_4292.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/attempts/rank07_1793556434043029816_4292.json",
+      "sha256": "a018c5ebf1c51b5fc4bdf791069fc627e9b352bbce0fddc7829241b5d039b76f"
+    }
+  },
+  "predictions": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/predictions.jsonl",
+    "sha256": "b141acbb12340849221720ef16c6cc5c6421ea238f4ad067e0c04d19c417afce"
+  },
+  "schema": "portable_stage2_full_roster_v1",
+  "scope": "all 1226 predictions complete; quality requires separate labelled evaluation",
+  "selected_checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+  "status": "complete",
+  "test_images": 521,
+  "workers": {
+    "0": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank00.json",
+      "sha256": "ee6e9d07c25ff87a5c9d58c26ced47e8de49c5a3706213e729d6f70a73d75461"
+    },
+    "1": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank01.json",
+      "sha256": "31008a7e591d4ab0e8024d1eba84c9b8675d3d6e42ad66b48f739d3ce0105b72"
+    },
+    "2": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank02.json",
+      "sha256": "1e27681b2d561aa21d13e55d25db8576c1b59813af53d4dc17b2532ace29053e"
+    },
+    "3": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank03.json",
+      "sha256": "beacb1b9104cda310caf0c3852af7be8e1f9b45eb74c6b9969e111980570d33b"
+    },
+    "4": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank04.json",
+      "sha256": "0b224c366465eecb9cc96d5ed6668fd71ed1aa3dec5122ab8d6384cc1aa3bb73"
+    },
+    "5": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank05.json",
+      "sha256": "67c0f620e6ee1b03c954d2c054f16cd80794c08856b14a6f5e2b6c76bf5fa853"
+    },
+    "6": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank06.json",
+      "sha256": "4db9f3cedaa00b0bbf37f0d16529c7f47d448f45c616e3a7d88f2d2bf935a234"
+    },
+    "7": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/workers/rank07.json",
+      "sha256": "a018c5ebf1c51b5fc4bdf791069fc627e9b352bbce0fddc7829241b5d039b76f"
+    }
+  }
+}

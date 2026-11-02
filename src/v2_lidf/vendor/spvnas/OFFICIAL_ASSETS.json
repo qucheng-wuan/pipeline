@@ -1,0 +1,22 @@
+{
+  "SemanticKITTI_val_SPVNAS@20GMACs": {
+    "net.config": {
+      "sha256": "3bedf00c36f4ba926504fcc05cc00734b01d74f0803a4563583e315ec4f3c72d",
+      "bytes": 3225
+    },
+    "init": {
+      "sha256": "d8f8e53ab5774f610c33a9d7d023beb82fdc3f846276162b205906112a27af85",
+      "bytes": 13937690
+    }
+  },
+  "SemanticKITTI_val_SPVNAS@65GMACs": {
+    "net.config": {
+      "sha256": "3652eacccd92eea11c3be346e5fac939476dd430d902dd0f7f0d6e0bbd189a9f",
+      "bytes": 3224
+    },
+    "init": {
+      "sha256": "ebb9bd2314b82c1e097df37115d53401c640bee4fc707159608ce8c6c640b527",
+      "bytes": 43591964
+    }
+  }
+}

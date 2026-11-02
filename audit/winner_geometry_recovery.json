@@ -1,0 +1,1396 @@
+{
+  "actual_recovery_execution": {
+    "finished_unix": 1793555762.3703303,
+    "inherited_runtime_environment": {
+      "CUDA_HOME": null,
+      "LD_LIBRARY_PATH": null,
+      "PATH": "/home/hengxianli/.local/bin:/home/hengxianli/.local/share/codex-cli/0.163.0/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/.codex/tmp/arg0-linux/codex-arg0fQvso8:/home/hengxianli/.local/share/codex-cli/0.163.0/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/miniconda3/bin:/home/hengxianli/miniconda3/condabin:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+      "TMPDIR": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/tmp"
+    },
+    "merge": {
+      "command": [
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+        "-u",
+        "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+        "--phase",
+        "merge",
+        "--selection-root",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+        "--stage1-root",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+        "--input-manifest",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+        "--label-manifest",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+        "--training-root",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+        "--production-src",
+        "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+        "--metric-src",
+        "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+        "--output",
+        "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+        "--label-loader",
+        "native_fusion.benchmark:load_evaluation_labels",
+        "--label-schema",
+        "original",
+        "--rank",
+        "0",
+        "--world",
+        "8"
+      ],
+      "log": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/merge.log",
+        "sha256": "7c5988e7323e68a9a6ab5208c93ad8fa2a5d66a0c1f6b625f45339834edfb217"
+      },
+      "returncode": 0
+    },
+    "plan": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/launch_plan.json",
+      "sha256": "a7180ca0743c228db77889151fca19ad8a816ff6f380e723d4c29d83056543d4"
+    },
+    "schema_version": "winner_geometry_exr_recovery_execution_v1",
+    "started_unix": 1793555505.9736617,
+    "status": "merge_completed",
+    "supervisor_pid": 43581,
+    "workers": [
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "0",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "0",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank00.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank00.log",
+          "sha256": "84612ed584a61f316876000659b832c3646b56557a5cd26e31681b1d849a1a7b"
+        },
+        "physical_gpu": 0,
+        "pid": 43582,
+        "rank": 0,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43582.json",
+          "sha256": "4dec93685e36674640ad3672f0db3cecdddc3db351e4861e98d38e1b19138e0b"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "1",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "1",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank01.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank01.log",
+          "sha256": "a07f8e30cdffd91d1c6a309d5d7a01e8690466d94e5d85219cb9fa6ff9702960"
+        },
+        "physical_gpu": 1,
+        "pid": 43583,
+        "rank": 1,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43583.json",
+          "sha256": "017d83a5b970efa6eb03674bf2761468c2d4e575d98316335526d22fee4e7480"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "2",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "2",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank02.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank02.log",
+          "sha256": "92a03d0d82704ed4af5eb7f3b925b52ab16f99d8f5cb8f4f4942eeae877a05c7"
+        },
+        "physical_gpu": 2,
+        "pid": 43584,
+        "rank": 2,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43584.json",
+          "sha256": "05667f6549983d75f4e1a282c8f5727999674ce677e8dfe4bcd101bf38fca726"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "3",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "3",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank03.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank03.log",
+          "sha256": "027ded5d086559a0f61e3112b1a7342386af5613688941dab6260569fd1d1841"
+        },
+        "physical_gpu": 3,
+        "pid": 43585,
+        "rank": 3,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43585.json",
+          "sha256": "df0ce84fa2fdee00d5037a09c61e943fa5f31e29dadce15d27ce1e7d0fea6b30"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "4",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "4",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank04.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank04.log",
+          "sha256": "c6a6f61d5f90a17e19fcc08f2ae52da20ac8abf6c60a375d7825dd7233c22465"
+        },
+        "physical_gpu": 4,
+        "pid": 43586,
+        "rank": 4,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43586.json",
+          "sha256": "602400cf85cedf6d43e87ec803cbfc9a8e060e87bdfda0e557b27f4e5c1af44a"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "5",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "5",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank05.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank05.log",
+          "sha256": "287a7795a4681c7e2a42d9ad462a0583c9f6d09d62c8b6271b26c97bd82ad3cc"
+        },
+        "physical_gpu": 5,
+        "pid": 43587,
+        "rank": 5,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43587.json",
+          "sha256": "ffdaf8250973cc9f6ac1dffd89d14de67ec2ae0781a0814ea88ec411c7625a72"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "6",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "6",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank06.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank06.log",
+          "sha256": "72781b97b56c4d45f28a37961f272c6ed9e662b16788caf4d2a15b4331c00c2c"
+        },
+        "physical_gpu": 6,
+        "pid": 43588,
+        "rank": 6,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43588.json",
+          "sha256": "c2e41d66ce49b1d441a8af046681e1fb5100661b78b8dab01a0a6e4e6aa5803e"
+        }
+      },
+      {
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+          "-u",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py",
+          "--phase",
+          "geometry",
+          "--selection-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+          "--stage1-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/stage1",
+          "--input-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/input_manifest.jsonl",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/manifests/label_manifest.jsonl",
+          "--training-root",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training",
+          "--production-src",
+          "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src",
+          "--metric-src",
+          "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry",
+          "--label-loader",
+          "native_fusion.benchmark:load_evaluation_labels",
+          "--label-schema",
+          "original",
+          "--rank",
+          "7",
+          "--world",
+          "8"
+        ],
+        "cuda_visible_devices": "7",
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank07.log",
+        "log_ref": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/geometry_rank07.log",
+          "sha256": "76a37628f3102760e64b8a1361864af1d73a7f1b19ff43690964f3165164c4bb"
+        },
+        "physical_gpu": 7,
+        "pid": 43589,
+        "rank": 7,
+        "returncode": 0,
+        "shim_usage": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/shim_usage/usage_pid43589.json",
+          "sha256": "ea7f42bae1c733d163b7088c4ac7a487242f3be5f241b4a997b2a232d3c518e4"
+        }
+      }
+    ]
+  },
+  "complete_real_and_synthetic_batch_parity": {
+    "byte_exact": true,
+    "cuda_visible_devices": "",
+    "modules": [
+      {
+        "path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/benchmark.py",
+        "sha256": "005949eb453e7c8d54f08cc58e2944e8edf3a545b24b7f4a306fe8a50d727678"
+      },
+      {
+        "path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/data.py",
+        "sha256": "a3243ac4d42e2158deabb624bf60e7b45f790380a7cdb58b014fb96552c4702c"
+      },
+      {
+        "path": "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src/v2_lidf/data.py",
+        "sha256": "c467ecd893540ccdc4f346cb1ec9ea3e3f603dc51e1f930644a8ef38bd65d933"
+      },
+      {
+        "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/src/transparent_depth/evaluation.py",
+        "sha256": "eb56a1dd8a0a0d4faa5e6324778a889b4f656d7a0a32b050f6b1994bec8af384"
+      },
+      {
+        "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+        "sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30"
+      }
+    ],
+    "openexr_version": "3.2.4",
+    "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+    "samples": {
+      "real": {
+        "batch_fields": {
+          "content": {
+            "dtype": "bool",
+            "sha256": "c8a90a99f8fdb9d8f91cd6ac32d571581df4ad4fccd17b50309bc8d2e4581a7e",
+            "shape": [
+              1,
+              1,
+              480,
+              848
+            ]
+          },
+          "intrinsics": {
+            "dtype": "float64",
+            "sha256": "938f59bbf7cc4fee4e7381667e19707af60c4a2917ddeb4240aad70fe155c760",
+            "shape": [
+              1,
+              3,
+              3
+            ]
+          },
+          "normal_camera_valid": {
+            "dtype": "bool",
+            "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+            "shape": [
+              1
+            ]
+          },
+          "normal_reference_available": {
+            "dtype": "bool",
+            "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+            "shape": [
+              1
+            ]
+          },
+          "target": {
+            "dtype": "float32",
+            "sha256": "0a342806a87faf23a8ab2234fe316d968358f12afa0470765da05cd29bd51646",
+            "shape": [
+              1,
+              1,
+              480,
+              848
+            ]
+          },
+          "transparent": {
+            "dtype": "bool",
+            "sha256": "3201cf7907c6d5bc1d4fa5b44b33f8656b9ab81e56e1b31fd7c5ff1d1d7b746f",
+            "shape": [
+              1,
+              1,
+              480,
+              848
+            ]
+          },
+          "valid": {
+            "dtype": "bool",
+            "sha256": "89deefed76d869968312ef7ad18c1f9ca3cc918be6609aa53ebf6f26f967cd19",
+            "shape": [
+              1,
+              1,
+              480,
+              848
+            ]
+          }
+        },
+        "cache_id": "evaluation_3b052af256d20498b0f9dcc0",
+        "label_assets": {
+          "camera": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/camera_intrinsics.yaml",
+            "sha256": "4c26a8c2eccc35ebc5f5921b896a33a6cc7504ac80cffc8e6930cdfa1e475c42"
+          },
+          "depth": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000000-opaque-depth-img.exr",
+            "sha256": "57c74234cec81b8b897d7ec77e8f614e4e781c8c0efcdd02c11fcd489758f9f4"
+          },
+          "transparent_mask": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000000-mask.png",
+            "sha256": "403e75dbe8d68db3c180e88f74291dfa24b439a9b2772c502884df2eddd91418"
+          }
+        },
+        "raw_arrays": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/real_shim_raw.npz",
+          "sha256": "ce2be5f7a18047fe4fcd12f5f0829b27acd49d388f7bf6c52183aa9895e7379b"
+        }
+      },
+      "synthetic": {
+        "batch_fields": {
+          "content": {
+            "dtype": "bool",
+            "sha256": "58df1370a8ca67ffd35cde32d113e394baf20f4be4b09c235d806cfd796c7a83",
+            "shape": [
+              1,
+              1,
+              576,
+              1024
+            ]
+          },
+          "intrinsics": {
+            "dtype": "float64",
+            "sha256": "eff2978ea8cb0694c98880b4ffa13c0919d745ed667775f75b724115ab674611",
+            "shape": [
+              1,
+              3,
+              3
+            ]
+          },
+          "normal_camera_valid": {
+            "dtype": "bool",
+            "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+            "shape": [
+              1
+            ]
+          },
+          "normal_reference_available": {
+            "dtype": "bool",
+            "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+            "shape": [
+              1
+            ]
+          },
+          "normal_valid": {
+            "dtype": "bool",
+            "sha256": "2e2f120faacbc84a6227a840f5715ebea278abb2d26c227b5e13732afe9ff8e5",
+            "shape": [
+              1,
+              1,
+              576,
+              1024
+            ]
+          },
+          "target": {
+            "dtype": "float32",
+            "sha256": "4439fa1dd6c1e8ae80b6ddafd2f38f78db5a29d950c8c2c2013327c4fd44dabf",
+            "shape": [
+              1,
+              1,
+              576,
+              1024
+            ]
+          },
+          "target_normal": {
+            "dtype": "float32",
+            "sha256": "ea4fd3eda692b3a27dbd742c39f58802e42446c23551974ab4768c583dce9321",
+            "shape": [
+              1,
+              3,
+              576,
+              1024
+            ]
+          },
+          "transparent": {
+            "dtype": "bool",
+            "sha256": "25c8d7d7ca2dc7ed1cca653036da43b46ae6f933253a476d088f172628504f22",
+            "shape": [
+              1,
+              1,
+              576,
+              1024
+            ]
+          },
+          "valid": {
+            "dtype": "bool",
+            "sha256": "58df1370a8ca67ffd35cde32d113e394baf20f4be4b09c235d806cfd796c7a83",
+            "shape": [
+              1,
+              1,
+              576,
+              1024
+            ]
+          }
+        },
+        "cache_id": "evaluation_e708605abba642312da8438a",
+        "label_assets": {
+          "camera": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/synthetic-test/glass-round-potion-test/json-files/000000000-masks.json",
+            "sha256": "e39c2a80f58c2b5fb166c76bc498e60f3fc222a373d37f9d793c2423f2ae5bd4"
+          },
+          "depth": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/synthetic-test/glass-round-potion-test/depth-imgs-rectified/000000000-depth-rectified.exr",
+            "sha256": "db1cd2cd8a043f7a7b71c485e6ee1ca3e84b963f1dd573a8fdc99646f8a2d7a9"
+          },
+          "independent_normal": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/synthetic-test/glass-round-potion-test/camera-normals/000000000-cameraNormals.exr",
+            "sha256": "cc90e40b6b8816f0146f4e90a27324071b0d4bd517d9b2336803e776082a20fe"
+          },
+          "transparent_mask": {
+            "path": "/ssd/polyu/cleargrasp-dataset-test-val/synthetic-test/glass-round-potion-test/segmentation-masks/000000000-segmentation-mask.png",
+            "sha256": "f915f6f9a7b4fa5ed071b95d37d3106ef30b3a17af68c1e0b1d6868a4a532e30"
+          }
+        },
+        "raw_arrays": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/synthetic_shim_raw.npz",
+          "sha256": "7f9b217b04ecd0db1591628fd7f7167494f7abeccc7a1406ad641f987ed0291a"
+        }
+      }
+    },
+    "shim": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa"
+    },
+    "status": "passed",
+    "test_scope": "two actual native label batches; no model execution",
+    "torch_version": "2.1.2+cu121",
+    "unsupported_api_rejected": true
+  },
+  "cpu_byte_exact_parity": {
+    "byte_exact": true,
+    "checker": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/check_compat.py",
+      "sha256": "a970201934811c2fa19a160cef9cc2008a18432085c410c9f979537316d8a46f"
+    },
+    "complete_label_batches_vs_portable_inputfile": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/portable_parity.json",
+      "sha256": "597eef20c3bc8f6142b9ca712f512d0611e6c5490b78b98a79b0367d608b8bbc"
+    },
+    "cuda_visible_devices": "",
+    "failure_evidence": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot.json",
+      "sha256": "10a3763470e9990ee436177bf0877647d86da27eebc45ab7ea17c81874260f82"
+    },
+    "finished_unix": 1793555343.316836,
+    "frozen_sources": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/frozen_sources_before.json",
+      "sha256": "f852d1d31dea1884e385c8de97db2805f70292d2a06b188df7d8ec5f49dc5a27"
+    },
+    "frozen_sources_unchanged": true,
+    "model_executed": false,
+    "native_file_reference": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/native_file_reference.json",
+      "sha256": "e80218508e8638b2393d106e93060aa14d5e1ae0089618e445e3bd8f69e30637"
+    },
+    "raw_depth_and_camera_normal_vs_native_file": {
+      "real": {
+        "depth": {
+          "dtype": "float32",
+          "sha256": "3f71f628cd1fafeb7f853f10a5c7559b5a4656bfd9238fe8c45186128b1e8ce1",
+          "shape": [
+            480,
+            848
+          ]
+        }
+      },
+      "synthetic": {
+        "depth": {
+          "dtype": "float32",
+          "sha256": "4439fa1dd6c1e8ae80b6ddafd2f38f78db5a29d950c8c2c2013327c4fd44dabf",
+          "shape": [
+            576,
+            1024
+          ]
+        },
+        "normal": {
+          "dtype": "float32",
+          "sha256": "24e78b74ee0bdabfe8e09f1ff90ef3ed3a083ccd7f7601697f60a907b727068b",
+          "shape": [
+            3,
+            576,
+            1024
+          ]
+        }
+      }
+    },
+    "schema_version": "winner_geometry_exr_compat_cpu_v1",
+    "shared_environment_modified": false,
+    "shim": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa"
+    },
+    "status": "passed"
+  },
+  "final_evaluation_marker": {
+    "finished_unix": 1793555761.4605916,
+    "ground_truth_used_as_prediction_input": false,
+    "ground_truth_used_for_metric_and_selection": true,
+    "images": 1226,
+    "model_executed": false,
+    "original_sweep_transparent_mae_mm": 55.91037394069383,
+    "reports_sha256": {
+      "RESULTS.zh-CN.txt": "ccc12cc6539fef47bea9a95a3dd96fbc7dd5360ef959bdbc43083803c7eb1a3c",
+      "comparison.csv": "6f45e77377d87d3d5383a420b69832fb7c879f9142cd3747aa27bc483c7b7ee1",
+      "metrics.json": "68e3f5bc6685502726367674c7f7ddbeb90c466c1cca55b2e153a2a8abef5e2e",
+      "paired_differences.json": "616b98f0b05970def05edbd9477875d12b3f19f8cdf930ea37895d6341a580ce",
+      "per_image.jsonl": "2a901edc2d95ca2b9b66aecb1ad117edc80cd5f48d5e6a620c2bd1195a277f20"
+    },
+    "resolved_selection": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/resolved_selection.json",
+      "sha256": "26512b9bdc573135f8df6511fc4ff19db0b3c9271766f06e69ec18d31f2aaf03"
+    },
+    "schema_version": "full1226_test_informed_selected_geometry_v1",
+    "selected_checkpoint": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/training/epoch058.pt",
+      "sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381"
+    },
+    "selected_epoch": 58,
+    "selection_policy": {
+      "empty_region": "null_per_image_excluded_from_macro",
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "gt_or_mask_used_as_prediction_input": false,
+      "independent_test_performance_claimed": false,
+      "input_alpha": 0.0,
+      "original_val704_selection_is_preserved_separately": true,
+      "primary_metric": "full1226/combined/transparent/image_macro/mae_mm",
+      "selection_images": 1226,
+      "tie_break": "smaller_epoch",
+      "uses_test_labels_for_checkpoint_selection": true
+    },
+    "source_sha256": {
+      "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/benchmark.py": "005949eb453e7c8d54f08cc58e2944e8edf3a545b24b7f4a306fe8a50d727678",
+      "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/data.py": "a3243ac4d42e2158deabb624bf60e7b45f790380a7cdb58b014fb96552c4702c",
+      "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/evaluation.py": "24a9a406d069e7ea5078e937f1f10409c63691ef7c4b8be4273833b0354c2d14",
+      "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/geometry.py": "50b4558b4a6e42cc8f730f77b11db3181293116e4a7d3ab3ee6e1d765a520195",
+      "/home/hengxianli/FusionV2_LIDF_SPVNAS_GPU567_20261031/src/v2_lidf/data.py": "c467ecd893540ccdc4f346cb1ec9ea3e3f603dc51e1f930644a8ef38bd65d933",
+      "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/evaluate_selected.py": "1602885de2eed95a1ba9ed9138c6984e8fd41503a8da57f9bb856a790306e641",
+      "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/sweep_checkpoints.py": "e133d6ed2d0377ef0c350b7af00d5d45632a2134a7b91d1ce194995e0f69d3b1"
+    },
+    "status": "complete",
+    "sweep_mae_absolute_difference_mm": 0.0,
+    "sweep_mae_tolerance_mm": 2e-05,
+    "sweep_verification": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/publication_verification.complete.json",
+      "sha256": "4000dd339b3cf502e7a01c09bce293db0e21501c7aeb8d318a4d2b4efc095c2b"
+    },
+    "test_images": 521,
+    "transparent_mae_mm": 55.91037394069383
+  },
+  "native_OpenEXR_3_5_reference": {
+    "cuda_visible_devices": "",
+    "native_file_api_unmodified": true,
+    "openexr_module": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage1/lib/python3.11/site-packages/OpenEXR.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "6448a6efc7a5869006a872a884f85e842af90fa3d991823aa59a1a02c9dc8ac6"
+    },
+    "openexr_version": "3.5.1",
+    "python": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage1/bin/python",
+    "samples": {
+      "real": {
+        "arrays": {
+          "depth": {
+            "dtype": "float32",
+            "sha256": "3f71f628cd1fafeb7f853f10a5c7559b5a4656bfd9238fe8c45186128b1e8ce1",
+            "shape": [
+              480,
+              848
+            ]
+          }
+        },
+        "file": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/real_native_file_raw.npz",
+          "sha256": "41fd608f9aa416ec1cda33fafb6cefa5ebb167eaacbe7daf4b645298682e5e61"
+        }
+      },
+      "synthetic": {
+        "arrays": {
+          "depth": {
+            "dtype": "float32",
+            "sha256": "4439fa1dd6c1e8ae80b6ddafd2f38f78db5a29d950c8c2c2013327c4fd44dabf",
+            "shape": [
+              576,
+              1024
+            ]
+          },
+          "normal": {
+            "dtype": "float32",
+            "sha256": "24e78b74ee0bdabfe8e09f1ff90ef3ed3a083ccd7f7601697f60a907b727068b",
+            "shape": [
+              3,
+              576,
+              1024
+            ]
+          }
+        },
+        "file": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/synthetic_native_file_raw.npz",
+          "sha256": "c1f88dd9e54c22f4355725aa63a29d42ea264fab994d0bc2c5f78852f6e79b8c"
+        }
+      }
+    },
+    "status": "completed_reference_read"
+  },
+  "original_failed_evidence": {
+    "artifacts": [
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/execution.json",
+          "sha256": "86732c20376e936a3ef71b81f7eb420e286c6098c0a2d55daaf2108bbbb8ed89"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/execution.json",
+          "sha256": "86732c20376e936a3ef71b81f7eb420e286c6098c0a2d55daaf2108bbbb8ed89"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/resolved_selection.json",
+          "sha256": "26512b9bdc573135f8df6511fc4ff19db0b3c9271766f06e69ec18d31f2aaf03"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/resolved_selection.json",
+          "sha256": "26512b9bdc573135f8df6511fc4ff19db0b3c9271766f06e69ec18d31f2aaf03"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/evaluate_selected.wait.log",
+          "sha256": "99d570c15f9dfa4a7453a743ab86ed154abe0b859b5f1a829b68ec9ae0e8f969"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/evaluate_selected.wait.log",
+          "sha256": "99d570c15f9dfa4a7453a743ab86ed154abe0b859b5f1a829b68ec9ae0e8f969"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank00.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank00.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank01.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank01.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank02.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank02.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank03.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank03.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank04.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank04.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank05.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank05.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank06.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank06.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/logs/geometry_rank07.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot/geometry_rank07.log",
+          "sha256": "00fcc275bf82dc5231dbb63743cd805da6945696eef9ad05ce7454591bcb6b6f"
+        }
+      }
+    ],
+    "created_unix": 1793555278.323438,
+    "failed_workers": 8,
+    "failure": "OpenEXR 3.2.4 has no File API used by frozen native label readers",
+    "frozen_sources_modified": false,
+    "independent_verification": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/publication_verification.complete.json",
+      "sha256": "4000dd339b3cf502e7a01c09bce293db0e21501c7aeb8d318a4d2b4efc095c2b"
+    },
+    "selection": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selection.complete.json",
+      "sha256": "c1b1b7f71bc33084bfae5e6d8172c24b5d53589007c3052e05e69aa23ca75edb"
+    },
+    "shared_environment_modified": false,
+    "status": "preserved_actual_failure"
+  },
+  "original_failed_workers": [
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 0,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 1,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 2,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 3,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 4,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 5,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 6,
+      "returncode": 1
+    },
+    {
+      "error": "AttributeError: module 'OpenEXR' has no attribute 'File'",
+      "rank": 7,
+      "returncode": 1
+    }
+  ],
+  "per_worker_shim_usage": [
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 816,
+      "cuda_visible_devices": "0",
+      "files_opened": 272,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000000-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000008-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000016-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000024-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000032-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000040-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000048-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000056-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555726.9453926,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43582,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 816,
+      "cuda_visible_devices": "1",
+      "files_opened": 272,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000001-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000009-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000017-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000025-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000033-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000041-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000049-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000057-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555729.8374267,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43583,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 810,
+      "cuda_visible_devices": "2",
+      "files_opened": 270,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000002-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000010-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000018-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000026-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000034-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000042-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000050-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000058-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555726.839833,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43584,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 810,
+      "cuda_visible_devices": "3",
+      "files_opened": 270,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000003-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000011-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000019-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000027-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000035-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000043-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000051-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000059-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555732.1640139,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43585,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 810,
+      "cuda_visible_devices": "4",
+      "files_opened": 270,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000004-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000012-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000020-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000028-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000036-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000044-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000052-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000060-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555725.900741,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43586,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 810,
+      "cuda_visible_devices": "5",
+      "files_opened": 270,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000005-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000013-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000021-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000029-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000037-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000045-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000053-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000061-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555724.3326674,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43587,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 813,
+      "cuda_visible_devices": "6",
+      "files_opened": 271,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000006-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000014-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000022-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000030-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000038-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000046-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000054-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000062-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555724.799148,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43588,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    },
+    {
+      "backend_api": "OpenEXR.InputFile.channel with Imath.PixelType.FLOAT",
+      "channels_decoded": 813,
+      "cuda_visible_devices": "7",
+      "files_opened": 271,
+      "first_paths": [
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000007-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000015-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000023-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000031-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000039-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000047-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000055-opaque-depth-img.exr",
+        "/ssd/polyu/cleargrasp-dataset-test-val/real-test/d415/000000063-opaque-depth-img.exr"
+      ],
+      "native_File_originally_present": false,
+      "observed_at_exit_unix": 1793555723.790108,
+      "openexr_module": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/lib/python3.10/site-packages/OpenEXR.so",
+      "openexr_module_sha256": "8577c78ece6ad02efd33382b9d2dc323087ea926145ace378f2895fcf6df1a30",
+      "openexr_version": "3.2.4",
+      "pid": 43589,
+      "python": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/env/bin/python",
+      "python_version": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+      "schema_version": "readonly_openexr_file_compat_usage_v1",
+      "shim_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "shim_sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa",
+      "status": "usage_observation_only",
+      "version_string_modified": false
+    }
+  ],
+  "publication_scope": "Test-informed all80 full1226 selection; original failure retained, read-only label API compatibility only; no model/metric math changed.",
+  "raw_arrays_or_original_logs_in_repository": false,
+  "reason": "Frozen label loader required OpenEXR.File; 3.2.4 only exposes InputFile",
+  "recovery_complete": {
+    "actual_execution": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/execution/execution.json",
+      "sha256": "de4263b5900dc46dfc73fb51c1ce266decdbac42fadb60d66406a2e714272321"
+    },
+    "cpu_parity": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/cpu_parity.complete.json",
+      "sha256": "90352bd7572d446fe539c5fa4eeaee0cfc72e4eb6f579df55ee4c2565d46c3ea"
+    },
+    "evaluation": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/evaluation.complete.json",
+      "sha256": "5192c1438149b5443d253ff25051795e5e9f69c7096486546d6f41a6c4624bfa"
+    },
+    "failure_evidence": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/failure_snapshot.json",
+      "sha256": "10a3763470e9990ee436177bf0877647d86da27eebc45ab7ea17c81874260f82"
+    },
+    "finished_unix": 1793555762.439664,
+    "frozen_sources_unchanged": true,
+    "images": 1226,
+    "independent_sweep_verification_rerun": false,
+    "independent_verification": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/publication_verification.complete.json",
+      "sha256": "4000dd339b3cf502e7a01c09bce293db0e21501c7aeb8d318a4d2b4efc095c2b"
+    },
+    "model_executed": false,
+    "original_failure_artifacts_unchanged": true,
+    "plan": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/launch_plan.json",
+      "sha256": "a7180ca0743c228db77889151fca19ad8a816ff6f380e723d4c29d83056543d4"
+    },
+    "reason": "Frozen label loader required OpenEXR.File; 3.2.4 only exposes InputFile",
+    "resolved_selection": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101/selected_geometry/resolved_selection.json",
+      "sha256": "26512b9bdc573135f8df6511fc4ff19db0b3c9271766f06e69ec18d31f2aaf03"
+    },
+    "schema_version": "winner_geometry_exr_recovery_complete_v1",
+    "selected_epoch": 58,
+    "shared_environment_modified": false,
+    "shim": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa"
+    },
+    "status": "passed_recovered_geometry",
+    "test_images": 521
+  },
+  "schema_version": "published_winner_geometry_recovery_audit_v1",
+  "status": "passed_recovered_geometry",
+  "supporting_tool_copies": [
+    {
+      "original": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/shim/sitecustomize.py",
+      "published_audit_copy": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/supporting_tools/winner_geometry/shim/sitecustomize.py",
+      "sha256": "1cf5075c9e9899e7155ed04f9a59c23247a9821e021eb8883a638c7148d1d0fa"
+    },
+    {
+      "original": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/check_compat.py",
+      "published_audit_copy": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/supporting_tools/winner_geometry/check_compat.py",
+      "sha256": "a970201934811c2fa19a160cef9cc2008a18432085c410c9f979537316d8a46f"
+    },
+    {
+      "original": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/winner_geometry_recovery/run_recovery.py",
+      "published_audit_copy": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/supporting_tools/winner_geometry/run_recovery.py",
+      "sha256": "460293c25500694cd8235b37a662d4ddbfa72c93831a56e52e8dae0cafb07c8f"
+    }
+  ]
+}

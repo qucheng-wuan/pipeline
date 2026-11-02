@@ -1,0 +1,11 @@
+{
+  "end_to_end_passed": false,
+  "error": "AcceleratorError: CUDA error: an illegal memory access was encountered\nSearch for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+  "gpu_backward_executed": false,
+  "gpu_forward_executed": false,
+  "reason_no_forward": "Stage1 DINOv3 assets missing; independently, real Stage2 initialization failed during official topology sparse dummy forward",
+  "seconds": 5.836693809998906,
+  "status": "blocked",
+  "official_topology_dummy_forward_attempted": true,
+  "pipeline_forward_executed": false
+}

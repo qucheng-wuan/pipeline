@@ -1,0 +1,32 @@
+{
+  "status": "evidence_preserved",
+  "scope": "historical exact-comparison failure and independent legacy self-repeatability evidence; not a claim of bitwise equivalence or full1226 live evaluation",
+  "files": {
+    "original_zero_tolerance_failure.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy_portable_comparison.json",
+      "sha256": "3cd610ce9d25f511e5b97f10457b30f686a46d2ddaf7126fefb300733453450e"
+    },
+    "numeric_policy_user_confirmed_v1.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/numeric_policy_user_confirmed_v1.json",
+      "sha256": "f8c9fbf7a5320f6026065b6288c47a117b9622d44e60253b613b957e0007a6fc"
+    },
+    "repeatability_summary.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/summary_contiguous.json",
+      "sha256": "f7fe6cd40453537811c987c4b19c565363b4a58f5dd1571658c0182b98bc8ac0"
+    },
+    "repeatability_comparisons.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/comparison_contiguous.json",
+      "sha256": "0eb5f23934bfc9a7339d894322dedb6298b6c3fb0f3d5da7d01f8083f44953a2"
+    },
+    "scatter_reduction_summary.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/reduction_summary.json",
+      "sha256": "cc82c36fea44f22669ab1deee1de46e7657d94a2f69bf61ef98a3ee7b31f6b4c"
+    },
+    "diagnostic_seal.json": {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/diagnostic_seal.json",
+      "sha256": "11b489262a3732cfc582794633c65077ad1ee878a700ca0108d83b95ae77929a"
+    }
+  },
+  "large_arrays_and_raw_logs_included": false,
+  "policy_authorized_by_user": true
+}

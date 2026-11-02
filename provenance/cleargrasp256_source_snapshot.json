@@ -1,0 +1,24 @@
+{
+  "schema": "cleargrasp256_source_snapshot_v1",
+  "gpu_execution_verified": false,
+  "prediction_producer_seal": false,
+  "description": "Source/config identity only. Native Stage1 prediction, real Stage2 forward/backward and training smoke have not passed.",
+  "sha256": {
+    "src/transparent_depth/prepare_cleargrasp256.py": "2af4431b83bc970bd8df406f16eddf425c78a7bdefd8516b6c3beac93d6aac4e",
+    "src/v2_lidf/data_protocol.py": "ac326bd69adb8da2f1324bfb835a73b1668faf6cd671fea0b7ae1ad7564b4f3d",
+    "src/transparent_depth/train_stage2.py": "3630bf6ae38fa0cafc9bc63e8b41e8412dbc51a698e21aff1ee878e7ba7226de",
+    "src/transparent_depth/training_cache.py": "1d89ccc478608698fb839f3e9410a518225e71d8912176dc98715746df139b24",
+    "src/transparent_depth/training_utils.py": "6a3ae2d7391a5b05fa9ec88fa4a3baf58a68da7154daffdcb8ace248935744dc",
+    "src/transparent_depth/prepare_stage2_data.py": "4b6080c2615c605f0fb8c4eca69118a30b0893b0be053ecd12c22b64e05541d9",
+    "src/transparent_depth/evaluate256.py": "08ad27452df219a791a71f19b2679c3b4ebbdfa65b07d0bded048ca02b39a7b9",
+    "scripts/run_transfer_smoke.py": "d24047e4917cb2564b63c87cf1f2195798bc0d2acb02c2b5adca35f24e1e3d8a",
+    "scripts/check_stage2_construction.py": "399dc48358391cdab9d433b292a154b482629d99bda5f62f724b3993c7fb8c9e",
+    "configs/cleargrasp256_stage2_60.json": "faf7b994bb4bb65ff10f8242315960c607dffa18d7d81f1f12dc0ca3224c5f0e",
+    "configs/cleargrasp256_stage2_smoke.json": "1f3bd4e726731cba0fc22579c97707d4bf777a86d7f0a35b9927d1977470ec3f"
+  },
+  "unchanged_numerical_core": {
+    "src/v2_lidf/model.py": "590865b5b1e5bace014848c82c74d3ebb0d53e4ad9376fbe149c228182631c1d",
+    "src/v2_lidf/geometry.py": "933d44282d78f90cec4f8f3f554d9f020b14d109e0b75612b8363a652b593f42",
+    "src/v2_lidf/spvnas_fusion.py": "9754db625b9e2b1acc7140a9608dbe472690b9f50e5eb7e841fdedf00f12706e"
+  }
+}

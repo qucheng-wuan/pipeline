@@ -1,0 +1,144 @@
+{
+  "seed": 23,
+  "epochs": 80,
+  "batch_per_gpu": 2,
+  "expected_world_size": 8,
+  "distributed": {
+    "strategy": "single_gradient_bucket_after_backward",
+    "torch_version": "2.1.2",
+    "bucket_cap_mb": 512,
+    "first_bucket_cap_mb": 512,
+    "find_unused_parameters": false,
+    "broadcast_buffers": true,
+    "gradient_as_bucket_view": false,
+    "static_graph": false
+  },
+  "workers_per_gpu": 2,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "scheduler": {
+    "step_size": 60,
+    "gamma": 0.1
+  },
+  "model": {
+    "grid_resolution": 8,
+    "valid_sample_num": 10000,
+    "train_query_num": 20000,
+    "query_chunk_size": 4096,
+    "maxpool_label_epochs": 6,
+    "pos_weight": 100.0,
+    "prob_weight": 0.5,
+    "normal_weight": 10.0,
+    "spvnas": {
+      "variant": "spvnas_fusion_20g",
+      "pretrained": true,
+      "voxel_size": 0.05,
+      "coordinate_scale": 1.0,
+      "spatial_shape": [
+        64,
+        64,
+        64
+      ],
+      "runtime_checks": true,
+      "allow_tf32": false
+    },
+    "rgb_pretrained": true,
+    "dense_allow_tf32": false
+  },
+  "input_hw": [
+    240,
+    320
+  ],
+  "counts": {
+    "train": 45453,
+    "val": 704,
+    "evaluation": 1226
+  },
+  "selection": "minimum 704-image pure-P validation native image-macro full-image AbsRel among epochs 51-80",
+  "input_contract": "Training and explicitly label-conditioned phase-matched validation: RGB+K+GT-background curriculum; transparent depth always frozen fusion P. Fixed pure-P selection validation, deployment and evaluation: RGB+K with all depth supplied only by frozen learned-Laplacian fusion, no GT depth/mask or sensor depth as input.",
+  "evaluation_note": "The 1226-image report includes official validation images used for selection; it is not a fresh held-out test. Report the original 521 test subset separately.",
+  "stage1": {
+    "checkpoint_sha256": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d",
+    "adapter_checkpoint_sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256",
+    "adapter": {
+      "kind": "learned_laplacian",
+      "levels": 6,
+      "hidden_channels": 32,
+      "gate_height": 24,
+      "gate_width": 32
+    },
+    "frozen": true,
+    "expected_asset_sha256": {
+      "v2": "32faa8cae83a3acd536507df21e986f28a79c9ea70165c1998fed31babdb4e7d",
+      "laplacian_e08": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256",
+      "r5": "70e5b33f7bf2c7f0a65b427b58688506b8bf8bcd2366eaf89d788e4bd7dce648",
+      "o2": "cbd0ca2258e870708c0325884010879a362963af49f578f1c8bbeca979451de1",
+      "o4": "ce135c1853973ed777a5fab204b28fc6d7d2d76adca4fd600fdc67e13abf5629",
+      "far": "221daf822f081685277fc6b9b5c03db88b2e33e89a10b2e3cca72b53244e6d3f",
+      "moge": "7f293312b7f388edfb5bb00fc13758b0cd005fd634f402d207f289127ca6e133",
+      "tom": "a1541a8d14a9bffd211376821f198a0d1950d91d3d595be3d35510cab2496b02",
+      "tom_calibration": "e88062e11415f4bad39311a359753573935e0d7ab4d4a4c6b90d37fe82e4e66e",
+      "transnormal_unet": "4d7f8e2935af42a18c6a7b2351b84c4f4dae042e08e133ef19bde6cc82584bf1",
+      "transnormal_vae": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+      "transnormal_projector": "d8d607cc08ece6620e1caa7af375a7656596e190e9070bb28c87eef077aa2386",
+      "dinov3": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d",
+      "transnormal_model_index_json": "cb42f168f368a312924233ac6d0d82b8512f90b30966f560578908cc6382624c",
+      "transnormal_unet_config_json": "f25c31a2af50385156282b0002237fc56a36a4134fa68c3cd306f2725049a20a",
+      "transnormal_vae_config_json": "6b194a1bad5f6ab0431cc254088949b814f75d0c3230483ad8fc6be2cc1495a0",
+      "transnormal_scheduler_scheduler_config_json": "d38e01c6b084c8db8c16411d955f17974e6c3d83ef6dc9c6b7b576329d6907a9",
+      "dinov3_config_json": "35770e98e425c9383534bcbfa7f3b7a3cb1d943f6d26a37d7d19fea0735eab57",
+      "dinov3_preprocessor_config_json": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7",
+      "flex_gemm_autotune_cache": "e40097daa6f432754cc1a27762ae5910a114df5034d9d218a61109f4021a39cd"
+    }
+  },
+  "experiment": "frozen learned-Laplacian E08 -> LIDF-SPVNAS20G background-depth curriculum",
+  "curriculum": {
+    "stage_epochs": [
+      20,
+      30,
+      30
+    ],
+    "steps_per_epoch": 1421,
+    "alpha_index": "committed_optimizer_updates_before_next_step",
+    "transition": "linear inclusive endpoints across epochs21_to50",
+    "mix_resolution": [
+      240,
+      320
+    ],
+    "mix": "valid nontransparent pixels: alpha*GT+(1-alpha)*P; all other pixels: P",
+    "invalid_gt_fallback": "P",
+    "transparent_gt_depth_input": false,
+    "training_gt_mask_for_input_composition": true,
+    "validation_alpha": 0.0,
+    "evaluation_alpha": 0.0,
+    "selection_start_epoch": 51,
+    "optimizer_continuous_across_stages": true,
+    "phase_matched_validation_alpha": "last_actual_training_optimizer_step_alpha",
+    "fixed_pure_p_validation_alpha": 0.0,
+    "reuse_pure_p_validation_when_matched_alpha_zero": true
+  },
+  "query_protocol": "uniform circular contiguous 20000 raster indices per training image; every pixel has equal direct-query probability; full-image validation/inference",
+  "initialization": "RGB ResNet34 backbone from the reference legacy ImageNet resnet34-333f7ec4 checkpoint and official pretrained SPVNAS20G backbone; LIDF output projection, PointNet, offset/probability heads and new fusion parameters initialized afresh; frozen V2+learned Lap E08",
+  "augmentation": "none; retain comparison settings",
+  "candidate_selection": "detached raw-score argmax with deterministic lowest-pair-index exact tie break; teacher positives use same tie rule; classification log-softmax unchanged",
+  "comparison_limit": "RGB ImageNet initialization, SPVNAS20G, 80 epochs, 20/30/30 curriculum, differential learning rates, microbatch accumulation and explicitly disabling dense cuDNN/matmul TF32 differ from the 20261027 experiment; this is a combined experiment, not a single-factor causal ablation.",
+  "precision": "Stage two uses float32 forward tensors with autocast disabled; cuDNN TF32, CUDA matmul TF32, TorchSparse TF32 and TorchSparse FP16 are explicitly disabled in training, validation and deployment. This does not change frozen E08 stage-one caches or the reference argmax rule.",
+  "gradient_accumulation_steps": 2,
+  "effective_global_batch": 32,
+  "learning_rate_factors": {
+    "lidf": 0.1,
+    "spvnas": 0.1,
+    "adapters": 1.0
+  },
+  "accumulation_protocol": "mean of the existing per-microbatch support-normalized losses, divided by the actual number of microbatches in the optimizer window; SyncBN synchronizes each microbatch only, not the accumulated optimizer batch",
+  "sampler_protocol": {
+    "kind": "DistributedSampler",
+    "drop_last": false,
+    "unique_per_epoch": 45453,
+    "presentations_per_epoch": 45456,
+    "padding_duplicates_per_epoch": 3
+  },
+  "checkpoint_policy": "retain every completed epoch as epoch001.pt through epoch080.pt, plus atomic last.pt and final-stage pure-P best.pt",
+  "torchsparse_commit": "385f5ce8718fcae93540511b7f5832f4e71fd835",
+  "training_reproduction": "Fresh 8-GPU 80epoch20/30/30 training, full45453 unique samples plus3 DistributedSampler padding duplicates per epoch. Preserves model/loss; not historical8-to3trajectory replay."
+}

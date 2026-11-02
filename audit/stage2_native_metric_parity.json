@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "gpu_inference_performed": false,
+  "labels_sha256": "fce605f8e0a05e83cce21ec9b45b7e440d423e8ba56aa5dec9baa32b2d9e05e8",
+  "samples": [
+    {
+      "domain": "real",
+      "cache_id": "evaluation_3b052af256d20498b0f9dcc0",
+      "passed": true,
+      "prediction_sha256": "d83fb4eb796b698eacc26e643eadec80e42c4db520bda51782127c06ebe53575",
+      "metric_sha256": "ee8ce7eed0df4c80723947cec8bae5369ebe0a057e8555f91f31954e57c5ad27",
+      "largest_absolute": [
+        {
+          "field": "/all/_sums/normal_angle_sum_deg",
+          "absolute": 0.03414520248770714,
+          "relative": 3.298625883101058e-09
+        },
+        {
+          "field": "/all/_sums/depth_induced_normal_angle_sum_deg",
+          "absolute": 0.03414520248770714,
+          "relative": 3.298625883101058e-09
+        },
+        {
+          "field": "/background/_sums/normal_angle_sum_deg",
+          "absolute": 0.03414520248770714,
+          "relative": 3.3500053933500306e-09
+        },
+        {
+          "field": "/background/_sums/depth_induced_normal_angle_sum_deg",
+          "absolute": 0.03414520248770714,
+          "relative": 3.3500053933500306e-09
+        },
+        {
+          "field": "/all/_sums/relative",
+          "absolute": 2.1566447685472667e-06,
+          "relative": 1.22193394667882e-10
+        }
+      ],
+      "max_relative_difference": 3.350005430663945e-09,
+      "exact_support_counts": true
+    },
+    {
+      "domain": "synthetic",
+      "cache_id": "evaluation_e708605abba642312da8438a",
+      "passed": true,
+      "prediction_sha256": "59d5c3913c1eb2dd9b06ac478e719fe71d0a8be85265ef8c9c638e910b4f7820",
+      "metric_sha256": "eed6ceb836d94e74e1159d103bc6f39b42519e2c26e1fb2a1f96099c108dec41",
+      "largest_absolute": [
+        {
+          "field": "/background/_sums/depth_induced_normal_angle_sum_deg",
+          "absolute": 0.035495225340127945,
+          "relative": 4.361078041047536e-09
+        },
+        {
+          "field": "/all/_sums/depth_induced_normal_angle_sum_deg",
+          "absolute": 0.035495223477482796,
+          "relative": 4.184955254858199e-09
+        },
+        {
+          "field": "/all/_sums/normal_angle_sum_deg",
+          "absolute": 0.004383905790746212,
+          "relative": 5.739413590333785e-10
+        },
+        {
+          "field": "/background/_sums/normal_angle_sum_deg",
+          "absolute": 0.004383905790746212,
+          "relative": 5.986093520333657e-10
+        },
+        {
+          "field": "/all/_sums/absolute_m",
+          "absolute": 0.00010561943054199219,
+          "relative": 4.53310261351137e-10
+        }
+      ],
+      "max_relative_difference": 4.361078041047536e-09,
+      "exact_support_counts": true
+    }
+  ],
+  "interpretation": "Native evaluator/label adapter parity on one real and one synthetic sealed prediction; not full-model GPU parity."
+}

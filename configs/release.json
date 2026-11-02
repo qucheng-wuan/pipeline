@@ -1,0 +1,51 @@
+{
+  "asset_root": "artifacts",
+  "schema": "transparent_depth_release_v1",
+  "selection": {
+    "checkpoint_epoch": 58,
+    "checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+    "direction": "minimum",
+    "epochs": [
+      1,
+      80
+    ],
+    "images": 1226,
+    "independent_test_estimate": false,
+    "metric": "native_image_macro_transparent_mae_mm",
+    "protocol": "post_hoc_selection_on_full1226",
+    "resolved_selection_sha256": "26512b9bdc573135f8df6511fc4ff19db0b3c9271766f06e69ec18d31f2aaf03",
+    "selection_rule": "minimum native-resolution per-image macro transparent-region MAE across all epochs 1..80; authenticated same-GPU resolution for near ties",
+    "selection_sha256": "c1b1b7f71bc33084bfae5e6d8172c24b5d53589007c3052e05e69aa23ca75edb",
+    "test_labels_used_for_selection": true,
+    "transparent_mae_mm": 55.91037394069383,
+    "verification_sha256": "4000dd339b3cf502e7a01c09bce293db0e21501c7aeb8d318a4d2b4efc095c2b",
+    "winner_geometry_sha256": "5192c1438149b5443d253ff25051795e5e9f69c7096486546d6f41a6c4624bfa"
+  },
+  "stage1": {
+    "assets_manifest": "provenance/stage1_assets.json",
+    "assets_manifest_sha256": "01b4578f7c76e0ab2e59a116cba4c3997e757856eb728751574536e2aa7a6489",
+    "frozen": true,
+    "laplacian_epoch": 8
+  },
+  "stage2": {
+    "bundle": "stage2",
+    "bundle_manifest_sha256": "512bf141702734d4433fbe22b1893095bd1e524b95c4715602d80fe762d4ca2c",
+    "checkpoint_epoch": 58,
+    "full_image_refinement": true,
+    "input_hw": [
+      240,
+      320
+    ],
+    "source_checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+    "weights_sha256": "3a2b7b8aa5864309b07bed592506170de239e70abf658e608425a713dddd29bb"
+  },
+  "status": "verified_release",
+  "verification": {
+    "cached_acceptance_kind": "accepted_approximate_quality",
+    "cached_strict_numerical_parity_passed": false,
+    "full_live_1226_executed": false,
+    "profile": "training_release",
+    "record": "audit/release_verification.json",
+    "record_sha256": "4321ce8e3c8eff9c6301e224bdf96e7afe5efc3fa2617327f11e974d0b259269"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "pipeline_publication_source_snapshot_v1",
+  "gpu_execution_verified": false,
+  "prediction_producer_seal": false,
+  "description": "Current real-val metric-selection publication. Source identity only; no real GPU pipeline execution or prediction seal.",
+  "sha256": {
+    "src/transparent_depth/prepare_cleargrasp256.py": "7e868858d81931f9027ba13c6cd8f3bfdeb8a2dc4755c7389e0f1758faccadb7",
+    "src/v2_lidf/data_protocol.py": "ac326bd69adb8da2f1324bfb835a73b1668faf6cd671fea0b7ae1ad7564b4f3d",
+    "src/transparent_depth/train_stage2.py": "dd391d48eb9ca3a1a65db808034e5665d0a85cae3968c8f492767ea9530201b8",
+    "src/transparent_depth/training_cache.py": "1d89ccc478608698fb839f3e9410a518225e71d8912176dc98715746df139b24",
+    "src/transparent_depth/training_utils.py": "9ab60a997a4b2399bb301b557d8bfe6e8a91762ff85e8ae9da8051254c752a89",
+    "src/transparent_depth/prepare_stage2_data.py": "4b6080c2615c605f0fb8c4eca69118a30b0893b0be053ecd12c22b64e05541d9",
+    "src/transparent_depth/evaluate256.py": "cb719adab7e90b08965ae3a796f91ea67dbe3dfd8c66832bdcfc32f6f75a3769",
+    "scripts/run_transfer_smoke.py": "5a765fe72be24b6717e6237756fb558147b2fa59fab9a7f2230e978ebc189c86",
+    "scripts/check_stage2_construction.py": "399dc48358391cdab9d433b292a154b482629d99bda5f62f724b3993c7fb8c9e",
+    "configs/cleargrasp256_stage2_60.json": "4f5af7a0f4dc77111ab626845455fdb23afa31d15bed489cb17467d8691276e0",
+    "configs/cleargrasp256_stage2_smoke.json": "0bd54010f03e0cfd720c19d4bad347b320e129e778c5d4588f30abdf57ca82db",
+    "src/transparent_depth/prepare_transfer_data.py": "dc34d19c49e73d2628034e1a6fc27c88688388d29b1ff4108737c32876fb0b00",
+    "tests/test_cleargrasp256.py": "f4a5e69007f2f1e779ddc305da9c017ef5f94b06dedf0930a2105fb00d26895d",
+    "tests/test_transfer256.py": "4403538eb25dae0ce7067f4acd48683b5d69bad242fea5be51bae5432d2b144e"
+  },
+  "unchanged_numerical_core": {
+    "src/v2_lidf/model.py": "590865b5b1e5bace014848c82c74d3ebb0d53e4ad9376fbe149c228182631c1d",
+    "src/v2_lidf/geometry.py": "933d44282d78f90cec4f8f3f554d9f020b14d109e0b75612b8363a652b593f42",
+    "src/v2_lidf/spvnas_fusion.py": "9754db625b9e2b1acc7140a9608dbe472690b9f50e5eb7e841fdedf00f12706e"
+  },
+  "selection_policy": "ClearGrasp real_val_best across epochs1-60; transCG internal val epochs41-60"
+}

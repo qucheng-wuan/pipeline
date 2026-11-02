@@ -1,0 +1,21 @@
+# Python3.10; CUDA13.0 toolkit; pinned single-GPU profile. Rebuild extensions on the target.
+torch==2.11.0+cu130
+torchvision==0.26.0+cu130
+numpy==1.26.4
+scipy==1.15.3
+opencv-python-headless==4.11.0.86
+Pillow==11.3.0
+OpenEXR==3.3.5
+matplotlib==3.10.9
+ninja==1.13.2
+PyYAML==6.0.3
+h5py==3.16.0
+tqdm==4.70.0
+torchpack==0.3.1
+loguru==0.7.3
+multimethod==2.0.2
+tensorpack==0.11
+toml==0.10.2
+backports.cached-property==1.0.2
+rootpath==0.1.1
+pytest==9.2.0

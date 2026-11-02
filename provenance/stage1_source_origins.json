@@ -1,0 +1,1447 @@
+[
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/__init__.py",
+    "path": "src/native_fusion/__init__.py",
+    "original_sha256": "d1970bc07d8b5c42f15a4d16f4cc7aa2d2c7e0f1e3ce6993230f9f779601dd7b"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/model.py",
+    "path": "src/native_fusion/model.py",
+    "original_sha256": "81308f5a037f1c874bc97f00a89d50f5338089f183d5a0b565b415e4b49f9105"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/geometry.py",
+    "path": "src/native_fusion/geometry.py",
+    "original_sha256": "50b4558b4a6e42cc8f730f77b11db3181293116e4a7d3ab3ee6e1d765a520195"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/losses.py",
+    "path": "src/native_fusion/losses.py",
+    "original_sha256": "6fe8cd3fdf22078e12488da874adac65ff2120c586125f36504d00fa76011f37"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/evaluation.py",
+    "path": "src/native_fusion/evaluation.py",
+    "original_sha256": "24a9a406d069e7ea5078e937f1f10409c63691ef7c4b8be4273833b0354c2d14"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/data.py",
+    "path": "src/native_fusion/data.py",
+    "original_sha256": "a3243ac4d42e2158deabb624bf60e7b45f790380a7cdb58b014fb96552c4702c"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_TransNormal_V2_20261021/src/native_fusion/train.py",
+    "path": "src/native_fusion/train.py",
+    "original_sha256": "cbe6b9a79f2e713b38295ddc0bcd94d8389b4344592cf496d07adca36c3c47d8"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/__init__.py",
+    "path": "src/laplacian_train/__init__.py",
+    "original_sha256": "9c9103a4ad46eeb2e2ebadaf74fec42b2374140f41788063668b9d96877e9c0a"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/model.py",
+    "path": "src/laplacian_train/model.py",
+    "original_sha256": "99beb6259f30b425035e3b5d56c34d4e15da4d49dd2f2876f99be0e4017abc25"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/losses.py",
+    "path": "src/laplacian_train/losses.py",
+    "original_sha256": "a372778133d6a6a44b0ac7a58720ef105b29f192205deebe489eaff3295037ab"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/objective.py",
+    "path": "src/laplacian_train/objective.py",
+    "original_sha256": "2708cee6d5232980f9abb6a8b54f110d18fe02f1ba8ba0a1ac87e3985bfa92b2"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/data.py",
+    "path": "src/laplacian_train/data.py",
+    "original_sha256": "150757b128caff39940c9b3fc13757d053d65bfa80ca24e53eca413bc5cf4cee"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/train.py",
+    "path": "src/laplacian_train/train.py",
+    "original_sha256": "0b5b52ddd6fccbc64ef62a3344e4537048ced508172703a6787c40ea8c76bf71"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/common.py",
+    "path": "src/laplacian_train/common.py",
+    "original_sha256": "b9e4f53188c16aca01315c3fc9c87a1d1a506183f94818a55e69bbb6adbcfc9e"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_Train_20261023/src/laplacian_train/evaluate.py",
+    "path": "src/laplacian_train/evaluate.py",
+    "original_sha256": "ee88bf22ed14322b8419e38a259498083e2beef40ab129639692c334e61934e7"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_20261023/src/laplacian_fusion/__init__.py",
+    "path": "src/laplacian_fusion/__init__.py",
+    "original_sha256": "4358c061c0b0859b34cef0955fe59db6298629c37e0352b8ec2a073f8ebddd79"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_20261023/src/laplacian_fusion/pyramid.py",
+    "path": "src/laplacian_fusion/pyramid.py",
+    "original_sha256": "de536e6bed358160f2071be801639fd797e45328bc3ff0bf69b0ea2c57e3d3da"
+  },
+  {
+    "original_path": "/home/hengxianli/FusionV2_Laplacian_20261023/src/laplacian_fusion/metrics.py",
+    "path": "src/laplacian_fusion/metrics.py",
+    "original_sha256": "daeab256f0169541932c77cc51d5d0810b2b38cd558cf80f0b1932ed9c982d2a"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/__init__.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/__init__.py",
+    "original_sha256": "907c5d0fd73516ec13963726b591c9b85f453eb55ac6f741208d47e21dd70d07"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/gift_normal_r5_model.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/gift_normal_r5_model.py",
+    "original_sha256": "2bc449e0514a71d0ec868cf23fcbe5de5d3f7971924d5daef8cdb1026ef24b04"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/gift_normal_r5_export.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/gift_normal_r5_export.py",
+    "original_sha256": "a3de6920524a992dd0e9d775c74464143b1b115c600a8c376a839a004a6fa643"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/model.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/model.py",
+    "original_sha256": "5bcd22bd725800a8e78b319e2b5475f33b6f40558b4149ad41934a22fedbd1d2"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/predicted_mask.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/predicted_mask.py",
+    "original_sha256": "6e59de6c6c2db9626fa1d8f92cae6339e464693bb693ba9042dc3c0428ab17e0"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/io_utils.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/io_utils.py",
+    "original_sha256": "bf07d500bc5acaefd3a17183ad9704231f819adeec7d1d32df15637e51ca31c0"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/tomnet.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/tomnet.py",
+    "original_sha256": "0f1c39562811f9a14219f993de3c5e19bd387073229c601347fe0b402999b9b6"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/tomnet_infer.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/tomnet_infer.py",
+    "original_sha256": "a74f0decb4ac32e03f420849242cd7debbc606c80d730d37a6cc6661a8f64e0b"
+  },
+  {
+    "original_path": "/home/hengxianli/MoGe_Transparent_Fusion/src/moge_transparent_fusion/transnormal_teacher_r5.py",
+    "path": "third_party/stage1_support/moge_transparent_fusion/transnormal_teacher_r5.py",
+    "original_sha256": "6a6bc37263cddf91db5aba99696b742f320814c9a07043c0118ead62bec97acd"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_R5_Fusion_20261020/src/far_r5/__init__.py",
+    "path": "third_party/stage1_support/far_r5/__init__.py",
+    "original_sha256": "2bc806259ef9cfb843461fc9f799b1f042a5130450505b1bff4de1c8156dce30"
+  },
+  {
+    "original_path": "/home/hengxianli/FAR_MoGe_R5_Fusion_20261020/src/far_r5/anchors.py",
+    "path": "third_party/stage1_support/far_r5/anchors.py",
+    "original_sha256": "cd404a9f85969c2861366f3d821c215a6c2d924ad4fcaeecf1b30e287a6b3a38"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/__init__.py",
+    "path": "third_party/moge/moge/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/__init__.py",
+    "path": "third_party/moge/moge/model/__init__.py",
+    "original_sha256": "402d26d194a06b3708a720997c7596721d34fd4f039d893d22a49102ffb37f95"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/__init__.py",
+    "path": "third_party/moge/moge/model/modules/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/conv_stack.py",
+    "path": "third_party/moge/moge/model/modules/conv_stack.py",
+    "original_sha256": "871c8cacf44814a483948a8ffeb6d58ff7b606fcde043b6737a6a786ec4124c3"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/__init__.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/__init__.py",
+    "original_sha256": "0d2b87b7e71c7f7279ccc4b4f8b541d26071425284a0ea01a5a435fac4511cfe"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/hub/__init__.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/hub/__init__.py",
+    "original_sha256": "2932e94a2d67be87b717c49468214c1127be7864aedf37f5891d26be7bc1437f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/hub/backbones.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/hub/backbones.py",
+    "original_sha256": "11c3b7e3da2a843ba5953191e8fc2027b37490313dfb315c0d4ad1a0ea31d27d"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/hub/utils.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/hub/utils.py",
+    "original_sha256": "c0533919016531b320bf9aef7cd7001249bc8ef8957cdb29246c15b67d5abdf8"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/__init__.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/__init__.py",
+    "original_sha256": "fd1e75383af9bf7d44c28f3ba3c58d48598fc16012665d463ff6178c4dcde188"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/attention.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/attention.py",
+    "original_sha256": "69ac7cc7cbf37f3bc0a9a7808af1ec3d4919341e1d1705f0e962b9ac68a63159"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/block.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/block.py",
+    "original_sha256": "62acf7c26453641de811994c4ee03dc7608c3b21b6e22484f09ebd158c12862c"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/dino_head.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/dino_head.py",
+    "original_sha256": "9fdb1fa61c0609dc0876f711f9d0d828c33bf9fd972aab3d9c968d44e16b98d1"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/drop_path.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/drop_path.py",
+    "original_sha256": "b9f8236e86054b9d9a71275efcad2a9ecaa1f86b529d4b8d6109ddb5e806f67a"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/layer_scale.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/layer_scale.py",
+    "original_sha256": "abb7bbfae152a9de2e6d0961ab5e75c79428e849281bfe50dd07b66b54b485d1"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/mlp.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/mlp.py",
+    "original_sha256": "255825c73b60a916dd00eb1e38aacbcdbf316e40d6a005efb46e245b7edb43aa"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/patch_embed.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/patch_embed.py",
+    "original_sha256": "40da6add3d811198ea3e17cb99cdd4e5cda59e369efbbe3d18d89308618cf142"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/layers/swiglu_ffn.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/layers/swiglu_ffn.py",
+    "original_sha256": "4c75f68d902cf497cb51e770ab8720057fa9957dd4c93da83aaf4f8893d14538"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/models/__init__.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/models/__init__.py",
+    "original_sha256": "87b360c71997314f41be1c497cc42326fc32617d3a2840f2f19d3795ca8b85ee"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/models/vision_transformer.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/models/vision_transformer.py",
+    "original_sha256": "3252299a8de0134f48aa18191ece68092ed62191a5f9589254262f4a6c98ada6"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/__init__.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/__init__.py",
+    "original_sha256": "2932e94a2d67be87b717c49468214c1127be7864aedf37f5891d26be7bc1437f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/cluster.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/cluster.py",
+    "original_sha256": "ea195476b1f5316520c07233eb73ff4b0e5fe3f7a2645aacec5b416e7bed157c"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/config.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/config.py",
+    "original_sha256": "588574a78951ccfe7ffaad9ef7cab53d37e837e3ae98cfc1b6a976189073d87c"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/dtype.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/dtype.py",
+    "original_sha256": "610251537bcf55de8961a17dd625560eae5cfa5082e9382bbd9ded86db92e1c6"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/param_groups.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/param_groups.py",
+    "original_sha256": "ec1daae9eb7c50492091504f97087e3179d46a080d7b7f131967c07cb15cf6d4"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2/utils/utils.py",
+    "path": "third_party/moge/moge/model/modules/dinov2/utils/utils.py",
+    "original_sha256": "10bfc824fdb00cf0c4afc0a875b5763ad4c5f33ec38c2515b12528307b789305"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/dinov2_encoder.py",
+    "path": "third_party/moge/moge/model/modules/dinov2_encoder.py",
+    "original_sha256": "18db83e4198f6bb46eae483295ed4d58c75f752ba5ac2245672d7d2e180c018e"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/flex_sparse_blocks.py",
+    "path": "third_party/moge/moge/model/modules/flex_sparse_blocks.py",
+    "original_sha256": "55f284ee207ad57f39c6d16a3d37dc7242da3332107fa4e69c64ef6bb2dc554e"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/mlp.py",
+    "path": "third_party/moge/moge/model/modules/mlp.py",
+    "original_sha256": "fa31829198b13f83a5cc89d8854bc9de1bc0c34655631f2a69af94d6fbf80eb3"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/modules/sparse_unet.py",
+    "path": "third_party/moge/moge/model/modules/sparse_unet.py",
+    "original_sha256": "556d52d3f3a4e64063fde540713bc36b8fec042bce8a178bd1a57d845c74aa83"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/utils.py",
+    "path": "third_party/moge/moge/model/utils.py",
+    "original_sha256": "efa9338c20543d3b0a736c5d42b846bdcaf3bc5912ffbc594fda71431daf22dd"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/v1.py",
+    "path": "third_party/moge/moge/model/v1.py",
+    "original_sha256": "0ecbbc0be149944297efd4d4f8fbd00921e778ace40d308bc4a4dc27397afeef"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/v2.py",
+    "path": "third_party/moge/moge/model/v2.py",
+    "original_sha256": "d70c1be8c7c62770a98bbf9e7c84e7c6d536eb1cf31ac78fcc136d36a0eaab3f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/model/v3.py",
+    "path": "third_party/moge/moge/model/v3.py",
+    "original_sha256": "ef05f98715455e30d730416dd42bc2f8847fab05866df9c10498612f1274b63f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/__init__.py",
+    "path": "third_party/moge/moge/scripts/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/app.py",
+    "path": "third_party/moge/moge/scripts/app.py",
+    "original_sha256": "6143a0e670b3f638640c9a95eb7e607dcbd6b6cbe9eab8d096c1b8d513faad69"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/cli.py",
+    "path": "third_party/moge/moge/scripts/cli.py",
+    "original_sha256": "86419e34bbfd15d0646b1d3821fa68651cb21f316428be862ed1df0a126395d0"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/eval_baseline.py",
+    "path": "third_party/moge/moge/scripts/eval_baseline.py",
+    "original_sha256": "8646def64d40c70228ea3ad94f068c1e7a3cfcf8ad487e08c4c410e3e9bfdca1"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/infer.py",
+    "path": "third_party/moge/moge/scripts/infer.py",
+    "original_sha256": "c92743ad7e2fbe8828bd24ca3b5018ca1a8670538c9e386e4e0a41070f4f856b"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/infer_baseline.py",
+    "path": "third_party/moge/moge/scripts/infer_baseline.py",
+    "original_sha256": "eb4da94744197ff59bb8f7f392b2b280e89e6dbee498817a2786a4934be79afb"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/infer_panorama.py",
+    "path": "third_party/moge/moge/scripts/infer_panorama.py",
+    "original_sha256": "901aedfc06ea740de8fd3151db7b34c8eb1007c595206d5e846f77c4f666ff15"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/scripts/vis_data.py",
+    "path": "third_party/moge/moge/scripts/vis_data.py",
+    "original_sha256": "80a47b1af86045e7f55f603d0c21dc0ed075e43b3d13e5381c64fa64901e492a"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/test/__init__.py",
+    "path": "third_party/moge/moge/test/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/test/baseline.py",
+    "path": "third_party/moge/moge/test/baseline.py",
+    "original_sha256": "8f62da7022ab16f3f00556ac38580f085c68477d9200722646c77a78720a0d75"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/test/dataloader.py",
+    "path": "third_party/moge/moge/test/dataloader.py",
+    "original_sha256": "00d66b43a9e28ec1d60be31f9a01d991dfbbe862e61dfce5aa5541e4a2faa571"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/test/metrics.py",
+    "path": "third_party/moge/moge/test/metrics.py",
+    "original_sha256": "c698ab70b9765d1089213581f5395c21e0c9e6cf2968fb9345ffcd3588f25d80"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/__init__.py",
+    "path": "third_party/moge/moge/train/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/checkpoint.py",
+    "path": "third_party/moge/moge/train/checkpoint.py",
+    "original_sha256": "d362bcbf5784fb9abc24da0dc59081de4b191e0e02f612766b591f4feb366e24"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/dataloader.py",
+    "path": "third_party/moge/moge/train/dataloader.py",
+    "original_sha256": "22da482a941fa6f02edf72287af0c2fd9a436cc2e05abd1adbe71a3dc3091914"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/debug.py",
+    "path": "third_party/moge/moge/train/debug.py",
+    "original_sha256": "c1b1590e622059c4de9275ed0459901a5f590f4cff7ca7f54c67a4e4e141016e"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/experiment.py",
+    "path": "third_party/moge/moge/train/experiment.py",
+    "original_sha256": "d40c6169a76b11c7f51e7ecea0a1323c78e5abf2276937b831af92354e642305"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/losses.py",
+    "path": "third_party/moge/moge/train/losses.py",
+    "original_sha256": "2867fa9bfeeb71a5800d22e23229bd66db651bd39c6d7043cb9860718292f941"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/train_moge12.py",
+    "path": "third_party/moge/moge/train/train_moge12.py",
+    "original_sha256": "d0c7637d4dfe398ba9dd7fcf41bc47fe237719dd0b9c6c64eda74024c487a21d"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/train_moge3.py",
+    "path": "third_party/moge/moge/train/train_moge3.py",
+    "original_sha256": "09a553ab3f67a1ef15ee190c630f2d191115f602f41fb4e7e2e59549bf9ab6ef"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/utils.py",
+    "path": "third_party/moge/moge/train/utils.py",
+    "original_sha256": "1893fe71c5b743e9eef4e235dc6352739c390d58c01144b979b80a7cef709eda"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/train/visualization.py",
+    "path": "third_party/moge/moge/train/visualization.py",
+    "original_sha256": "ebd851538e771054b2d5595ea68a7e728649c5ccef7707c6ce40a2b217d03080"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/__init__.py",
+    "path": "third_party/moge/moge/utils/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/alignment.py",
+    "path": "third_party/moge/moge/utils/alignment.py",
+    "original_sha256": "fab0ade86ad23ca9787b3ac241d2ff0e86819df0517df94047ad98140c72d513"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/data_augmentation.py",
+    "path": "third_party/moge/moge/utils/data_augmentation.py",
+    "original_sha256": "a6c177e586239d9b06ca9ff959c8f51607e26d6c8f8592250083474e6bfaf333"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/download.py",
+    "path": "third_party/moge/moge/utils/download.py",
+    "original_sha256": "929fde9df713247927b93807809ffa9b5a49572d6bd5bd1ae57235d2c8f4fc91"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/geometry_numpy.py",
+    "path": "third_party/moge/moge/utils/geometry_numpy.py",
+    "original_sha256": "1e648d22a4f45392d8fbb25ce8e8287e2f62fd0222df4cfa697eaad4509e935b"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/geometry_torch.py",
+    "path": "third_party/moge/moge/utils/geometry_torch.py",
+    "original_sha256": "1fd013761c30a411dc48b08031925518b980ab53c323a85e9d86e8a95c98c43f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/gradio_3d_viewer/__init__.py",
+    "path": "third_party/moge/moge/utils/gradio_3d_viewer/__init__.py",
+    "original_sha256": "ee5e4d3209965af14349d93159b5dde1dfb2750d1529aff1d729265039e60850"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/gradio_3d_viewer/gradio_3d_viewer.py",
+    "path": "third_party/moge/moge/utils/gradio_3d_viewer/gradio_3d_viewer.py",
+    "original_sha256": "6c7af43a32a4c4afc8f8c72391b73d4d236d080d58247499564cd90afae55cdf"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/io.py",
+    "path": "third_party/moge/moge/utils/io.py",
+    "original_sha256": "36dcbc1fc933dcd19d2c97d3a7a3d556ce3f3a191055bb4cc6f93168c4ef32ba"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/panorama.py",
+    "path": "third_party/moge/moge/utils/panorama.py",
+    "original_sha256": "f0bf1b07c3b6c80ea9759595b2bdd41f05a8f38878b43599bdfb48da4c9b5f24"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/tools.py",
+    "path": "third_party/moge/moge/utils/tools.py",
+    "original_sha256": "06db2d34227318edb6e5319ad677b84cf6a8b3c6a34e698d6620f3fcfb6899ee"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/vis.py",
+    "path": "third_party/moge/moge/utils/vis.py",
+    "original_sha256": "4a3fb22a1dc14171d793961b1ca669b6c906574daf9ca353df41397845b3b47f"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/webfile.py",
+    "path": "third_party/moge/moge/utils/webfile.py",
+    "original_sha256": "3ffcd69e343b9c867cf52c80ec1923f76478a6e8bda712cc677bfefb077b0777"
+  },
+  {
+    "original_path": "/ssd/polyu/moge_cleargrasp_finetune_20261003/vendor/moge/utils/webzipfile.py",
+    "path": "third_party/moge/moge/utils/webzipfile.py",
+    "original_sha256": "5e68057dad8f05ecbd08883f2b960211512c28bdb0243d32700ec5102b735668"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/__init__.py",
+    "path": "third_party/dinov3/dinov3/__init__.py",
+    "original_sha256": "cfcd49b9d41705ef9bd6ce61bccc38e8ab8fa52fa365de48c10a7d7e1710b631"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/checkpointer/__init__.py",
+    "path": "third_party/dinov3/dinov3/checkpointer/__init__.py",
+    "original_sha256": "2d44449d0cdd2b7c803582def39b61bec1e55bf610a92bc3b072a7a2eddea877"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/checkpointer/checkpointer.py",
+    "path": "third_party/dinov3/dinov3/checkpointer/checkpointer.py",
+    "original_sha256": "21d9840fb2bfcb217738a0843ccc72c87cfc518957ff18038e3350640ee3cade"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/configs/__init__.py",
+    "path": "third_party/dinov3/dinov3/configs/__init__.py",
+    "original_sha256": "3e43ad228d86c0be1cf711a1527c40c9f351a5910cfc250a341e18e000183493"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/configs/config.py",
+    "path": "third_party/dinov3/dinov3/configs/config.py",
+    "original_sha256": "bed862291a153e9008bd33cd4ee84235b8b169804a2552aca45460e992d5dd13"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/configs/train/__init__.py",
+    "path": "third_party/dinov3/dinov3/configs/train/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/configs/train/multidist_tests/__init__.py",
+    "path": "third_party/dinov3/dinov3/configs/train/multidist_tests/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/__init__.py",
+    "path": "third_party/dinov3/dinov3/data/__init__.py",
+    "original_sha256": "d802fa917898098dfeff0d6baf9360620c1e3ab1b856413be0e3d86a993d77ec"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/adapters.py",
+    "path": "third_party/dinov3/dinov3/data/adapters.py",
+    "original_sha256": "104068a78e6055a3198ee58f0658950d7a081ce8a79514e924d856f0e59ffad2"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/augmentations.py",
+    "path": "third_party/dinov3/dinov3/data/augmentations.py",
+    "original_sha256": "ed056cb708e00dbc989bb9c8fc59839536bed17263cc297634e7accaeca3be3e"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/collate.py",
+    "path": "third_party/dinov3/dinov3/data/collate.py",
+    "original_sha256": "49c0f80d055c8e66d4da64f5a3235a45ec3727323dc13d85b752549e4ed2a2a6"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/__init__.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/__init__.py",
+    "original_sha256": "4c7ce1ec121aff57a9c274296ebd9c59a0c087b46acabad0ed54927d11171719"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/ade20k.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/ade20k.py",
+    "original_sha256": "c1e010b3420b62b811a943a539a9df07a23867b391a54cf4f48faf0d8f2b61cf"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/coco_captions.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/coco_captions.py",
+    "original_sha256": "9f602a8bc537db35a99d5c252df64bc9b2c1db606f49b73eb0e7cf163d107eeb"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/decoders.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/decoders.py",
+    "original_sha256": "7a7fc3ed86488c4e5be720be59545a40480ae647499a471c6c3178867aa01222"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/extended.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/extended.py",
+    "original_sha256": "b23cbf6245a7cf8c24ce85197aad9edc5123fba5e16a45d672f77a82109b8983"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/image_net.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/image_net.py",
+    "original_sha256": "65720c18947dcf142985a77c333103083b8319930f78315e7535ea72614b0ba3"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/image_net_22k.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/image_net_22k.py",
+    "original_sha256": "928e8e84e64098e29801ff5e138ea8ff54bb9f126cb1ad5e30dfdf38e5a8ac51"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/datasets/nyu.py",
+    "path": "third_party/dinov3/dinov3/data/datasets/nyu.py",
+    "original_sha256": "bee8d10d28e74d2b7bfb1dd6b404ea2081c1f418071772c82933b92191204329"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/loaders.py",
+    "path": "third_party/dinov3/dinov3/data/loaders.py",
+    "original_sha256": "66d1e0125d6a26f96ce19417bce34b9adfc61841c22879d90883536c1a808545"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/masking.py",
+    "path": "third_party/dinov3/dinov3/data/masking.py",
+    "original_sha256": "40f37aa4b4a7b7ac94ebf57000bdce50e24fd8771feb1edca7d8ec40bc5f01b2"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/meta_loaders.py",
+    "path": "third_party/dinov3/dinov3/data/meta_loaders.py",
+    "original_sha256": "b6301d9381c92a5462a3a4228340a64c660f9e38defcbaf70fc0f9977a2c0b63"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/samplers.py",
+    "path": "third_party/dinov3/dinov3/data/samplers.py",
+    "original_sha256": "f51e00c1534badb4c0bd3c09258d03eca50111c6a965a011f35c94184673054c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/data/transforms.py",
+    "path": "third_party/dinov3/dinov3/data/transforms.py",
+    "original_sha256": "fe8de416012616da78c7191e3975c622171cd3c14d26bbbb3eb20c2645bb3840"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/distributed/__init__.py",
+    "path": "third_party/dinov3/dinov3/distributed/__init__.py",
+    "original_sha256": "d17e0f68fa38f506ae19347c2b4fc99d1b1cdc7159bebf9a8ed8f863116e58a1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/distributed/torch_distributed_primitives.py",
+    "path": "third_party/dinov3/dinov3/distributed/torch_distributed_primitives.py",
+    "original_sha256": "cde664c2bde4021778284b45018561e219d0ef6c93b8d652b9d596fbea689be9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/distributed/torch_distributed_wrapper.py",
+    "path": "third_party/dinov3/dinov3/distributed/torch_distributed_wrapper.py",
+    "original_sha256": "6dd47e7e8044c98b37ad0d00dc1a2f5732389ae38e779207ec794da35a4e5d52"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/env/__init__.py",
+    "path": "third_party/dinov3/dinov3/env/__init__.py",
+    "original_sha256": "924c241f9301b704ffe064c796966a801dfffae7cd9d2bd072710f2a8fbc7b74"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/accumulators.py",
+    "path": "third_party/dinov3/dinov3/eval/accumulators.py",
+    "original_sha256": "311aa6a4ba713fa8edd263e95f0d48f5891595c2e525ebc7a2f08a706e122412"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/data.py",
+    "path": "third_party/dinov3/dinov3/eval/data.py",
+    "original_sha256": "97d264cc012d2f52d7102155215dfd9a0c8399c238aa8cb84219b2d384046f90"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/checkpoint_utils.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/checkpoint_utils.py",
+    "original_sha256": "5ea2c430908d0901ce55fdbeea710c5287c8f8cdf50019ff946d6a42162466dc"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/config.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/config.py",
+    "original_sha256": "3ece55fdcbe91d71494d43915cbc5ccded37b1227920d91649de0b5ed0e91fb0"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/configs/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/configs/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/data.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/data.py",
+    "original_sha256": "1d876684c2108a20440abc89e40a2fc9dba369b065a788575ad4a7b8e66e4b50"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/datasets/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/datasets/__init__.py",
+    "original_sha256": "94df78b000730b9534e7f575731bf4d1668eba5fa6ef693f57dd25dafc3572ce"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/datasets/datasets_utils.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/datasets/datasets_utils.py",
+    "original_sha256": "065ca6ceee936fa37e41a4cf93cd588b937806d8606d23b5d471168da9bbb967"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/eval.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/eval.py",
+    "original_sha256": "758d2b189d61e154c62b6f874672316a5a5c36a07d84cfa122cefe0d9a9f1d64"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/loss.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/loss.py",
+    "original_sha256": "aac9df1ede31dabaef0c7ec9bed09a8b79fa1e2bc0b19fdb69bfc200d57de853"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/metrics.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/metrics.py",
+    "original_sha256": "5d0160e4bec9ccec7512fafbbbc28aca76521b8a6ca914a740131c4e2631f056"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/models/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/models/__init__.py",
+    "original_sha256": "c567603ba4a3b0fc3625cfa7483392b41de3564b252ec861d85087edab6cb553"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/models/dpt_head.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/models/dpt_head.py",
+    "original_sha256": "efb245b7faa319e8c9ec2320bce8bacb848d7e69d59992275f11531839153f21"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/models/embed.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/models/embed.py",
+    "original_sha256": "975b1add76ecf7516dc46e147e5d7e9c7a4ccb0fc0be6eea27501ebae818fb14"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/models/encoder.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/models/encoder.py",
+    "original_sha256": "6ec3fc75ab5ec958388a630cc86a6bc5995aa884113c0a0fbb5d2583f5c262d5"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/models/linear_head.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/models/linear_head.py",
+    "original_sha256": "04e032a861ea918d2020731b573a05613803a5c24bbb3f8af738eeb09d2ce348"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/run.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/run.py",
+    "original_sha256": "5bc5e5a58ee84c9547641fa5d054306c8819c69b370736e517b0db7a3d7289f4"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/schedulers.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/schedulers.py",
+    "original_sha256": "5d3cf9b827552b60f1aec7608a89022a5f12ab3e337c3745c4f8028cb53e3951"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/train.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/train.py",
+    "original_sha256": "533fd16b9f87f5e00db7d2c222c32906b14ab236ac7ace148a03c499cb0efdf9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/transforms.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/transforms.py",
+    "original_sha256": "5061d83c4be205d860a375784ea95470e49947d638ec2c997473308ac159c1c2"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/utils.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/utils.py",
+    "original_sha256": "056d6ff47f768449a0292db5daf60a00b4626970c65fdaed0eb88e90f6ab7b7c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/depth/visualization_utils.py",
+    "path": "third_party/dinov3/dinov3/eval/depth/visualization_utils.py",
+    "original_sha256": "52861fd1685083387848f17eb63fa5283bbc2d87c5d729b14528fe7727e37cd8"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/config.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/config.py",
+    "original_sha256": "b70dcd89651d668ab107fd92203d166dccddbfc002e3afd1e57407daf3a50fa9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/__init__.py",
+    "original_sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/backbone.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/backbone.py",
+    "original_sha256": "e739d35f02af46fed6afd8f824e47060bd4d09b73228460bf0063ad8bb974edc"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/detr.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/detr.py",
+    "original_sha256": "4e568f73d6cab0d90668163fcb6bbc5b088a4f4bd046be38929daba93a404d23"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/global_ape_decoder.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/global_ape_decoder.py",
+    "original_sha256": "96be28c2e99e67ede9472bb29cba68109f513a6e6aed482066d8f001ac2f1b84"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/global_rpe_decomp_decoder.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/global_rpe_decomp_decoder.py",
+    "original_sha256": "f4c77a15572b6d030b6662cad73cf80b3d4fb94ff449301ef20761d3183caffc"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/position_encoding.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/position_encoding.py",
+    "original_sha256": "f885b7bfd40df50cb012c8038979042ff2f5c427a5f6bbe36028e84735132d4a"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/transformer.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/transformer.py",
+    "original_sha256": "9f9f83a54396f1acc1fa1ff9b66ddc54fe4990ab15f586f9382a31a599a4e0a3"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/transformer_encoder.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/transformer_encoder.py",
+    "original_sha256": "907ac6ed7cca47ef5e7fb04089d644422c31cd30226cdaa59d21279f7668ca73"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/utils.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/utils.py",
+    "original_sha256": "039d5d96267cd6a3201f38846781155b3de106eda63253d6b059de7b74e79952"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/models/windows.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/models/windows.py",
+    "original_sha256": "fc1a62a3bafdab4345b6c3232a978d03aef0e72ea1101c7da52ef6eca231e30d"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/util/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/util/__init__.py",
+    "original_sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/util/box_ops.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/util/box_ops.py",
+    "original_sha256": "09a4981ed1a031c0163d9190c166b125d5546982b8467d2e5a388edeb708edf9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/detection/util/misc.py",
+    "path": "third_party/dinov3/dinov3/eval/detection/util/misc.py",
+    "original_sha256": "fd815910b8dd23f0df3364fa08e194c07e97a1582ae5305b3b575f5d99a92360"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/helpers.py",
+    "path": "third_party/dinov3/dinov3/eval/helpers.py",
+    "original_sha256": "becd0e2de601b45f597a27f2ebfef4adf0a03086f98f67127910a8a7077c2445"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/knn.py",
+    "path": "third_party/dinov3/dinov3/eval/knn.py",
+    "original_sha256": "44e282054c07e7ad0201e0ff6dc8102470dfb41a94a0b2174af7cb71daa5694b"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/linear.py",
+    "path": "third_party/dinov3/dinov3/eval/linear.py",
+    "original_sha256": "6a3cfb9ab133e3a386cd0f0c7769fc9d378d7d4a5522d3437e8dfa3114b08b6c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/log_regression.py",
+    "path": "third_party/dinov3/dinov3/eval/log_regression.py",
+    "original_sha256": "d2924997552714392ed26cfc752d9e83c94bdd3fb267ac97e65d10c4aa7a2ed4"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/metrics/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/metrics/__init__.py",
+    "original_sha256": "5eac7657f2782bf9aeba5f2e0a02d29c20440fdb6e41372c4c0b4b7cdfcd3cfc"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/metrics/classification.py",
+    "path": "third_party/dinov3/dinov3/eval/metrics/classification.py",
+    "original_sha256": "7cdf1830dfea572d91269f58d4b44908150a689f3df24b8630b44f9ce1606618"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/metrics/imagenet_c.py",
+    "path": "third_party/dinov3/dinov3/eval/metrics/imagenet_c.py",
+    "original_sha256": "0eba26615a0257edcde85ce93e52b3f2959c0416ce678cf9037145cd347feae3"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/results.py",
+    "path": "third_party/dinov3/dinov3/eval/results.py",
+    "original_sha256": "f3fc969dde4f8622b84e2da251a2044b3f86f5dd4bfe54bd2d4347675ae013ec"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/config.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/config.py",
+    "original_sha256": "8add85ef68c1f299daa062ff1291af09713057f4e4c0a4179df9d0c056b46c5f"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/configs/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/configs/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/eval.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/eval.py",
+    "original_sha256": "37908b3264518fe504f795785ca1747401ddba237daab59e37e59d222c738d32"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/inference.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/inference.py",
+    "original_sha256": "f9cb07c34398f8ff1ff6dcf95d30f00a0048ffc76931c932f3eb9389aad2eb07"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/loss.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/loss.py",
+    "original_sha256": "82c0e39b29decef34f679f1d48db8699378e4de63c1e47ca5c967ae889a64d18"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/metrics.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/metrics.py",
+    "original_sha256": "ac91cb3e8ecc7fa51ce398cd2e742572a1a926a282690bd9cd1877d84c8d7b0c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/__init__.py",
+    "original_sha256": "3f27793f35fd2ea8009b6eb1c48e4fa3dfa50dcf97496bba74ed6e425b5f8889"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/backbone/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/backbone/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/backbone/dinov3_adapter.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/backbone/dinov3_adapter.py",
+    "original_sha256": "20922fc0b3e7526920525d25dd7207119e7e6aee6626668f747458e9a91bf827"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/heads/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/heads/__init__.py",
+    "original_sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/heads/linear_head.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/heads/linear_head.py",
+    "original_sha256": "82d69b2a46fd5f13b128f35e05c3b8f66d303727935e1660a5448a3d95d83590"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/heads/mask2former_head.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/heads/mask2former_head.py",
+    "original_sha256": "b7b177f9dc1d77cf98404f60d50d288a76f8eec06ac54eceb0a99392ac8c5733"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/heads/mask2former_transformer_decoder.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/heads/mask2former_transformer_decoder.py",
+    "original_sha256": "c1637e3c873f823f7c2c534b77e7b7b841f0847bb0aa6eed42c04c0f2e71c7dd"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/heads/pixel_decoder.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/heads/pixel_decoder.py",
+    "original_sha256": "ecea2f7b5b0ef0078ff80fda8a1cdf0a149df744680f2301d715c4ab141f96f9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/batch_norm.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/batch_norm.py",
+    "original_sha256": "ead32bdbdf8163625d2810fd315b0613d2890052e20a57f75a115a3850d5ee6b"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ms_deform_attn.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ms_deform_attn.py",
+    "original_sha256": "54be948b54bce71f881ba1347e1eeb4143f626dab1a921f134d8cd7b9792d465"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/functions/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/functions/__init__.py",
+    "original_sha256": "d99e42be9d47c057ba6f9d0c77fd36f823ee2f7aebcce2d34592b83cce4db4fa"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/functions/ms_deform_attn_func.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/functions/ms_deform_attn_func.py",
+    "original_sha256": "0b28e5c0e364b9a3e2c7a2e92b05d835203fa1e8ccfad6218018985888237e21"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/modules/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/modules/__init__.py",
+    "original_sha256": "a006f568e2a36e928106a5152cfd39eef97157b6af96861b2a3bb771337f692a"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/modules/ms_deform_attn.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/modules/ms_deform_attn.py",
+    "original_sha256": "297e3522826afec3fb93692b68b11f9245263626bc0e37042088bc547a2c3821"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/setup.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/setup.py",
+    "original_sha256": "b6d5d2c156b74e07cb56a2f1cef42e4f57ca96599d621bc5a24dba510c4b7984"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/src/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/src/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/src/cpu/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/src/cpu/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/src/cuda/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/src/cuda/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/ops/test.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/ops/test.py",
+    "original_sha256": "08c1605c7987a77504e789afb42619f376b37476bad7e7b813c8d3570c05f19e"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/position_encoding.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/position_encoding.py",
+    "original_sha256": "a7c1a83ec11f0bbad68c6751fc3a457e8bd0948d6968827611f8a59db7968437"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/models/utils/transformer.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/models/utils/transformer.py",
+    "original_sha256": "42f8c7a6d045dbe95c4d79d3b39080d6a2ccc7bc2c478df649b4d60d81043a86"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/run.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/run.py",
+    "original_sha256": "27b2226c24f812faa809049ff62a8bd9e6a44f75d51efe819a431c52d9a9673b"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/schedulers.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/schedulers.py",
+    "original_sha256": "8ff0ed6a6702e1b219a72f5ad50184378588d250b9d91b0d0f663e864f930901"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/train.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/train.py",
+    "original_sha256": "acb052039193c8d12595b9088c4ce9f4cabaa3fde9790e5831fcaa7e47d02d80"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/segmentation/transforms.py",
+    "path": "third_party/dinov3/dinov3/eval/segmentation/transforms.py",
+    "original_sha256": "7e44bffbf26291108ba41b305b3c33f5838a283dba21817db77fc91282eb45a1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/setup.py",
+    "path": "third_party/dinov3/dinov3/eval/setup.py",
+    "original_sha256": "f5312a7e9a556cbed2ac87b75b4cdc6f8cec38245ec6176449eccfe34810da53"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/text/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/ac_comp_parallelize.py",
+    "path": "third_party/dinov3/dinov3/eval/text/ac_comp_parallelize.py",
+    "original_sha256": "939d2a71d35c7135795372f31081d6359d6342a3e0f47c2ad6ca5cfa50e0335c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/build_dinotxt.py",
+    "path": "third_party/dinov3/dinov3/eval/text/build_dinotxt.py",
+    "original_sha256": "c3797ed848ff8a2cdae2ede553197b26acf38d3b140b6d7a43b63735c93065c1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/clip_loss.py",
+    "path": "third_party/dinov3/dinov3/eval/text/clip_loss.py",
+    "original_sha256": "b9a15a16a6ab5b734272d7e769baa94c44908b3c3622e6a126556eba29ff0f1e"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/configs/__init__.py",
+    "path": "third_party/dinov3/dinov3/eval/text/configs/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/dinotxt_model.py",
+    "path": "third_party/dinov3/dinov3/eval/text/dinotxt_model.py",
+    "original_sha256": "04a9c4bbd58294b8193163c1d1a716b2b834a1e00e0d039e7222f9bfdb7af0e2"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/gram_loss.py",
+    "path": "third_party/dinov3/dinov3/eval/text/gram_loss.py",
+    "original_sha256": "b32fa04dbb0ba76cbed6c0d4cf98c26180f5c5b0567b986b9f73b885253009d1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/text_tower.py",
+    "path": "third_party/dinov3/dinov3/eval/text/text_tower.py",
+    "original_sha256": "c131ee186815f533ee93a402720f8208891718edb8e2f1f9b282559df5446d6a"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/text_transformer.py",
+    "path": "third_party/dinov3/dinov3/eval/text/text_transformer.py",
+    "original_sha256": "4264fa001ff0062815a0323a107b8d2205f516de790c6775f60cc5daa5e95247"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/tokenizer.py",
+    "path": "third_party/dinov3/dinov3/eval/text/tokenizer.py",
+    "original_sha256": "4c63dc45da6d2113795b3ca68fd7c27808124f4530d8090888d28fe389ae7f27"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/train_dinotxt.py",
+    "path": "third_party/dinov3/dinov3/eval/text/train_dinotxt.py",
+    "original_sha256": "40428860f1ec846be0c4874d34b40c32ff4c37bf096353beff00c31339bc5b91"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/text/vision_tower.py",
+    "path": "third_party/dinov3/dinov3/eval/text/vision_tower.py",
+    "original_sha256": "adb2825d99e883126e9903b0a54fbe7ab4920cedccc894d843efd2078c647f85"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/eval/utils.py",
+    "path": "third_party/dinov3/dinov3/eval/utils.py",
+    "original_sha256": "644ed23a8b3183399af632a4dc13094d4454c5e608fbc9fb870807b2f2a048df"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/fsdp/__init__.py",
+    "path": "third_party/dinov3/dinov3/fsdp/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/fsdp/ac_compile_parallelize.py",
+    "path": "third_party/dinov3/dinov3/fsdp/ac_compile_parallelize.py",
+    "original_sha256": "1d5ac721becdef6748acb604b6de6afbd820bccdc710013c790700958103c9aa"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/__init__.py",
+    "path": "third_party/dinov3/dinov3/hub/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/backbones.py",
+    "path": "third_party/dinov3/dinov3/hub/backbones.py",
+    "original_sha256": "6c9a18aca0b5fcb1fce439213a94a528e072376a6023718e03dbd9fcfaa10deb"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/classifiers.py",
+    "path": "third_party/dinov3/dinov3/hub/classifiers.py",
+    "original_sha256": "2223bb2ca3f1d7a7b94d591e75c968ef588b9538aefa359c6ebd24ff3af2a8ac"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/depthers.py",
+    "path": "third_party/dinov3/dinov3/hub/depthers.py",
+    "original_sha256": "32a8793f0084189c6c8ea74519b0a54d5290a880c68d0ba8f1664fae99066dc6"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/detectors.py",
+    "path": "third_party/dinov3/dinov3/hub/detectors.py",
+    "original_sha256": "243c070fd027f084e8b901d862fc98b0b27748c1ff9c3a32c9f8e7bfe9c4462b"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/dinotxt.py",
+    "path": "third_party/dinov3/dinov3/hub/dinotxt.py",
+    "original_sha256": "6a97e636ad5ecf18e4b7ec667d2707564fc207f298341024257aa87bc175bf50"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/segmentors.py",
+    "path": "third_party/dinov3/dinov3/hub/segmentors.py",
+    "original_sha256": "a6bba5253fb9fb8d059871f89ac7354bdffe516074e357823e6defc2df493a51"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/hub/utils.py",
+    "path": "third_party/dinov3/dinov3/hub/utils.py",
+    "original_sha256": "24d0e4bd083510bb00677ebd0082dd486a1f9c8b8467f98b7fe6109aefc4712d"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/__init__.py",
+    "path": "third_party/dinov3/dinov3/layers/__init__.py",
+    "original_sha256": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/attention.py",
+    "path": "third_party/dinov3/dinov3/layers/attention.py",
+    "original_sha256": "dfc21def6ba17d00cba18ea23a8726e7f1dd5a0dc8e43510852c999a173d37a8"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/block.py",
+    "path": "third_party/dinov3/dinov3/layers/block.py",
+    "original_sha256": "809a3615ec93019042ab440f31c21d5242186d9e503c67ac0f42a324ceae1950"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/dino_head.py",
+    "path": "third_party/dinov3/dinov3/layers/dino_head.py",
+    "original_sha256": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/ffn_layers.py",
+    "path": "third_party/dinov3/dinov3/layers/ffn_layers.py",
+    "original_sha256": "fa2caadb52ff43a7e6888966a00ee07842fed9fd05c68305962cc1577d221fbe"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/fp8_linear.py",
+    "path": "third_party/dinov3/dinov3/layers/fp8_linear.py",
+    "original_sha256": "f5b4d46e8c159e1830bc99968baf9a2e8070f0c46d0dda235eac46cc11c34f47"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/layer_scale.py",
+    "path": "third_party/dinov3/dinov3/layers/layer_scale.py",
+    "original_sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/patch_embed.py",
+    "path": "third_party/dinov3/dinov3/layers/patch_embed.py",
+    "original_sha256": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/rms_norm.py",
+    "path": "third_party/dinov3/dinov3/layers/rms_norm.py",
+    "original_sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/layers/rope_position_encoding.py",
+    "path": "third_party/dinov3/dinov3/layers/rope_position_encoding.py",
+    "original_sha256": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/logging/__init__.py",
+    "path": "third_party/dinov3/dinov3/logging/__init__.py",
+    "original_sha256": "50d75171a7b1828f669023e675d26227c7570a75e9bc3e7e31edb921abfe120f"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/logging/helpers.py",
+    "path": "third_party/dinov3/dinov3/logging/helpers.py",
+    "original_sha256": "9dec29734a5c88d9b8e1763fff2c738ec1ad2c3a1ead40acb216dcf12a94d5aa"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/loss/__init__.py",
+    "path": "third_party/dinov3/dinov3/loss/__init__.py",
+    "original_sha256": "84e8e7856fc08af844accd51f4588fce0c85c33890f72e88c11bbb3b9c1d6caa"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/loss/dino_clstoken_loss.py",
+    "path": "third_party/dinov3/dinov3/loss/dino_clstoken_loss.py",
+    "original_sha256": "2ee114321a3c38b4e9426bb200f3c13de4672e6531a7a3e30c4b399881529166"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/loss/gram_loss.py",
+    "path": "third_party/dinov3/dinov3/loss/gram_loss.py",
+    "original_sha256": "d4ec062c53cc40f039878fb90f88844ceb15c3685e695640038c6f56988a2256"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/loss/ibot_patch_loss.py",
+    "path": "third_party/dinov3/dinov3/loss/ibot_patch_loss.py",
+    "original_sha256": "bfb9e358aaf872949ce3150c22599f89f7dbdafd0137652b7e1944a9853f40d4"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/loss/koleo_loss.py",
+    "path": "third_party/dinov3/dinov3/loss/koleo_loss.py",
+    "original_sha256": "942ccd42b06105c95c04d62ca2105d9e5bf22987b509c19fb81a645fac5a8cf6"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/models/__init__.py",
+    "path": "third_party/dinov3/dinov3/models/__init__.py",
+    "original_sha256": "3e993968b5ffe2be00eaea8b16cd52f8d165ac683b9035d3ceb769cffdd72914"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/models/convnext.py",
+    "path": "third_party/dinov3/dinov3/models/convnext.py",
+    "original_sha256": "ab969325158df58f4b0957f81f77d543392df61611dc0c72e89ba172ecdf0fb9"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/models/vision_transformer.py",
+    "path": "third_party/dinov3/dinov3/models/vision_transformer.py",
+    "original_sha256": "1af05405e19bc42188f80bfcb204b87ed1ec72af998e0bbd4658a85d7fae93f2"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/run/__init__.py",
+    "path": "third_party/dinov3/dinov3/run/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/run/init.py",
+    "path": "third_party/dinov3/dinov3/run/init.py",
+    "original_sha256": "dc28d4f4a0fdb4886af9a3194dcddf7807e9523df0ca58ead5563bb3f4e442b4"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/run/submit.py",
+    "path": "third_party/dinov3/dinov3/run/submit.py",
+    "original_sha256": "2233b810f5ebb640d528b0dc7e491557073f35c2e20d2cd39cdf214684d7019c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/thirdparty/CLIP/__init__.py",
+    "path": "third_party/dinov3/dinov3/thirdparty/CLIP/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/thirdparty/CLIP/clip/__init__.py",
+    "path": "third_party/dinov3/dinov3/thirdparty/CLIP/clip/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/thirdparty/CLIP/clip/simple_tokenizer.py",
+    "path": "third_party/dinov3/dinov3/thirdparty/CLIP/clip/simple_tokenizer.py",
+    "original_sha256": "b03605a8e83952e3202659351cb0d695b0c11927089bb6bf3d0379f5ac1144c7"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/thirdparty/__init__.py",
+    "path": "third_party/dinov3/dinov3/thirdparty/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/__init__.py",
+    "path": "third_party/dinov3/dinov3/train/__init__.py",
+    "original_sha256": "a6040401fdef80c38b7bed37e43c657dc908dfefe481244c99f65eb622e42dd1"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/cosine_lr_scheduler.py",
+    "path": "third_party/dinov3/dinov3/train/cosine_lr_scheduler.py",
+    "original_sha256": "671d3a7c16fcc7b73a6ff76d702664ccfe141895d89bc9d0137bee6a3ce4b02c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/multidist_meta_arch.py",
+    "path": "third_party/dinov3/dinov3/train/multidist_meta_arch.py",
+    "original_sha256": "34f04732ad1d9150e120f3eab52b3711883d5bf8e4048bab83e0dc0816073c8c"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/param_groups.py",
+    "path": "third_party/dinov3/dinov3/train/param_groups.py",
+    "original_sha256": "b3d638888c03a63b7bc585c2f886ca4cedb6ba24f4e9511bfa3840f97b90716f"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/ssl_meta_arch.py",
+    "path": "third_party/dinov3/dinov3/train/ssl_meta_arch.py",
+    "original_sha256": "1b11d7f9f94e6292c3be141ac50ebd10d7357103cb63ce4965b69e3da4ff0781"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/train/train.py",
+    "path": "third_party/dinov3/dinov3/train/train.py",
+    "original_sha256": "1f979df26be1f1a7344d5a75716a95470b86b3fdd0294a5c69abe48a85ec576e"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/utils/__init__.py",
+    "path": "third_party/dinov3/dinov3/utils/__init__.py",
+    "original_sha256": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/utils/cluster.py",
+    "path": "third_party/dinov3/dinov3/utils/cluster.py",
+    "original_sha256": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/utils/custom_callable.py",
+    "path": "third_party/dinov3/dinov3/utils/custom_callable.py",
+    "original_sha256": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/utils/dtype.py",
+    "path": "third_party/dinov3/dinov3/utils/dtype.py",
+    "original_sha256": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419"
+  },
+  {
+    "original_path": "/ssd/polyu/TransDepth/vendor/dinov3/dinov3/utils/utils.py",
+    "path": "third_party/dinov3/dinov3/utils/utils.py",
+    "original_sha256": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/__init__.py",
+    "path": "third_party/transnormal/transnormal/__init__.py",
+    "original_sha256": "db3280e0a802c77fac7fd3991729fc82dd699ae2e271bda6d0f2651e6b6a215b"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/dino_encoder.py",
+    "path": "third_party/transnormal/transnormal/dino_encoder.py",
+    "original_sha256": "fff0c28a4bf5c2406408d2a6b120f52953388a3f9518c3b0bab50149842161a4"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/evaluation/__init__.py",
+    "path": "third_party/transnormal/transnormal/evaluation/__init__.py",
+    "original_sha256": "67cdb716053ea72ffece8132f7e0f3052326a95aa9dc4ee2b95e375f8f41705b"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/evaluation/cli.py",
+    "path": "third_party/transnormal/transnormal/evaluation/cli.py",
+    "original_sha256": "2c607998530ddf9342c5abf48a70f278ac0dd0f8c6a7601b621756bdc5f5dd57"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/evaluation/data.py",
+    "path": "third_party/transnormal/transnormal/evaluation/data.py",
+    "original_sha256": "55de6d12cdf9152523c40ec92deef0fc57ddf7b8b1934cb0994af82e55d3761d"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/evaluation/metrics.py",
+    "path": "third_party/transnormal/transnormal/evaluation/metrics.py",
+    "original_sha256": "ac6cfffb8bb62ac0ee9feaf75d5e2568cafaac7379572396b995d16a94723c9c"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/pipeline.py",
+    "path": "third_party/transnormal/transnormal/pipeline.py",
+    "original_sha256": "e87f2fc883691b6d42e96aada7557d49330ea98d11bc7907fa4f3fd7cbdc1373"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/__init__.py",
+    "path": "third_party/transnormal/transnormal/training/__init__.py",
+    "original_sha256": "f68ebae38ad67ec39fc7b60fc13feb4c387e48ac3f6edc1a6cfd0e917af662f2"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/checkpointing.py",
+    "path": "third_party/transnormal/transnormal/training/checkpointing.py",
+    "original_sha256": "d9869f8a4e42679d24d5f12ac9ec7816589582ebff29ef34ed3461bbc8e66167"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/__init__.py",
+    "path": "third_party/transnormal/transnormal/training/data/__init__.py",
+    "original_sha256": "9039ec5de1e452f4e386d1d15cdae0e114c95b2c0cbf802fd2e1e64dd09f1fb8"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/dataset.py",
+    "path": "third_party/transnormal/transnormal/training/data/dataset.py",
+    "original_sha256": "b509f22e89971264583a66905124cb93d1747b0fe4208aeb5878d9b0e21be65a"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/index.py",
+    "path": "third_party/transnormal/transnormal/training/data/index.py",
+    "original_sha256": "bd946fccee5dd83c9db775b3747f9f0818089b97212b39062461183e2894ec07"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/mixture.py",
+    "path": "third_party/transnormal/transnormal/training/data/mixture.py",
+    "original_sha256": "02abecaf1ef4ce68d75be9924be3910d88ac0523561d36299fd92150c65e8532"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/prepare_vkitti_normals.py",
+    "path": "third_party/transnormal/transnormal/training/data/prepare_vkitti_normals.py",
+    "original_sha256": "5a0f5128b5b9aac3bb22ec912db379e1078e888eff5318a781103eca91057d3f"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/data/transforms.py",
+    "path": "third_party/transnormal/transnormal/training/data/transforms.py",
+    "original_sha256": "d529228f401cf618e89b47f4850df4375efded53b415375774e48750c8d56250"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/initialization.py",
+    "path": "third_party/transnormal/transnormal/training/initialization.py",
+    "original_sha256": "585d3a9051f685a431b3210c55b5faa151c7c7e0f6e3cc440486a6f06c3ce961"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/losses.py",
+    "path": "third_party/transnormal/transnormal/training/losses.py",
+    "original_sha256": "d37d9d379b4f0be208b2191e8d1c51eac8c9a551f0691de497e8651ff6d212d2"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/training/trainer.py",
+    "path": "third_party/transnormal/transnormal/training/trainer.py",
+    "original_sha256": "2330af7977634309f118da10429a9094176c5df4e5e15f64215658acac53e72b"
+  },
+  {
+    "original_path": "/home/hengxianli/TransNormal/TransNormal/transnormal/utils.py",
+    "path": "third_party/transnormal/transnormal/utils.py",
+    "original_sha256": "4a0657892be86098ce549e1bf5463a9d5d31f0ab1bf69248d02b3c0e80a54032"
+  },
+  {
+    "original_path": "/home/hengxianli/TransDepth_FeatureGeometry_Integrated/src/transdepth/models/backbone/dinov3.py",
+    "path": "third_party/stage1_support/dinov3_features.py",
+    "original_sha256": "aa6a9aca2882527211ea682b90b9dd222d9730376d74811f0195b047956de628"
+  }
+]

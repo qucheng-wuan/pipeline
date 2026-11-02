@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scope": "full metadata mapping/role/K/flags/order equality plus all required data paths exist; RGB bytes and GT arrays not read",
+  "unique_samples": 46679,
+  "roles": {
+    "evaluation": 1226,
+    "train": 45453,
+    "val": 704
+  },
+  "all_native_intrinsics_match": true,
+  "all_normal_validity_flags_match": true,
+  "first_seen_order_matches": true,
+  "training_role_overlap": false,
+  "normal_camera_valid_counts": {
+    "True": 33023,
+    "False": 13656
+  },
+  "compressed_bytes": 5033376,
+  "reference_manifest_sha256": "491a6888516b6a26ec5c413eb511940824035b8b79c97858f3d5b719f2ce1c9f",
+  "materialized_complete_sha256": "4ee9be57d4b4e25d38bf02fdd8e630a677ff712ae34f98e97172ef23034f9c1c",
+  "cpu_fixture_tests_passed": 4,
+  "cpu_test_xml_sha256": "fdb8ccaf32219e00c1e45ba8d0a885d7597f2b48f2e2e2bc003280cbd3ab1ada",
+  "script_sha256": "84817123d3290ad2eb6363f8ec77d6cd2babeba95e85f04e922a9c83914a528d"
+}

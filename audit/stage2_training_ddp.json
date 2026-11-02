@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "diagnostic_smoke": true,
+  "formal_training_claimed": false,
+  "epochs": 3,
+  "updates": 9,
+  "input_alphas": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "world_size": 2,
+  "stage1_source": "actual sealed portable RGB Stage1 predictions",
+  "training_complete_sha256": "f887c13433641c9f723763d265de2b055634a8ced44fc4caec1629d293e94e27",
+  "config_sha256": "8252d9c788c8f0d24ac4ced5975527ade32b8a3e10a062b575d2d81e94713adb",
+  "ranks": [
+    {
+      "rank": 0,
+      "resume_sha256": "7864255fa22af74243c856f3a6cd5acb624c0b3d02076ecc498a4e93d5ec0709",
+      "optimizer_changes_sha256": "e33a23422811d367bfd529ea2dce660a45a872236abda3022c302d9497f227a8",
+      "group_max_abs_change": {
+        "spvnas": 0.0001001507043838501,
+        "lidf": 0.00010328181087970734,
+        "adapters": 0.0010320162400603294
+      }
+    },
+    {
+      "rank": 1,
+      "resume_sha256": "a87d3c94ad2150d128a6af54af5674fbe88f12706c4d9b7d8321850051081114",
+      "optimizer_changes_sha256": "e33a23422811d367bfd529ea2dce660a45a872236abda3022c302d9497f227a8",
+      "group_max_abs_change": {
+        "spvnas": 0.0001001507043838501,
+        "lidf": 0.00010328181087970734,
+        "adapters": 0.0010320162400603294
+      }
+    }
+  ],
+  "transparent_input_is_always_P": "enforced by unchanged tested curriculum mixer",
+  "finished_unix": 1793552235.2496464,
+  "runner_sha256": "ddeac8120d42dc54c210211460426a98b78eb91546b796b1a533d32d16a8088b",
+  "executions": [
+    {
+      "command": [
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc-per-node=2",
+        "--log-dir",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/torchrun",
+        "--redirects",
+        "3",
+        "--tee",
+        "3",
+        "-m",
+        "transparent_depth.train_stage2",
+        "--config",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/smoke.config.json",
+        "--input-manifest",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/manifests/input_manifest.jsonl",
+        "--label-manifest",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/manifests/label_manifest.jsonl",
+        "--stage1-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/stage1",
+        "--label-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/labels",
+        "--assets-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/training_initialization",
+        "--output",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/training",
+        "--stop-after-epoch",
+        "1"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/fresh.log",
+        "sha256": "f886388eee43bb5ea4b073561abb056b9d122aecd61d4d1ed970a4424904c978"
+      }
+    },
+    {
+      "command": [
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc-per-node=2",
+        "--log-dir",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/torchrun",
+        "--redirects",
+        "3",
+        "--tee",
+        "3",
+        "-m",
+        "transparent_depth.train_stage2",
+        "--config",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/smoke.config.json",
+        "--input-manifest",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/manifests/input_manifest.jsonl",
+        "--label-manifest",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/manifests/label_manifest.jsonl",
+        "--stage1-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/stage1",
+        "--label-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/prepared/labels",
+        "--assets-root",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/training_initialization",
+        "--output",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/training",
+        "--resume"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/resume.log",
+        "sha256": "b74de3facca6d8eff56410c950a70ae40c6b9efeb2adfa7258a7a7c11ac7fdba"
+      }
+    }
+  ],
+  "stage1_acceptance": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/complete.json",
+    "sha256": "af7ee53a552e658438748bfd2dee7be34dbc7cab852566782c6148816b820ae3"
+  },
+  "source_predictions": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/fresh_training12/predictions.jsonl",
+    "sha256": "f760a2a8d227e1e8e1bec5d2932ed72ee3aebc12066945b778ca0eef116c08ad"
+  },
+  "training_contract": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/training/contract.json",
+    "sha256": "f923c1e2c41b2fe2a95097a0a2943e03339a4d4f47f18d7241c4eaf67514745e"
+  }
+}

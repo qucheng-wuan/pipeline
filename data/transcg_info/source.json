@@ -1,0 +1,31 @@
+{
+  "official_page": "https://graspnet.net/transcg",
+  "official_archive": "https://drive.google.com/file/d/18LkbelKNTURF-8f8N-ykzs79FJ013knH/view",
+  "retrieved_from": "https://huggingface.co/datasets/kronecker0122/transcg/resolve/main/transcg-info.zip",
+  "reason": "Official Google Drive reported quota exceeded. Mirror claims unchanged official archive; root split cross-checked against all 130 local scene metadata.",
+  "archive_sha256": "168edc435e297da64677d75b225d50ccc08f0ee4521ee2f1bbbce46f535cfa22",
+  "files": {
+    "metadata.json": "9232d6cd9186edb0fbc2db6f5972207561a7e3828708cc052531aafe2d8802ed",
+    "camera_intrinsics/1-camIntrinsics-D435.npy": "46e233ee54ab30d07c24d5a4a039be9c1ff5425b4429b14238780d12e44432d3",
+    "camera_intrinsics/2-camIntrinsics-L515.npy": "9008a25b717a1880d6997097abcc19b545bfde3f6659c5fd4c092f50bde9e3bf"
+  },
+  "calibration_evidence": {
+    "pixel_centres": "https://dev.realsenseai.com/docs/projection-in-realsense-sdk-2-0/",
+    "alignment": "https://github.com/Galaxies99/TransCG-data-collector/blob/main/camera/realsense.py",
+    "gt_units": "https://github.com/Galaxies99/TransCG-data-collector/blob/main/postprocessing/depth_renderer.py",
+    "reader": "https://github.com/Galaxies99/TransCG/blob/main/datasets/transcg.py",
+    "native_hw": [
+      720,
+      1280
+    ],
+    "pixel_convention": "integer_pixel_centres",
+    "depth_aligned_to": "color",
+    "evidence_sha256": {
+      "camera/realsense.py": "af2d7e6f61c71f3a59eda3ea22c991ef6ac13526089b4099fbeaf0afc8ad429e",
+      "postprocessing/depth_renderer.py": "8b6f3a85d21e8ea65ff4997daf3559b739e83bc184266ea76f0d993fff515706"
+    },
+    "D435_collector_matrix_match": true,
+    "L515_collector_matrix_match": true,
+    "collector_commit": "ece270e9324a7554f5fdc4905ea424839ff97a6f"
+  }
+}

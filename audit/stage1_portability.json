@@ -1,0 +1,168 @@
+{
+  "bindings": {
+    "acceptance_policy": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/numeric_policy_user_confirmed_v1.json",
+      "sha256": "f8c9fbf7a5320f6026065b6288c47a117b9622d44e60253b613b957e0007a6fc"
+    },
+    "asset_manifest": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/provenance/stage1_assets.json",
+      "sha256": "01b4578f7c76e0ab2e59a116cba4c3997e757856eb728751574536e2aa7a6489"
+    },
+    "batch_manifest": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/training_smoke_roster/rgb_only.jsonl",
+      "sha256": "b154abf902917dc8eafd1b3158099da86fb1cc532ceb272935892992eefb9337"
+    },
+    "controller": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/run_stage1_validation_v2.py",
+      "sha256": "22caa19884fca40539cccbb9af258ee6d2599dfc2dc6c9151fd83052ea1f65a4"
+    },
+    "legacy_checkpoint": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_laplacian_train_20261023/runs/full_pyramid_s20261023/epoch08.pt",
+      "sha256": "db5f9b61e767dea8bd9ad93c45779327f640dfb8c51bcfeccfee11c333f74256"
+    },
+    "policy_comparator": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/stage1_acceptance_policy.py",
+      "sha256": "95b1cb07567fb153e073e3fe6448dfe1731a6c3499292c307c551901c0c3888c"
+    },
+    "requirements": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/requirements-stage1.txt",
+      "sha256": "dc75220a31f407bc8564f8147bd6c9c527becde62db126b8d26ab058e40514c5"
+    },
+    "reuse_case_00_legacy_complete.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy/complete.json",
+      "sha256": "223627daeabad7ae4d83a456bcabcda7d74bb3778086da86304d8c328446bfc8"
+    },
+    "reuse_case_00_legacy_portable_comparison.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy_portable_comparison.json",
+      "sha256": "3cd610ce9d25f511e5b97f10457b30f686a46d2ddaf7126fefb300733453450e"
+    },
+    "reuse_case_00_portable_complete.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/portable/complete.json",
+      "sha256": "65e1a4ac37d63fdbacc0bbd75a6946333e5eeba29dfeadf1df809fffab2fbaeb"
+    },
+    "reuse_executions.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/executions.json",
+      "sha256": "80b7b37fa7c2c00643a79bdd3c9435dc96c2b583436637b9e4ada79b68a21b3c"
+    },
+    "reuse_status.json": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/status.json",
+      "sha256": "eb33e2732e95b39214631d4cf6dbcefb6733fd2dea9f4874cf8742710a02c2d0"
+    },
+    "source_inventory": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/provenance/stage1_runtime_sources.json",
+      "sha256": "5b716c4520258e36c8c8543eab3e3e71c21132b0d159b5ebb2101875ffa12f99"
+    },
+    "trace_cases": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/trace_cases.jsonl",
+      "sha256": "1a9848ac254df7885ec83e3d223856000db8a605daa37784a4f1c96f3a6c813c"
+    }
+  },
+  "executions": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/executions.json",
+    "sha256": "b39f9f92b50d9739baaa9ae0718b95126c9f3f227f94ebb15e5e05e45b99fddf"
+  },
+  "finished_unix": 1793551506.2509322,
+  "fresh_environment_probe": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/environment_probe.json",
+    "sha256": "d636b7486f6736dd6a17bd8cda8a7ece918d887b850ed8cd49655d22d85cdbcf"
+  },
+  "fresh_predictions": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/fresh_training12/predictions.jsonl",
+    "sha256": "f760a2a8d227e1e8e1bec5d2932ed72ee3aebc12066945b778ca0eef116c08ad"
+  },
+  "fresh_predictions_seal": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/fresh_training12/complete.json",
+    "sha256": "b9fe6d4a2363ca6987f3170d326edc3f434ba3eadb13b01e03ac428627674991"
+  },
+  "full_1226_regression_executed": false,
+  "nonmetric_intermediate_equivalence_claimed": false,
+  "numeric_tolerance_automatically_relaxed": false,
+  "numeric_tolerance_user_authorized": true,
+  "original_zero_tolerance_failure": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy_portable_comparison.json",
+    "sha256": "3cd610ce9d25f511e5b97f10457b30f686a46d2ddaf7126fefb300733453450e"
+  },
+  "policy_comparisons": [
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_00/legacy_portable_policy_comparison.json",
+      "sha256": "50c74957707547059d09733e68835dc45e3b8bf9aad6863ee46b4b9f19e2355a"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_01/legacy_portable_policy_comparison.json",
+      "sha256": "366fb951a4a459058cb143917a6f6e8c0727bdccf093daf907f3cb8960a39b27"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_02/legacy_portable_policy_comparison.json",
+      "sha256": "711dcb1d8d401542e815f20150ad73317cd4e782e92b00f85bbd6406fe6f7f06"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/relocation_policy_comparison.json",
+      "sha256": "a77f6860d82d9bd8039b0cc91bf7d6717e81b3cab74c6094bd0a24cc6e7641a1"
+    }
+  ],
+  "ready_marker": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage1.ready.json",
+    "sha256": "d37a9a498010cc665b0862faa959123cbf50990a4c0657e63d04438a3e40939d"
+  },
+  "relocation_preparation": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/relocated_project/relocation_preparation.json",
+    "sha256": "3c0f25158945106aa8dc8b2128a61a4c6f7107229bebf24ae8e6cc05164f9c46"
+  },
+  "reused_evidence": [
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_00_reused_evidence.json",
+      "sha256": "965208e9b34b07270fd420400bcbb835121354a9fe98ee971df06e3e5ecf398e"
+    }
+  ],
+  "schema": "portable_stage1_validation_complete_v2",
+  "status": "passed_user_policy",
+  "trace_receipts": [
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy/complete.json",
+      "sha256": "223627daeabad7ae4d83a456bcabcda7d74bb3778086da86304d8c328446bfc8"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/portable/complete.json",
+      "sha256": "65e1a4ac37d63fdbacc0bbd75a6946333e5eeba29dfeadf1df809fffab2fbaeb"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_01/legacy/complete.json",
+      "sha256": "3cb050c8a59755855b0064f22bc4c227654a99f036c4d53f217236373182160d"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_01/portable/complete.json",
+      "sha256": "02219098739fe4eba671d52f04d27e16c37c498fc7a58ac089666f465615c1af"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_02/legacy/complete.json",
+      "sha256": "ef3c92db1be2c9a84a38ee303c5afe017d28f24b4c27644fe5d00d7ff9457d55"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_02/portable/complete.json",
+      "sha256": "fcd298a4660d3655bc403afedc0a7097d8e6ace95797954d581a0486e9c99aca"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/relocated_trace/complete.json",
+      "sha256": "6e8c1d79349c89ac21958acfbc8ee456aa8eaca1a2ca520e8327603f2a305ade"
+    }
+  ],
+  "zero_tolerance_comparisons": [
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_00/legacy_portable_policy_comparison.zero_tolerance.json",
+      "sha256": "3cd610ce9d25f511e5b97f10457b30f686a46d2ddaf7126fefb300733453450e"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_01/legacy_portable_policy_comparison.zero_tolerance.json",
+      "sha256": "3c6cc55204e440739dbf372a063293a984b852b96a7b642a54573bcb40cc3dd6"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/case_02/legacy_portable_policy_comparison.zero_tolerance.json",
+      "sha256": "9ccb5ea9701d475652790ba1c6d2a4f1a9492fa6f6435d18ce0aea1f6443c885"
+    },
+    {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/relocation_policy_comparison.zero_tolerance.json",
+      "sha256": "7cba6cc3c88dc1ac8a3320e03108ad54d1684d9298e86e43555744d4a71ac2ba"
+    }
+  ],
+  "zero_tolerance_equivalence_claimed": false
+}

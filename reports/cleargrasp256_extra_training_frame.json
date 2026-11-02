@@ -1,0 +1,84 @@
+{
+  "sample_id": "cleargrasp/train/square-plastic-bottle-train/000004501",
+  "role": "train",
+  "scene": "square-plastic-bottle-train",
+  "camera": "synthetic_renderer",
+  "domain": "synthetic",
+  "official_split": "train",
+  "status": "ok",
+  "native_hw": [
+    1080,
+    1920
+  ],
+  "intrinsics_native": [
+    [
+      1386.4160255812183,
+      0.0,
+      959.5
+    ],
+    [
+      0.0,
+      1386.4159740053753,
+      539.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "intrinsics256": [
+    [
+      184.85547007749577,
+      0.0,
+      127.5
+    ],
+    [
+      0.0,
+      328.631934579052,
+      127.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_sha256": {
+    "rgb": "8943031b21c8762de58bd11e533761d96abcae5e720cf726c8bd731f8493aebc",
+    "gt": "32e8aeafd386e5bc1fd8062181d5ce66c1236d776b8f7940229fb5ad3f1efec8",
+    "mask": "016506031ef4ceff0fccf115625b591a269b6ee12fb84bbc67fdc451d73a1bd8",
+    "calibration": "e27d0dd1b96e51b507075aa002c7ebae74bc2395f096ea4deae0d01abf618959"
+  },
+  "decoded_rgb_sha256": "47d5ecf7ca2a53a1ad8d300ba4c9fc0ed8bdb9f81cf3022474d299db9c13796b",
+  "rgb_relative": "square-plastic-bottle-train/rgb-imgs/000004501-rgb.jpg",
+  "mask_encoding": [
+    0,
+    255
+  ],
+  "depth_unit": "m",
+  "depth_coordinate": "optical_z",
+  "depth_conversion": false,
+  "gt_pixel_decode": true,
+  "exr_complete": true,
+  "optional_normal_present": true,
+  "normals_used": "existing_loss_GT256_K256_dx_cross_dy_valid_current_right_down",
+  "native_positive_valid": 2073600,
+  "valid256": 65536,
+  "transparent_valid256": 4638,
+  "zero_coverage256": 0,
+  "gt_native_positive_range_m": [
+    0.31005859375,
+    1.53125
+  ],
+  "historical_duplicate": {
+    "record": "provenance/stage1_historical/tomnet_full_v1.json",
+    "record_sha256": "8b278f6b68798ca127295cfb137b7096b5c775481b4f8f3bd204b6ad60206a02",
+    "same_rgb_sha256_path_in_historical_reference": "cleargrasp-dataset-test-val/synthetic-val/square-plastic-bottle-val/rgb-imgs/000000114-rgb.jpg",
+    "old_reference_roles": [
+      "evaluation"
+    ],
+    "active_in_this_experiment": false,
+    "current_policy": "retain train frame; synthetic-val unused; require no train/real-val duplicate"
+  }
+}

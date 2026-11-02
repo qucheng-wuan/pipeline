@@ -1,0 +1,135 @@
+{
+  "schema_version": "moge_transparent_transnormal_teacher_r5_plan_v1",
+  "method_name": "O4-anchored spatial depth refinement with the official TransNormal full-image normal prior",
+  "seed": 20261008,
+  "base_config": "/home/hengxianli/MoGe_Transparent_Fusion/configs/tomnet_full_v1.json",
+  "base_config_sha256": "8b278f6b68798ca127295cfb137b7096b5c775481b4f8f3bd204b6ad60206a02",
+  "r4_plan": "/home/hengxianli/MoGe_Transparent_Fusion/configs/gift_normal_r4_v1.json",
+  "r4_plan_sha256": "00d679b811c6db9150cde4655353c2fca6b7b72db5c6474ea0fd1c63195c5848",
+  "output_root": "/ssd/polyu/moge_transparent_transnormal_r5_20261008",
+  "inference_contract": {
+    "external_input": "RGB only",
+    "external_output": "corrected metric optical-z depth only",
+    "internal_components": ["frozen MoGe", "frozen project DINOv3", "frozen TOM-Net", "frozen official TransNormal teacher", "frozen O2 anchor", "frozen O4 anchor", "trainable spatial refiner"],
+    "normal_output_exposed": false,
+    "intrinsics_are_model_inputs": false,
+    "teacher_is_required_at_training_and_inference": true,
+    "rgb_runtime_entrypoint": "moge_transparent_fusion.gift_normal_r5_infer",
+    "distilled_variant_is_a_separate_future_ablation": true
+  },
+  "assets": {
+    "transnormal_source": "/home/hengxianli/TransNormal/TransNormal",
+    "transnormal_source_commit": "11b573907151e665426f02e5ccedee294bf0e058",
+    "transnormal_revision": "796f97ad3d82ea2e455bed88afe3c33aca8e115f",
+    "transnormal_model": "/ssd/polyu/moge_transparent_transnormal_r5_20261008/models/transnormal_796f97ad",
+    "transnormal_unet": {
+      "path": "unet/diffusion_pytorch_model.safetensors",
+      "bytes": 3470311272,
+      "sha256": "4d7f8e2935af42a18c6a7b2351b84c4f4dae042e08e133ef19bde6cc82584bf1"
+    },
+    "transnormal_vae": {
+      "path": "vae/diffusion_pytorch_model.safetensors",
+      "bytes": 334643276,
+      "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+    },
+    "transnormal_projector": {
+      "path": "cross_attention_projector.pt",
+      "bytes": 2625220,
+      "sha256": "d8d607cc08ece6620e1caa7af375a7656596e190e9070bb28c87eef077aa2386"
+    },
+    "dinov3_model": "/ssd/polyu/TransDepth/models/dinov3/hf-vith16plus-lvd1689m",
+    "dinov3_revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc",
+    "dinov3_weights": {
+      "path": "model.safetensors",
+      "bytes": 3362432800,
+      "sha256": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d"
+    },
+    "o2_checkpoint": {
+      "path": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/runs/o2_tom/checkpoints/best.pt",
+      "sha256": "cbd0ca2258e870708c0325884010879a362963af49f578f1c8bbeca979451de1"
+    },
+    "o4_checkpoint": {
+      "path": "/ssd/polyu/moge_transparent_fusion_tomnet_full_20261004/runs/o4_tom/checkpoints/best.pt",
+      "sha256": "ce135c1853973ed777a5fab204b28fc6d7d2d76adca4fd600fdc67e13abf5629"
+    }
+  },
+  "teacher": {
+    "required": true,
+    "timestep": 999,
+    "processing_resolution": 768,
+    "dtype": "bfloat16",
+    "rng_seed_rule": "uint64_le(sha256('transnormal-r5-v1|' + sample_id)[:8]) mod 2^31",
+    "source_coordinate": "+X left, +Y up, +Z toward viewer",
+    "target_coordinate": "OpenCV camera +X right, +Y down, +Z forward; front-facing normal (0,0,-1)",
+    "coordinate_conversion": "normalize(-(2 * output_01 - 1))",
+    "canvas_hw": [384, 512],
+    "cache_root": "/ssd/polyu/moge_transparent_transnormal_r5_20261008/cache/transnormal_teacher_full_v1",
+    "manifest": "/ssd/polyu/moge_transparent_transnormal_r5_20261008/manifests/transnormal_teacher_full_v1.jsonl",
+    "confidence": {
+      "pair_consensus_floor_cosine": 0.5,
+      "reject_against_gt_degrees": 45.0,
+      "normal_edge_p99": true
+    }
+  },
+  "model": {
+    "anchor_variant": "o4",
+    "comparison_anchor": "o2",
+    "anchor_frozen": true,
+    "anchor_initialization": "strict checkpoint load",
+    "step_zero_reproduction": "bit exact O4 forward",
+    "dino_channels_per_layer": 24,
+    "spatial_channels": 64,
+    "decoder_scales": [8, 4, 2, 1],
+    "context_dilations": [1, 2, 4, 8],
+    "outline_classes": ["none", "depth_discontinuity", "normal_discontinuity"]
+  },
+  "losses": {
+    "current": {"depth": 1.0, "gradient": 0.25, "ranking": 0.1, "smoothness": 0.01, "background": 0.25},
+    "raw_metric_depth": 0.5,
+    "geometry_invariance": 0.05,
+    "gt_full_normal": 0.05,
+    "teacher_full_normal": 0.05,
+    "normal_wavelet": 0.1,
+    "tangent_plane": 0.025,
+    "occlusion_jump": 0.1,
+    "outline": 0.025,
+    "best_anchor_no_regress": 0.1,
+    "region_mean_log_offset": 0.1,
+    "geometry_loss_warmup_fraction": 0.1,
+    "normal_log_depth_jump_threshold": 0.05,
+    "normal_target_neighbor_degrees": 30.0,
+    "no_regress_margin_log": 0.005
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size_per_gpu": 1,
+    "gradient_accumulation": 4,
+    "world_size": 8,
+    "cleargrasp_global_effective_batch_size": 32,
+    "transnormal_global_pair_batch_size": 8,
+    "transnormal_global_image_batch_size": 16,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "minimum_learning_rate": 0.000001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "amp_dtype": "bfloat16",
+    "cleargrasp_steps_per_transnormal_pair_step": 4,
+    "never_repeat_a_transnormal_prefix_within_an_epoch": true
+  },
+  "selection": {
+    "anchor": "frozen O4",
+    "cleargrasp_raw_abs_log_max_relative_regression": 0.01,
+    "cleargrasp_aligned_abs_log_max_relative_regression": 0.01,
+    "cleargrasp_background_drift_max_relative_regression": 0.01,
+    "cleargrasp_worst_decile_max_relative_regression": 0.01,
+    "primary": "geometric mean of TransNormal internal GCE_log and directed normal mean-angle ratios",
+    "booster_used": false,
+    "transnormal_official_test_used": false
+  },
+  "license_contract": {
+    "use": "non-commercial research",
+    "datasets": "CC BY-NC 4.0",
+    "copy_transnormal_source_code": false
+  }
+}

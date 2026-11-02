@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "scope": "fresh install and CPU runtime/import checks only; CUDA numerical checks pending",
+  "cuda_initialized": false,
+  "python": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+  "versions": {
+    "torch": "2.1.2+cu121",
+    "torchvision": "0.16.2+cu121",
+    "torch_scatter": "2.1.2+pt21cu121",
+    "torchsparse_commit": "385f5ce8718fcae93540511b7f5832f4e71fd835",
+    "torchsparse_version": "2.1.0"
+  },
+  "pip_check": "No broken requirements found.",
+  "torchsparse_source_commit": "385f5ce8718fcae93540511b7f5832f4e71fd835",
+  "torchsparse_fresh_source_compile": true,
+  "gcc": "gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "torchsparse_binary": [
+    {
+      "file": "backend.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "c8eaaf475f2211a4156da3029494c46cb84073c7975ccf53a9c69168d2ea7d82"
+    }
+  ],
+  "fresh_environment_no_old_site_packages": true,
+  "official_cached_torch_wheels_sha_verified": true,
+  "torchsparse_wheel_sha256": "e01a05d324c46b1cebac4887e774d4934ade64b9a56c5a31f7c4c09aeb3e3b9f",
+  "cuda_toolchain_version": "12.1",
+  "environment_freeze_sha256": "39daf9ce628cf438b3888f829e30b0ab12bad7059511a4dba2466aadfcbd37dc",
+  "cpu_test_groups": {
+    "stage2_six_files": {
+      "passed": 47
+    },
+    "preparation_after_new_policy_gate": {
+      "passed": 9,
+      "overlap_with_previous_group": 8
+    },
+    "report_builder": {
+      "passed": 13
+    },
+    "cleargrasp_metadata_rosters": {
+      "passed": 4
+    }
+  },
+  "gpu_training_smoke": {
+    "status": "passed",
+    "report": "stage2_fresh_gpu_training.json",
+    "sha256": "0b5b13198bd0d1d3ed12aa002292ee00e67ba72dec5ffd084797ebccba5573ab",
+    "scope": "single and two-GPU diagnostic training, 9 real updates each; no formal quality claim"
+  },
+  "old_torchsparse_binary_reused": false,
+  "cpu_unique_tests_passed": 65,
+  "cpu_test_receipts": [
+    {
+      "file": "stage2_fresh_cpu_tests.xml",
+      "sha256": "a6cb0164d83be9d151c8ad3862c5d60d768299fffefe04319a8f473d71f06e14",
+      "tests": 47,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "file": "stage2_fresh_gate_tests.xml",
+      "sha256": "5fe65c8f6db28b29c8c330aafa86c29dca8f01d0a8e7bfd4ece29234469bdc38",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "file": "stage2_fresh_report_tests.xml",
+      "sha256": "bdd1c9821908b556f88dbe0f1155274aea99129331764895e155873a46f11bdc",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "file": "audit/cleargrasp_rosters_cpu.xml",
+      "sha256": "fdb8ccaf32219e00c1e45ba8d0a885d7597f2b48f2e2e2bc003280cbd3ab1ada",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ]
+}

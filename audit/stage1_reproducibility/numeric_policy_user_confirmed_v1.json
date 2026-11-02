@@ -1,0 +1,117 @@
+{
+  "authorization": {
+    "recorded_unix": 1793548793.2622778,
+    "source": "Explicit user confirmation relayed by parent agent in the active task",
+    "summary_zh": "\u7528\u6237\u63a5\u53d7 V2 \u53ca\u540e\u7eed\u6df1\u5ea6\u8f93\u51fa\u6700\u5927\u7edd\u5bf9\u5dee\u4e0d\u8d85\u8fc7 5e-5 m\u3001\u5e73\u5747\u7edd\u5bf9\u5dee\u4e0d\u8d85\u8fc7 1e-6 m\uff1b\u5176\u4f59\u4e13\u5bb6\u53ca\u5168\u90e8 18 \u9879 V2 \u8f93\u5165\u5fc5\u987b\u9010\u5143\u7d20\u5b8c\u5168\u4e00\u81f4\uff1b\u6a21\u578b\u4e0e\u6743\u91cd\u4e0d\u53d8\u3002"
+  },
+  "depth_limits": {
+    "max_abs_m": 5e-05,
+    "mean_abs_m": 1e-06,
+    "relative_tolerance": 0.0
+  },
+  "diagnostic_only_fields": [
+    "lap/applied/0/output/gate_delta",
+    "lap/applied/0/output/global_log_mean",
+    "lap/applied/0/output/log_correction",
+    "lap/context/0/output",
+    "lap/fixed_bands/0/output/1",
+    "lap/gates/gate_alpha",
+    "lap/gates/gate_delta",
+    "lap/gates/gate_regularization",
+    "lap/mean_coeff/0/output"
+  ],
+  "evidence": {
+    "all_comparisons": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/comparison_contiguous.json",
+      "sha256": "0eb5f23934bfc9a7339d894322dedb6298b6c3fb0f3d5da7d01f8083f44953a2"
+    },
+    "diagnostic_seal": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/diagnostic_seal.json",
+      "sha256": "11b489262a3732cfc582794633c65077ad1ee878a700ca0108d83b95ae77929a"
+    },
+    "legacy_replay": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/legacy_contiguous/complete.json",
+      "sha256": "d891c24ba0b574597f7d2a0b234f188fe122b9b59fbe66b268fa4b0cd1b2b2c9"
+    },
+    "portable_replay": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/portable_contiguous/complete.json",
+      "sha256": "17231a638eff7a711429a262756ce131f929b49f1595d1f50604904041a6d5e6"
+    },
+    "repeat_summary": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/summary_contiguous.json",
+      "sha256": "f7fe6cd40453537811c987c4b19c565363b4a58f5dd1571658c0182b98bc8ac0"
+    },
+    "scatter_reduction_summary": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_v2_diagnostic/reduction_summary.json",
+      "sha256": "cc82c36fea44f22669ab1deee1de46e7657d94a2f69bf61ef98a3ee7b31f6b4c"
+    }
+  },
+  "exact_fields": [
+    "dino/0/output",
+    "far/0/output",
+    "lap/gates/global_alpha",
+    "moge/0/output",
+    "moge/1/output",
+    "r5/0/output/anchor_disagreement",
+    "r5/0/output/bounded_delta",
+    "r5/0/output/delta_log",
+    "r5/0/output/depth",
+    "r5/0/output/o2_delta_log",
+    "r5/0/output/o2_depth",
+    "r5/0/output/o4_delta_log",
+    "r5/0/output/o4_depth",
+    "r5/0/output/outline_logits",
+    "r5/0/output/patch_roi",
+    "r5/0/output/raw_delta",
+    "r5/0/output/refine_raw",
+    "r5/0/output/teacher_confidence",
+    "r5/0/output/teacher_edge",
+    "r5/0/output/teacher_normal",
+    "teacher/0/output/confidence",
+    "teacher/0/output/normal_cv",
+    "tom/0/logits",
+    "tom/0/output",
+    "v2_inputs/0/output/content",
+    "v2_inputs/0/output/context_content",
+    "v2_inputs/0/output/context_descriptor",
+    "v2_inputs/0/output/context_far",
+    "v2_inputs/0/output/context_probability",
+    "v2_inputs/0/output/context_r5",
+    "v2_inputs/0/output/context_rgb",
+    "v2_inputs/0/output/context_teacher_confidence",
+    "v2_inputs/0/output/context_teacher_normal",
+    "v2_inputs/0/output/crop_top_left",
+    "v2_inputs/0/output/far_depth",
+    "v2_inputs/0/output/native_hw",
+    "v2_inputs/0/output/padding_tblr",
+    "v2_inputs/0/output/probability",
+    "v2_inputs/0/output/r5_depth",
+    "v2_inputs/0/output/rgb",
+    "v2_inputs/0/output/teacher_confidence",
+    "v2_inputs/0/output/teacher_normal"
+  ],
+  "frozen_source_inventory": {
+    "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/provenance/stage1_runtime_sources.json",
+    "sha256": "5b716c4520258e36c8c8543eab3e3e71c21132b0d159b5ebb2101875ffa12f99"
+  },
+  "metric_depth_fields": [
+    "final_depth",
+    "lap/applied/0/output/depth",
+    "lap/fixed_bands/0/output/0",
+    "v2/0/output"
+  ],
+  "missing_fields": "reject",
+  "nonmetric_fields_are_not_claimed_exact": true,
+  "numeric_tolerance_automatically_relaxed": false,
+  "numeric_tolerance_user_authorized": true,
+  "original_zero_tolerance_failure": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt03/case_00/legacy_portable_comparison.json",
+    "sha256": "3cd610ce9d25f511e5b97f10457b30f686a46d2ddaf7126fefb300733453450e"
+  },
+  "prior_zero_tolerance_policy_changed_with_user_authorization": true,
+  "require_finite_all_fields": true,
+  "require_positive_metric_depth": true,
+  "require_same_shape_and_dtype": true,
+  "schema": "portable_stage1_user_numeric_policy_v1",
+  "unknown_fields": "reject"
+}

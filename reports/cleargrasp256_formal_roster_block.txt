@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/transparent_depth/prepare_cleargrasp256.py", line 355, in <module>
+    main()
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/transparent_depth/prepare_cleargrasp256.py", line 351, in main
+    print(json.dumps(roster(roots,args.audit_root,args.output,protocol,args.smoke),indent=2))
+  File "/home/QuchengZou/projects/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS/src/transparent_depth/prepare_cleargrasp256.py", line 255, in roster
+    raise ValueError('Full roster blocked by audit errors; no automatic sample exclusion')
+ValueError: Full roster blocked by audit errors; no automatic sample exclusion

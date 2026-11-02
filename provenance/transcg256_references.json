@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/qucheng-wuan/CVPR",
+  "commit": "1c280d11df64f534591947c1f7724bcff5be88ee",
+  "files": {
+    "MODEST/modest_rgb/data.py": {
+      "sha256": "516f58b6b5ba68e0ead789748e20076606190bddd042c06f20e3a11a2ed1fd69",
+      "reviewed": true
+    },
+    "rgb-metric-depth/rgb_metric_depth/rftrans_correction_cache.py": {
+      "sha256": "11ae4a751af637722b406277c49a752571af55826add5bc3f880c22fe3397ccd",
+      "reviewed": true
+    }
+  },
+  "adopted": "Strict frame ID pairing, explicit physical depth decode, half-pixel intrinsics, valid-aware GT integration.",
+  "not_adopted": "Unity PNG encoding, RFTrans centre-square crop, MODEST bilinear GT/all-valid threshold, other project K, GT fill/normalization. This user protocol controls all transforms."
+}

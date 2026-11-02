@@ -1,0 +1,50 @@
+{
+  "schema": "transparent_depth_release_verification_v1",
+  "status": "accepted_for_training_release",
+  "profile": "training_release",
+  "selected_epoch": 58,
+  "checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+  "cached_acceptance_kind": "accepted_approximate_quality",
+  "cached_strict_numerical_parity_passed": false,
+  "full_live_1226_executed": false,
+  "fresh_full80_training_executed": false,
+  "single_and_ddp_training_updates_each": 9,
+  "actual_live_relocated_cli_exitcode": 0,
+  "actual_cli_runtime_classification_review_required": true,
+  "model_math_or_weights_changed_for_portability": false,
+  "evidence": {
+    "stage1": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage1_validation/acceptance_attempt04/complete.json",
+      "sha256": "af7ee53a552e658438748bfd2dee7be34dbc7cab852566782c6148816b820ae3"
+    },
+    "single_training": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke/acceptance.complete.json",
+      "sha256": "caa3a3d3604f20474bde834a28a71e8e5902b62bc709c3e1221dc5a0a181bdd0"
+    },
+    "ddp_training": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_training_smoke_ddp/acceptance.complete.json",
+      "sha256": "ba337396fadf7a3a0aaec8776a3a2a09f69c4be22da37316a721b22208a6a607"
+    },
+    "same_p_quality": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/stage2_quality_acceptance.json",
+      "sha256": "293755700ca998acfd98c142a96c0d6d19f7c485b1fb29ba3262d17799963d3d"
+    },
+    "same_p_statistics": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/stage2_quality_statistics.json",
+      "sha256": "bcf6d3e2a6786ab146e7941601412fc0a1e894ac48549e54a3b48dc09e425c59"
+    },
+    "actual_relocated_cli": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/cli_integration.json",
+      "sha256": "75be786f3215387915ac40ef2cc176058f03b84c99370ee08bb10d30140a408d"
+    },
+    "winner_geometry": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/selected_geometry.json",
+      "sha256": "5192c1438149b5443d253ff25051795e5e9f69c7096486546d6f41a6c4624bfa"
+    }
+  },
+  "candidate_release_config": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/release_promotion/candidate_config.json",
+    "sha256": "8077b65f2de6e130439bd16daff3b7ace39733a24fbe81f85d0ce5c170a5f05e"
+  },
+  "reviewed_unix": 1793559983.5581264
+}

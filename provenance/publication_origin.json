@@ -1,0 +1,7 @@
+{
+  "upstream_repository": "https://github.com/cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+  "upstream_commit": "a5c91fa11ddc9a6b8bce52a014192ba68ce98234",
+  "publication_repository": "https://github.com/qucheng-wuan/pipeline",
+  "changes": "transCG256/ClearGrasp256 adapters, metric-best selection, portability and reproducibility documentation",
+  "history": "New repository snapshot; upstream licenses, notices and provenance retained. Historical absolute paths in evidence are not runtime dependencies."
+}

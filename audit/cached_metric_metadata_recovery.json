@@ -1,0 +1,551 @@
+{
+  "schema": "cached_metric_metadata_recovery_v1",
+  "status": "completed_metadata_recovery_original_numerical_failure_preserved",
+  "reason": "The authenticated label manifest keeps official_split in original_row and omits benchmark_group at the top level; the frozen metric-worker roster validator expected both top-level fields.",
+  "metadata_resolution": {
+    "status": "passed_metadata_identity_only",
+    "images": 1226,
+    "script": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+      "sha256": "97db1ef959cde74b4ed629d1384ed63fb4b3e11776732f7aa31b890b720afe1e"
+    },
+    "frozen_validator": {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+      "sha256": "704877de976bbbb0d1199472fcd5fb01f2c123a8246fc47c9931348bb51d4114"
+    },
+    "label_manifest": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+      "sha256": "fce605f8e0a05e83cce21ec9b45b7e440d423e8ba56aa5dec9baa32b2d9e05e8"
+    },
+    "roster": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/roster.jsonl",
+      "sha256": "20ee30355c7138cbc7d895f30e6efd9229c07d965615ae584dd2c7234c9b3d4a"
+    },
+    "contract": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/contract.json",
+      "sha256": "411060d8c997677f0d6e5a79550e4b48113f034043aa4860077fd5e2f7a4ec29"
+    },
+    "mapping_rule": "official_split=label.original_row.official_split; benchmark_group=label.domain+('_known' if split.endswith('-val') else '_novel')",
+    "labels_or_arrays_modified": false,
+    "prediction_model_executed": false,
+    "metric_math_modified": false,
+    "rank": null,
+    "mapping_rows": 1226,
+    "mapping_sha256": "855ae97c20626c67bb46435b4090cc7b4f5bc323ab48cee36f6d887d1d0b2785"
+  },
+  "all_1226_identity_fields_exact_before_metrics": true,
+  "original_labels_or_predictions_or_frozen_sources_modified": false,
+  "model_rerun": false,
+  "independent_98080_verification_rerun": false,
+  "metric_math_modified": false,
+  "original_strict_numerical_failure_preserved": true,
+  "failed_attempt": {
+    "files": [
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric-worker.execution.json",
+          "sha256": "3542ae2e2a1d8613b95bf50f6c018a31d145968d710e9caea79fe29d14a17b7e"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/00_metric-worker.execution.json",
+          "sha256": "3542ae2e2a1d8613b95bf50f6c018a31d145968d710e9caea79fe29d14a17b7e"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.status.json",
+          "sha256": "15fa023064041796c96b9f1ee69c77b3cf8b188c68ecea3fd96eaee197ab1515"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/01_cached_final_validation.status.json",
+          "sha256": "15fa023064041796c96b9f1ee69c77b3cf8b188c68ecea3fd96eaee197ab1515"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.log",
+          "sha256": "b76ef61661ed4eeabf3376be93c917f9563c26a5c48b9832559eacac7aeb96ef"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/02_cached_final_validation.log",
+          "sha256": "b76ef61661ed4eeabf3376be93c917f9563c26a5c48b9832559eacac7aeb96ef"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank00.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/03_metric-worker_rank00.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank01.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/04_metric-worker_rank01.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank02.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/05_metric-worker_rank02.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank03.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/06_metric-worker_rank03.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank04.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/07_metric-worker_rank04.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank05.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/08_metric-worker_rank05.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank06.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/09_metric-worker_rank06.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      },
+      {
+        "original": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/logs/metric-worker_rank07.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        },
+        "snapshot": {
+          "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/10_metric-worker_rank07.log",
+          "sha256": "b55f34da514dfca656c2acf8fe70b8b15f3ad8a7c065eea3bcca3dcc1b2f6e05"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "status": "completed_metadata_recovery_original_numerical_failure_preserved",
+    "started_unix": 1793557693.2316446,
+    "wrapper": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+      "sha256": "97db1ef959cde74b4ed629d1384ed63fb4b3e11776732f7aa31b890b720afe1e"
+    },
+    "runner": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/run_recovery.py",
+      "sha256": "abd3df7ad8341aef4b850be7ec933de3fb8cc5ae31ca30b1558c47add8135c5f"
+    },
+    "cpu_identity": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/cpu_metadata_identity.complete.json",
+      "sha256": "d30dc8b5692f840f92457e09915e85d975c33aecce86a9c8c978fc65a214d29f"
+    },
+    "failure_snapshot": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/manifest.json",
+      "sha256": "c5df63fd4ac827de51d2423646690932923ecc75afee7114ab78d6799a518fdb"
+    },
+    "prediction_seal": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/predictions.complete.json",
+      "sha256": "d986ed8e714c320f4d4c4ceb65495ba4fd741bbd565846024b93ec4dd22b6e28"
+    },
+    "gpu_observation": "0, GPU-fdbc8d59-296b-1204-b71e-5e2cf52820d4, 16098\n1, GPU-04be4073-d4da-462d-86f3-f722b668a442, 15962\n2, GPU-7b37fa0b-a524-18e9-b15e-06b92b729044, 16383\n3, GPU-7e212d0d-83b3-8767-878d-c861b942f5bb, 16129\n4, GPU-9c9f5c94-e2c6-4f01-6419-8bd0dfc4ba37, 16413\n5, GPU-2e687fec-88da-4be7-8f69-33660faf5d3b, 24134\n6, GPU-3f803bfc-d97e-4ff8-e5c7-8a7f51f2a7bf, 24134\n7, GPU-02681910-f193-3424-f68b-27d9cdefb89e, 24134\n",
+    "model_rerun": false,
+    "workers": [
+      {
+        "rank": 0,
+        "pid": 41895,
+        "physical_gpu": 0,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "0"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank00.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.4079626,
+        "log_sha256": "97bf32c65eb9aebb4caeed27aaea86f6fb6e7e2316a7fa7392bad0b25a5a87a2"
+      },
+      {
+        "rank": 1,
+        "pid": 41896,
+        "physical_gpu": 1,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "1"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank01.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7709212,
+        "log_sha256": "1d7ab42ec284237ba80dc26ec17a91eb49be1f22c987a3bbb33ba9bca12112ea"
+      },
+      {
+        "rank": 2,
+        "pid": 41897,
+        "physical_gpu": 2,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "2"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank02.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7748187,
+        "log_sha256": "419888ab976c783907f1a4c3392c183d26973d79e5059eb7ae950fb879ea9390"
+      },
+      {
+        "rank": 3,
+        "pid": 41898,
+        "physical_gpu": 3,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "3"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank03.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7820966,
+        "log_sha256": "ff94b3f36f35f3db95388049badd03e1faaba64cb402c88650e5925d4143a1f2"
+      },
+      {
+        "rank": 4,
+        "pid": 41899,
+        "physical_gpu": 4,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "4"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank04.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7869906,
+        "log_sha256": "95a5802e08b52e134b8daed0ae5b590d0ca3a53aa01021902b7bc70685c8845d"
+      },
+      {
+        "rank": 5,
+        "pid": 41900,
+        "physical_gpu": 5,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "5"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank05.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7898386,
+        "log_sha256": "ef8d0dc410a81a92929fd67493e007b5fc1db697add3edace28609b29f9bf8c0"
+      },
+      {
+        "rank": 6,
+        "pid": 41901,
+        "physical_gpu": 6,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "6"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank06.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.79543,
+        "log_sha256": "e547fd18491032f979795a0fecadb43206a9a3893d4f6a1dc8955ab90a345bb7"
+      },
+      {
+        "rank": 7,
+        "pid": 41902,
+        "physical_gpu": 7,
+        "command": [
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+          "-u",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/metric_wrapper.py",
+          "--script",
+          "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+          "--output",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+          "--label-manifest",
+          "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+          "--audit-dir",
+          "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery",
+          "--rank",
+          "7"
+        ],
+        "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank07.log",
+        "returncode": 0,
+        "completion_observed_unix": 1793557936.7981353,
+        "log_sha256": "e3c459d9d871ec8b232b5ddebcaa46cdb127830d12dc6fed70b626c7748b8207"
+      }
+    ],
+    "merge": {
+      "command": [
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+        "-u",
+        "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+        "metrics-merge",
+        "--output",
+        "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached"
+      ],
+      "returncode": 0,
+      "log": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/merge.log",
+        "sha256": "e2b8b622d4475e0867b9cc7752d12389e20616ce5f0c933e195944292197e692"
+      }
+    },
+    "evaluation_complete": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/evaluation.complete.json",
+      "sha256": "99878dc6391db34cf129558e30992b736cbb58fce2a677c1d4f5c3c3ab44824c"
+    },
+    "numerical_acceptance_status": "failed_cached_input_numerical_parity",
+    "transparent_mae_mm": 55.91037444366485,
+    "finished_unix": 1793557963.8803198
+  },
+  "supervisor_execution_observation": {
+    "command": [
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+      "-u",
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/run_recovery.py"
+    ],
+    "CUDA_VISIBLE_DEVICES": "",
+    "tool_session_id": 89059,
+    "actual_returncode": 0,
+    "observed_unix": 1793558063.8447454
+  },
+  "final_metric_marker": {
+    "bootstrap_scope": "paired images; excludes scene correlation and 80-checkpoint selection uncertainty",
+    "cached_input_parity_passed": false,
+    "cached_transparent_mae_agrees": true,
+    "cached_transparent_mae_tolerance_mm": 2e-05,
+    "finished_unix": 1793557963.1545904,
+    "historical_cached_winner_transparent_mae_mm": 55.91037394069383,
+    "images": 1226,
+    "independent_test_performance_claimed": false,
+    "labels": {
+      "path": "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+      "sha256": "fce605f8e0a05e83cce21ec9b45b7e440d423e8ba56aa5dec9baa32b2d9e05e8"
+    },
+    "metric_shards": {
+      "0": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank00.complete.json",
+        "sha256": "f83286fd2f5741575b00261fc377fcc08226a29c2c7e77e882208efa270199aa"
+      },
+      "1": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank01.complete.json",
+        "sha256": "84b0a793942aef8bce69429c4136c189ca65553a68ad380f8e8c9ad2798416cb"
+      },
+      "2": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank02.complete.json",
+        "sha256": "bcec2c87586e5ef7e3c1b3b52a9d2d58af4611e14db573f9707595e2a624af3e"
+      },
+      "3": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank03.complete.json",
+        "sha256": "0cadaaba1637b90f4911ee6684dff4cb5b35e64c827d0b7dff2f2e77d0f8bfea"
+      },
+      "4": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank04.complete.json",
+        "sha256": "3ddb7abd3da0590849620267b9401659adfc3fe7dc6409a8fff2523cf1fd3124"
+      },
+      "5": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank05.complete.json",
+        "sha256": "b81e8301677e6bcef4ba756ba70c5879191fb328aa732c0f76e733416a2d2fae"
+      },
+      "6": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank06.complete.json",
+        "sha256": "27f9eee189eda733ddfb94a0a2455277a98d6c1cc5574ec03085dbcc2a1c2027"
+      },
+      "7": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric_shards/rank07.complete.json",
+        "sha256": "932e224b05b1a5a944f5f56381e99da71c120767dbcaa0cf8462117e486d57d3"
+      }
+    },
+    "mode": "cached",
+    "model_inputs_included_gt_or_mask": false,
+    "predictions_seal": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/predictions.complete.json",
+      "sha256": "d986ed8e714c320f4d4c4ceb65495ba4fd741bbd565846024b93ec4dd22b6e28"
+    },
+    "reports": {
+      "comparison.csv": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/comparison.csv",
+        "sha256": "42f8c7c10aba135cb2da0dcb2df3c7f15d4bb5765f196a46cebaabb526028945"
+      },
+      "metrics.json": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/metrics.json",
+        "sha256": "9ac2fbf4c7c5ae1a53e88eab51cd2514ad4c1ecac396f5e307a0bec7933fc05a"
+      },
+      "paired_differences.json": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/paired_differences.json",
+        "sha256": "126406f4075bd549328bf1ad2cfa467739beed1516b73ebab504e1697eadf530"
+      },
+      "per_image.jsonl": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/reports/per_image.jsonl",
+        "sha256": "fd57ffe8fe4082818db43d70bf8f10b94c6825ad175a51445f2ac89211aee544"
+      }
+    },
+    "schema": "portable_stage2_full_roster_v1",
+    "selected_checkpoint_sha256": "b2465c457a438cc3a65e055e9793b5ba9e134b9b25012d1bd91599440c0da381",
+    "selected_epoch": 58,
+    "status": "failed_cached_input_numerical_parity",
+    "test_images": 521,
+    "test_informed_selection": true,
+    "transparent_mae_change_vs_historical_mm": 5.029710195003645e-07,
+    "transparent_mae_mm": 55.91037444366485
+  },
+  "evidence": {
+    "complete": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/complete.json",
+      "sha256": "0e5b518ced1064860c7fc0138cb1090330e8d6056d6251ba2433492a7cec96ee"
+    },
+    "execution": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/execution.json",
+      "sha256": "2efc1f7c8bbcace23006134dff46c18b4e8620c10dbe9603563503ba1ffebabd"
+    },
+    "cpu_full_roster": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/cpu_metadata_identity.complete.json",
+      "sha256": "d30dc8b5692f840f92457e09915e85d975c33aecce86a9c8c978fc65a214d29f"
+    },
+    "failure_snapshot": {
+      "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/failure_snapshot/manifest.json",
+      "sha256": "c5df63fd4ac827de51d2423646690932923ecc75afee7114ab78d6799a518fdb"
+    },
+    "rank_metadata": {
+      "0": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank00.metadata.json",
+        "sha256": "2d6fdc3653664868a08354312a240d96fa39b4f04bc21428a2bac7de4b219b21"
+      },
+      "1": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank01.metadata.json",
+        "sha256": "b35892b5a3a1e99ed0e90b8a74cbffb0f683b9585286dfa235d4a2312536f25f"
+      },
+      "2": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank02.metadata.json",
+        "sha256": "2746f871c49cd79a500b6f1729dbd8890faf122f8f7073fa283328026e0570ba"
+      },
+      "3": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank03.metadata.json",
+        "sha256": "de714dd2d600ff3ca990dfa20de7c24a13b6484d84c81495eb28223fdfe551d2"
+      },
+      "4": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank04.metadata.json",
+        "sha256": "f96d68f469e664917f41f4af08ef17a541a88f237c7235395f1420d7d375c4ec"
+      },
+      "5": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank05.metadata.json",
+        "sha256": "1b143f2df49d37b375fea88dba5d559dbfdfed42beb6eb294850d833db8c1fc0"
+      },
+      "6": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank06.metadata.json",
+        "sha256": "0857333b66d6171ddbc3caf7b9dac1f8060796e93c24eb4608fd6057f73ed6a0"
+      },
+      "7": {
+        "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_metric_metadata_recovery/rank07.metadata.json",
+        "sha256": "25b7a20828a74c0893cc13906dd8999a433ade2ad2702be3873602e399b82585"
+      }
+    }
+  },
+  "supporting_tools": {
+    "metric_wrapper.py": {
+      "path": "audit/supporting_tools/cached_metric_metadata_recovery/metric_wrapper.py",
+      "sha256": "97db1ef959cde74b4ed629d1384ed63fb4b3e11776732f7aa31b890b720afe1e"
+    },
+    "run_recovery.py": {
+      "path": "audit/supporting_tools/cached_metric_metadata_recovery/run_recovery.py",
+      "sha256": "abd3df7ad8341aef4b850be7ec933de3fb8cc5ae31ca30b1558c47add8135c5f"
+    }
+  }
+}

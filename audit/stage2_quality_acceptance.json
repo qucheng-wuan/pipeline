@@ -1,0 +1,66 @@
+{
+  "schema": "transparent_depth_cached_quality_acceptance_v1",
+  "status": "accepted",
+  "root_reviewed": true,
+  "verification_profile": "training_release",
+  "strict_numerical_parity_passed": false,
+  "authorization": {
+    "basis": "latest_user_training_release_approximate_effect_scope",
+    "numeric_limits_explicitly_specified_by_user": false,
+    "operational_limits_defined_by": "root",
+    "post_failure_policy": true,
+    "automatically_relaxed": false
+  },
+  "limits": {
+    "per_image_low_mean_abs_m": 1e-06,
+    "per_image_native_mean_abs_m": 1e-06,
+    "per_image_low_over_1e6_fraction": 0.0001,
+    "total_low_over_1e6_fraction": 1e-06,
+    "partition_mae_abs_change_mm": 0.01,
+    "refined_mask_disagree_pixels": 0
+  },
+  "proposed_statistics": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_quality_acceptance/quality_statistics.json",
+    "sha256": "bcf6d3e2a6786ab146e7941601412fc0a1e894ac48549e54a3b48dc09e425c59"
+  },
+  "strict_failure": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/evaluation.complete.json",
+    "sha256": "99878dc6391db34cf129558e30992b736cbb58fce2a677c1d4f5c3c3ab44824c"
+  },
+  "repeatability_evidence": [
+    {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/stage2_repeatability.json",
+      "sha256": "f474da074e4f069f73b1d6e3cb67c04c738399a693c0c9fe6f5b4664b90f5c22"
+    }
+  ],
+  "orchestration_recovery_evidence": [
+    {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/cached_ninja_path_recovery.json",
+      "sha256": "56fedbb338768c48d3882fade760d2d254016c7051bea70411f221ce68b9c798"
+    },
+    {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/cached_metric_metadata_recovery.json",
+      "sha256": "40c738dc9c401d54216bebfece079b783738a714a23372a8b3558af4c6a3054a"
+    },
+    {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/winner_geometry_recovery.json",
+      "sha256": "98a4e6fecdcbc49302dc2452bded04d644357bf42c677ccaea23278c48c3a40a"
+    },
+    {
+      "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/audit/cli_strict_gate_rejection.json",
+      "sha256": "e4c5796c40a0f12f4adb9380e63ed5c3b27cde5853133e8fb5769e594045c535"
+    }
+  ],
+  "assessment_implementation": {
+    "path": "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/build_release_report.py",
+    "sha256": "4ccf0d3f6db775ec0819b4e1ce30926742bc9cb5e0687760679c1c94f0f6748b"
+  },
+  "root_review": {
+    "reviewer": "/root",
+    "decision": "accept_training_release_approximate_quality",
+    "reviewed_unix": 1793558094.0090263,
+    "repeatability_evidence_reviewed": true,
+    "additional_partition_mae_limit_mm": 2e-05,
+    "note": "按用户最新要求，以后续训练实现和整体效果接近为发布范围。源码及模型状态已核对一致；旧版和便携版 plain 自重复均出现近并列候选硬选择跳变。完整1226仅5/94156800个low像素超过原1e-6m，mask全部相同，逐图平均差最大低/原生均小于1e-6m；全部18个分区MAE变化不仅小于附加操作界限0.01mm，也小于原指标容差2e-5mm（最大3.3805e-6mm）。保留原strict失败、最大56.46mm单像素差及全部恢复证据，不改变模型算子/权重，不宣称逐像素一致或新80轮重训得分相同。"
+  }
+}

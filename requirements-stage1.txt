@@ -1,0 +1,21 @@
+# Install PyTorch from the CUDA 12.8 index first (scripts/setup_stage1.sh).
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+numpy==2.4.6
+opencv-python-headless==5.0.0.93
+Pillow==12.3.0
+scipy==1.17.1
+OpenEXR==3.5.1
+safetensors==0.8.0
+diffusers==0.35.2
+transformers==4.57.2
+huggingface_hub==0.36.2
+tokenizers==0.22.2
+regex==2026.9.10
+accelerate==1.15.0
+tqdm==4.70.1
+trimesh==5.1.0
+triton==3.4.0
+utils3d_moge @ git+https://github.com/EasternJournalist/utils3d-moge.git@62f09d58509485564e24d5d9f6aac9ee9ebc0c37
+pipeline @ git+https://github.com/EasternJournalist/pipeline.git@1c511390d90226c00c101f34b84df26a0f8789b4
+flex-gemm @ git+https://github.com/JeffreyXiang/FlexGEMM.git@b2fadb29d41846c7981ade6801ffc689fae119cf

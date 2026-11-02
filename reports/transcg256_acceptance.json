@@ -1,0 +1,437 @@
+{
+  "schema": "transcg256_delivery_acceptance_v1",
+  "status": "cpu_validated_gpu_deferred_by_user",
+  "date": "2026-11-02",
+  "host_gpu": "NVIDIA RTX5090 (occupied by existing tasks)",
+  "latest_user_instruction": "When occupied, finish code for migration to A100; do not consume the occupied GPU.",
+  "formal_training_started": false,
+  "gpu_model_execution_attempted": false,
+  "full_stage1_cache_generated": false,
+  "actual_real_data_checked": [
+    {
+      "camera": "D435",
+      "depth_divisor": 1000,
+      "gt_valid_m_range": [
+        0.44406670331954956,
+        0.5817333459854126
+      ],
+      "intrinsics256": [
+        [
+          185.434,
+          0.0,
+          129.864
+        ],
+        [
+          0.0,
+          329.7315555555556,
+          123.98711111111112
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          927.17,
+          0.0,
+          651.32
+        ],
+        [
+          0.0,
+          927.37,
+          349.62
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "train",
+      "sample_id": "transcg/scene1/perspective0/camera1",
+      "transparent_valid256": 6759,
+      "valid256": 64945,
+      "zero_coverage256": 249
+    },
+    {
+      "camera": "L515",
+      "depth_divisor": 4000,
+      "gt_valid_m_range": [
+        0.4899999797344208,
+        1.9999921321868896
+      ],
+      "intrinsics256": [
+        [
+          180.4806,
+          0.0,
+          129.7922
+        ],
+        [
+          0.0,
+          320.99662222222224,
+          129.61235555555555
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          902.403,
+          0.0,
+          650.961
+        ],
+        [
+          0.0,
+          902.803,
+          365.441
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "train",
+      "sample_id": "transcg/scene1/perspective0/camera2",
+      "transparent_valid256": 7582,
+      "valid256": 50146,
+      "zero_coverage256": 10182
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1000,
+      "gt_valid_m_range": [
+        0.46699994802474976,
+        0.5794711709022522
+      ],
+      "intrinsics256": [
+        [
+          185.434,
+          0.0,
+          129.864
+        ],
+        [
+          0.0,
+          329.7315555555556,
+          123.98711111111112
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          927.17,
+          0.0,
+          651.32
+        ],
+        [
+          0.0,
+          927.37,
+          349.62
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "val",
+      "sample_id": "transcg/scene14/perspective0/camera1",
+      "transparent_valid256": 11726,
+      "valid256": 65273,
+      "zero_coverage256": 57
+    },
+    {
+      "camera": "L515",
+      "depth_divisor": 4000,
+      "gt_valid_m_range": [
+        0.4747577905654907,
+        1.999866247177124
+      ],
+      "intrinsics256": [
+        [
+          180.4806,
+          0.0,
+          129.7922
+        ],
+        [
+          0.0,
+          320.99662222222224,
+          129.61235555555555
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          902.403,
+          0.0,
+          650.961
+        ],
+        [
+          0.0,
+          902.803,
+          365.441
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        1
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "val",
+      "sample_id": "transcg/scene14/perspective0/camera2",
+      "transparent_valid256": 8926,
+      "valid256": 50908,
+      "zero_coverage256": 10099
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1,
+      "gt_valid_m_range": [
+        0.4799804091453552,
+        1.0350433588027954
+      ],
+      "intrinsics256": [
+        [
+          184.20000000000002,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          327.4666666666667,
+          127.32222222222222
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          921.0,
+          0.0,
+          642.0
+        ],
+        [
+          0.0,
+          921.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        255
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "evaluation",
+      "sample_id": "cleargrasp/real-val/d435/000000000",
+      "transparent_valid256": 2490,
+      "valid256": 64712,
+      "zero_coverage256": 487
+    },
+    {
+      "camera": "D435",
+      "depth_divisor": 1,
+      "gt_valid_m_range": [
+        0.489013671875,
+        1.028059959411621
+      ],
+      "intrinsics256": [
+        [
+          184.20000000000002,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          327.4666666666667,
+          127.32222222222222
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics_native": [
+        [
+          921.0,
+          0.0,
+          642.0
+        ],
+        [
+          0.0,
+          921.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mask_encoding": [
+        0,
+        255
+      ],
+      "native_hw": [
+        720,
+        1280
+      ],
+      "role": "evaluation",
+      "sample_id": "cleargrasp/real-val/d435/000000001",
+      "transparent_valid256": 2263,
+      "valid256": 64576,
+      "zero_coverage256": 578
+    }
+  ],
+  "stage2_cpu_tests": {
+    "environment": "rgbfusion-stage2-5090",
+    "command": "python -m pytest -q tests",
+    "passed": 114,
+    "failed": 0,
+    "warnings": 1,
+    "seconds": 18.83
+  },
+  "stage1_cpu_tests": {
+    "environment": "rgbfusion-stage1",
+    "command": "python -m pytest -q tests/test_stage1_portable.py tests/test_stage1_batch.py tests/test_stage1_trace.py",
+    "passed": 15,
+    "failed": 0
+  },
+  "tests_are_cpu_only": true,
+  "synthetic_unit_fixtures_are_not_end_to_end_acceptance": true,
+  "checks_completed": [
+    "130 scene metadata and official split/count cross-check",
+    "6 actual RGB/GT/mask/K full-field256 transforms and visualizations",
+    "both official camera K matrices match the official collector byte-decoded values",
+    "valid area coverage and depth range",
+    "source/weights/preprocessing/split cache rejection tests",
+    "data-root/cache relocation test",
+    "pure-P validation label access order test",
+    "formal and smoke curriculum boundaries",
+    "legacy240x320 path regression",
+    "bundle256 CPU export/load contract",
+    "A100 installer shell syntax and Python compilation"
+  ],
+  "not_executed": [
+    "real frozen Stage1 high-resolution prediction/seal",
+    "real P-derived Stage2 cache",
+    "real Stage2 forward/loss/backward/optimizer update",
+    "real checkpoint save/resume/continued update",
+    "Stage2 internal-val and ClearGrasp256 GPU evaluation/visualization",
+    "A100 environment install and CUDA source compilation",
+    "multi-GPU/DDP and large numerical parity experiments"
+  ],
+  "remaining_asset_blocker": [
+    {
+      "id": "dinov3",
+      "path": "stage1/dinov3/model.safetensors",
+      "sha256": "3e1d4d18b9bfa9f28fad8e9de6a783f1313532d3460efa4cd0b12521d81d1a4d",
+      "status": "missing"
+    },
+    {
+      "id": "dinov3_config_json",
+      "path": "stage1/dinov3/config.json",
+      "sha256": "35770e98e425c9383534bcbfa7f3b7a3cb1d943f6d26a37d7d19fea0735eab57",
+      "status": "missing"
+    },
+    {
+      "id": "dinov3_preprocessor_config_json",
+      "path": "stage1/dinov3/preprocessor_config.json",
+      "sha256": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7",
+      "status": "missing"
+    }
+  ],
+  "asset_download_error": "Hugging Face gated DINOv3 fixed revision returned HTTP401; authorized login or exact existing files required on target.",
+  "formal_config_sha256": "3b56bc1d4a81ca4a91e2acd9890fb276a771d15ef5117bcca8e4a5ede72b5936",
+  "smoke_config_sha256": "1de96e3d05190fd0307f5f8c5668779a2a90e34b52191d9a3d554b45015860bd",
+  "formal_optimizer_steps_from_enumerated_training_count": {
+    "steps_per_epoch": 3090,
+    "alpha": {
+      "epoch1_first": 1.0,
+      "epoch20_last": 1.0,
+      "epoch21_first": 1.0,
+      "transition_mid": 0.5000080907458049,
+      "epoch40_last": 0.0,
+      "epoch41_first": 0.0,
+      "epoch60_last": 0.0
+    },
+    "update_indices": {
+      "epoch1_first": 0,
+      "epoch20_last": 61799,
+      "epoch21_first": 61800,
+      "transition_mid": 92699,
+      "epoch40_last": 123599,
+      "epoch41_first": 123600,
+      "epoch60_last": 185399
+    }
+  },
+  "split_sha256": "40fd6d25db56a1f14c1dfbb53f6ebab194d216c8c6362c01cae52ed9a836bc38",
+  "stage1_historical_exposure": {
+    "reference_roster": "data/cleargrasp_reference/rgb_k.jsonl.gz",
+    "current_real_val_rgb_hashes": 173,
+    "also_in_historical_validation": 173,
+    "independent_pipeline_test": false
+  },
+  "data_report": "reports/transcg256_data_audit.json",
+  "data_visualizations": "reports/transcg256_data_visualizations",
+  "asset_report": "reports/transcg256_asset_verification.json",
+  "migration_instructions": "docs/TRANSCG256_A100.zh-CN.md",
+  "precision_claim": false,
+  "note": "Existing historic release reports and .setup GPU operator checks do not certify this new data protocol."
+}

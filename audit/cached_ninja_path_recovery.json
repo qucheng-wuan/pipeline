@@ -1,0 +1,156 @@
+{
+  "all_prior_processes_observed_exited": [
+    55847,
+    52290,
+    56735,
+    56736,
+    56738,
+    56739,
+    56740,
+    56742,
+    56743,
+    56744
+  ],
+  "changed_controller_lines_only": "env PATH = fresh executable parent + CUDA_HOME/bin + inherited PATH",
+  "controller_after_sha256": "568e1cd8c8abe12091698fce956b97f00b0cb3dae75439371b7486c19f6c8fde",
+  "created_unix": 1793556131.9428856,
+  "failed_output": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached_attempt01.failed",
+  "failed_worker_execution_sha256": "89082078dad1064ba06aefb46ddee1bfadc1443623e1dee69dcb1151242fac4e",
+  "frozen_validator_sha256": "704877de976bbbb0d1199472fcd5fb01f2c123a8246fc47c9931348bb51d4114",
+  "independent_sweep_verification_rerun": false,
+  "model_or_validator_source_changed": false,
+  "ninja_check": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PATH": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin:/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/runtime/cuda-12.1/bin:/home/hengxianli/.local/bin:/home/hengxianli/.local/share/codex-cli/0.163.0/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/.codex/tmp/arg0-linux/codex-arg0fQvso8:/home/hengxianli/.local/share/codex-cli/0.163.0/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/home/hengxianli/miniconda3/bin:/home/hengxianli/miniconda3/condabin:/home/hengxianli/.local/bin:/home/hengxianli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "binary_sha256": "08639e194fffa7f08b259fc4abfa4803aff66b64de52549cee42ec527d55cea6",
+    "command": [
+      "ninja",
+      "--version"
+    ],
+    "resolved_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/ninja",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "1.13.2.git.kitware.jobserver-pipe-1\n"
+  },
+  "prior_child_pid": 52290,
+  "prior_controller_pid": 55847,
+  "prior_validator_command": [
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+    "-u",
+    "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+    "run",
+    "--mode",
+    "cached",
+    "--output",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+    "--input-manifest",
+    "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/input_manifest.jsonl",
+    "--label-manifest",
+    "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+    "--stage1-root",
+    "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/stage1",
+    "--bundle",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/artifacts/stage2",
+    "--selection-root",
+    "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+    "--gpus",
+    "0,1,2,3,4,5,6,7"
+  ],
+  "reason": "Ninja installed in fresh environment but fresh bin absent from child PATH",
+  "replacement_controller_command": [
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+    "-u",
+    "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/run_cached_final_validation.py"
+  ],
+  "replacement_controller_pid": 61649,
+  "replacement_log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_controller_attempt02.log",
+  "replacement_session": 63914,
+  "replacement_validator_command_matches_original_exactly": true,
+  "replacement_validator_pid": 62955,
+  "runtime_snapshots": [
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/cached_final_validation.lock"
+    },
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.status.json",
+      "sha256": "a9a04b220e60963bdb621bf66419ba230fde77feecaca8dfbd651a0575e6c953",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/cached_final_validation.status.json"
+    },
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.log",
+      "sha256": "4a2defae1d522cad5512827b10bec0a98df8f9d50dc3b6c73d5a1776f6f77669",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/cached_final_validation.log"
+    },
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/run_cached_final_validation.py",
+      "sha256": "59e0ea4df36eec7273d026746e1eb9cf29ceb09c46966cd5794f2d28f0aa19f7",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/run_cached_final_validation.py"
+    },
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/run_cached_final_validation.launch.json",
+      "sha256": "daa0609e53732f709589fec2e4be9d6948733f6ff8dbf4842bfef5dbc751c669",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/run_cached_final_validation.launch.json"
+    },
+    {
+      "original_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/run_cached_final_validation.launcher.log",
+      "sha256": "90d311ed97f5b890f27dc8e2856f2c439de29611eeb749607dc78ffa4b4c8cd1",
+      "snapshot_path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/cached_final_validation_path_recovery/failed_runtime/run_cached_final_validation.launcher.log"
+    }
+  ],
+  "schema_version": "cached_validation_path_recovery_v1",
+  "status": "ninja_path_repaired_prediction_completed_later_metric_metadata_failure_preserved",
+  "thresholds_changed": false,
+  "updated_unix": 1793556230.1325,
+  "replacement_actual_status": {
+    "child_pid": 62955,
+    "command": [
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh/bin/python",
+      "-u",
+      "/home/hengxianli/RGBOnly_Fusion_Laplacian_LIDF_SPVNAS/scripts/validate_stage2_full.py",
+      "run",
+      "--mode",
+      "cached",
+      "--output",
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached",
+      "--input-manifest",
+      "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/input_manifest.jsonl",
+      "--label-manifest",
+      "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/manifests/label_manifest.jsonl",
+      "--stage1-root",
+      "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_curriculum_20261027/stage1",
+      "--bundle",
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/artifacts/stage2",
+      "--selection-root",
+      "/mnt/gluster_dcpu/hengxianli/fusion_v2_lidf_spvnas_20261030/continuation_gpu567_20261031/selection_full1226_transparent_mae_20261101",
+      "--gpus",
+      "0,1,2,3,4,5,6,7"
+    ],
+    "finished_unix": 1793557381.354434,
+    "gates": {
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/selected_bundle.candidate.json": "6c36531e102e8490b7d22634c7df53315c9f326ab57e88a51daec584cfee4311",
+      "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/stage2_fresh.ready.json": "bfb5ab8c2ae6bd7e45c1d557c35ef433b0e8ac7d9f58fb799059aacb68f0dff7"
+    },
+    "log": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/runtime/cached_final_validation.log",
+    "log_sha256": "b76ef61661ed4eeabf3376be93c917f9563c26a5c48b9832559eacac7aeb96ef",
+    "pid": 61649,
+    "returncode": 1,
+    "started_unix": 1793556177.1841595,
+    "status": "failed_evidence_preserved",
+    "tool_sha256": "704877de976bbbb0d1199472fcd5fb01f2c123a8246fc47c9931348bb51d4114"
+  },
+  "prediction_worker_execution": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/worker.execution.json",
+    "sha256": "9650a0115aa999b273827e91f4eaa30d9fb51f832723a2a5512aa98818d74a2e"
+  },
+  "prediction_seal": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/predictions.complete.json",
+    "sha256": "d986ed8e714c320f4d4c4ceb65495ba4fd741bbd565846024b93ec4dd22b6e28"
+  },
+  "later_metric_metadata_failure": {
+    "path": "/mnt/gluster_dcpu/hengxianli/transparent_depth_release_20261101/audit/stage2_full_cached/metric-worker.execution.json",
+    "sha256": "3542ae2e2a1d8613b95bf50f6c018a31d145968d710e9caea79fe29d14a17b7e"
+  },
+  "overall_acceptance_passed": false
+}
