@@ -13,6 +13,17 @@ from .stage2 import build_stage2, file_sha, source_hashes
 from .training_cache import load_authenticated_native_labels, validate_prediction_caches
 
 
+DELTA_THRESHOLDS = (1.05, 1.10, 1.25)
+METRIC_KEYS = ('mae_m', 'rmse_m', 'abs_rel', *(f'delta_{t:.2f}' for t in DELTA_THRESHOLDS))
+EVALUATION_SCHEMA = 'fullfield256_evaluation_v2'
+
+
+def metric_metadata():
+    return {'metric_protocol': 'depth256_rftrans_thresholds_v2',
+            'delta_thresholds': list(DELTA_THRESHOLDS),
+            'delta_comparison': 'strict_less_than', 'delta_storage': 'fraction_0_to_1'}
+
+
 def region_metrics(prediction, target, support):
     prediction, target = np.asarray(prediction), np.asarray(target)
     support = np.asarray(support, dtype=bool)
@@ -24,12 +35,13 @@ def region_metrics(prediction, target, support):
     if not count:
         return {'valid_pixels': 0, 'empty': True}
     p, g = prediction[support].astype(np.float64), target[support].astype(np.float64)
+    if not np.isfinite(g).all() or np.any(g <= 0):
+        raise ValueError('Invalid GT inside evaluation support')
     error = np.abs(p-g)
     ratio = np.maximum(p/g, g/p)
     return dict(valid_pixels=count, empty=False, mae_m=float(error.mean()),
         rmse_m=float(np.sqrt(np.mean(error**2))), abs_rel=float(np.mean(error/g)),
-        delta_1=float(np.mean(ratio < 1.25)), delta_2=float(np.mean(ratio < 1.25**2)),
-        delta_3=float(np.mean(ratio < 1.25**3)))
+        **{f'delta_{t:.2f}': float(np.mean(ratio < t)) for t in DELTA_THRESHOLDS})
 
 
 def score_predictions(baseline, prediction, labels):
@@ -49,7 +61,7 @@ def aggregate(records):
             good = [r for r in rows if not r['empty']]
             value = {'images': len(rows), 'nonempty_images': len(good),
                      'empty_images': len(rows)-len(good), 'valid_pixels': sum(r['valid_pixels'] for r in rows)}
-            for key in ('mae_m','rmse_m','abs_rel','delta_1','delta_2','delta_3'):
+            for key in METRIC_KEYS:
                 value[key] = float(np.mean([r[key] for r in good])) if good else None
             result[model][region] = value
     return result
@@ -59,7 +71,8 @@ def score_item(row, baseline, prediction, label_row):
     if row.get('preprocessing') != label_row.get('preprocessing'):
         raise ValueError('Prediction/supervision preprocessing mismatch')
     labels = resize_supervision(load_authenticated_native_labels(label_row), row['preprocessing'])
-    return {'sample_id':row['sample_id'], 'dataset':row['dataset'], 'scene':row['scene'],
+    return {'sample_id':row['sample_id'], 'cache_id':row['cache_id'],
+            'dataset':row['dataset'], 'scene':row['scene'],
             'camera':row['camera'], 'metrics':score_predictions(baseline,prediction,labels)}, labels
 
 
@@ -135,7 +148,7 @@ def evaluate(args):
     groups=defaultdict(list)
     for row in rows:
         groups[row['dataset']+'/'+row['scene']+'/'+row['camera']].append(row)
-    report={'schema':'fullfield256_evaluation_v1','diagnostic_smoke':diagnostic,
+    report={'schema':EVALUATION_SCHEMA, **metric_metadata(), 'diagnostic_smoke':diagnostic,
         'accuracy_claim':False if diagnostic else ('test-set-selected result; not independent held-out accuracy'
             if cfg.get('test_set_selection') else 'dataset-specific; see Stage1 exposure disclosure'),
         'test_set_selection':cfg.get('test_set_selection',False),
@@ -145,7 +158,8 @@ def evaluate(args):
         'input_manifest_sha256':file_sha(args.input_manifest),'label_manifest_sha256':file_sha(args.label_manifest),
         'stage1_seal_sha256':file_sha(Path(args.stage1_root)/'complete.json'),
         'aggregation':'unweighted mean of per-image metrics over nonempty regions; RMSE averaged per image',
-        'units':{'MAE':'m','RMSE':'m','AbsRel':'dimensionless','delta':'fraction; max(P/G,G/P)<1.25**k'},
+        'units':{'MAE':'m','RMSE':'m','AbsRel':'dimensionless',
+                 'delta':'fraction; max(P/G,G/P)<t; t=1.05,1.10,1.25; multiply by 100 only for percent display'},
         'empty_regions':'omitted from macro means, counted explicitly; no valid prediction filtering',
         'gt_scale_alignment':False,'native_upsampling':False,'input_gt_or_mask_access':False,
         'stage1_exposure':'Frozen V2/Laplacian were historically selected using ClearGrasp validation (including real-val); not an untouched held-out test of the complete pipeline.',

@@ -1,0 +1,15 @@
+...............                                                          [100%]
+15 passed in 1.59s
+........................................................................ [ 45%]
+........................................................................ [ 90%]
+................                                                         [100%]
+=============================== warnings summary ===============================
+../../miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/dash/testing/plugin.py:104
+  /home/QuchengZou/miniconda3/envs/rgbfusion-stage2-5090/lib/python3.10/site-packages/dash/testing/plugin.py:104: PytestRemovedIn10Warning: The hookimpl pytest_addhooks uses old-style configuration options (marks or attributes).
+  Please use the pytest.hookimpl(tryfirst=True) decorator instead
+   to configure the hooks.
+   See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers
+    @pytest.mark.tryfirst
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+160 passed, 1 warning in 6.57s

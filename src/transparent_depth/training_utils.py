@@ -247,7 +247,7 @@ def validate(model, dataset, label_rows, device, rank, world, limit=0, alpha=0.0
             module.training = training
         restore_rng(state)
     if transfer_protocol:
-        from .evaluate256 import aggregate
+        from .evaluate256 import aggregate, metric_metadata
         if world > 1:
             all_records = [None] * world
             dist.all_gather_object(all_records, grid_records)
@@ -262,7 +262,7 @@ def validate(model, dataset, label_rows, device, rank, world, limit=0, alpha=0.0
             'abs_rel':metrics['Stage2']['all']['abs_rel'],
             'mae_mm':metrics['Stage2']['all']['mae_m']*1000,
             'rmse_mm':metrics['Stage2']['all']['rmse_m']*1000,
-            'metrics256':metrics,'seconds':time.monotonic()-started,
+            'metrics256':metrics, **metric_metadata(), 'seconds':time.monotonic()-started,
             'input_alpha':0.0,'gt_or_mask_used_as_input':False,
             'test_set_selection':test_selection,'selection_policy':selection_policy,
             'protocol':dataset.rows[0]['preprocessing']['schema'] + ':selection_val_pure_p_image_macro'}

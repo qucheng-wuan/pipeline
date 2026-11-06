@@ -19,4 +19,5 @@ cd "$project_dir"
   tests/test_stage2_portable.py tests/test_stage2_preparation.py tests/test_stage2_full.py \
   tests/test_portable_cli_assets.py tests/test_sweep_checkpoints.py tests/test_evaluate_selected.py \
   tests/test_build_release_report.py tests/test_cached_quality_acceptance.py \
-  tests/test_cleargrasp_rosters.py
+  tests/test_cleargrasp_rosters.py tests/test_transfer256.py tests/test_cleargrasp256.py \
+  tests/test_evaluate256_metrics.py tests/test_rescore256.py

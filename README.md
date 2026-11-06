@@ -3,6 +3,9 @@
 用 **transCG 或 ClearGrasp 分别训练** RGB-only 深度估计 pipeline。两个实验独立，默认不混合数据。
 新训练入口统一 **256×256、60 epochs、单 GPU**；Stage1 始终冻结。
 
+**评测指标已修正为 δ1.05 / δ1.10 / δ1.25。**
+验证命令、指标定义、模型评分与旧报告重算见[测试与评测指南](tests/README.md)。
+
 ```text
 原始高分辨率 RGB
   → 冻结专家 + V2 融合 + Learned Laplacian E08
@@ -34,7 +37,7 @@ ClearGrasp的规则按本项目实验要求设置，属于 test-set selection，
 - Stage1的20个资产中，本机已核验17个；DINOv3权重及两份配置需通过官方授权下载。
 - 当前5090/cu130环境在官方SPVNAS构造器的稀疏卷积中出现CUDA非法内存访问，尚未到真实训练前向。A100必须重新编译并通过真实smoke，不能据此声称已验证A100。
 
-最新记录见[发布检查](reports/publication_verification.json)。`reports/cleargrasp256_acceptance.json`等保留了此前的数据检查与阻塞；其中旧末轮交付策略已由上述best策略替代。CPU测试的合成fixture不算真实P/seal或GPU验收。
+指标修正与最新CPU验证见[测试与评测指南](tests/README.md)和[指标核查记录](reports/metric_fix_verification.json)。原始[发布检查](reports/publication_verification.json)、`reports/cleargrasp256_acceptance.json`等保留了此前的数据检查与阻塞；其中旧末轮交付策略已由上述best策略替代。CPU测试的合成fixture不算真实P/seal或GPU验收。
 
 ## 1. Clone、官方数据和权重
 
@@ -185,8 +188,26 @@ Adam基础LR=1e-3，lidf/spvnas倍率0.1、adapters倍率1；StepLR每20轮乘0.
   --output "$WORK/best-real-val"
 ```
 
-直接在256网格同时报告P256与D256：全有效/透明/背景的MAE、RMSE（米）、AbsRel、δ1/δ2/δ3（阈值1.25^k），
-逐图计算后对非空图等权平均；报告空区域和有效像素数，按可用场景/相机分组。不做GT尺度对齐或原生尺寸上采样指标。
+直接在256网格同时报告P256与D256：全有效/透明/背景的MAE、RMSE（米）、AbsRel（REL），以及
+`delta_1.05`、`delta_1.10`、`delta_1.25`。每个δ统计 `max(P/GT,GT/P)<阈值` 的有效像素比例，
+采用严格小于；保存值为[0,1]，展示百分数时乘100。逐图计算后对非空图等权平均，RMSE也是逐图RMSE平均；
+报告空区域和有效像素数，按可用场景/相机分组。不做GT尺度对齐或原生尺寸上采样指标。
+
+旧256报告的 `delta_1/2/3` 使用1.25、1.5625、1.953125，不能整体改名为上述三列；
+其中只有旧 `delta_1` 对应当前 `delta_1.25`。δ1.05和δ1.10须从保存的预测、GT及相同有效掩码重新统计，
+不能由旧聚合值换算。阈值修正不改变MAE/RMSE/AbsRel、训练损失或按透明MAE选取的best，无需重新训练。
+
+已保存 `predictions/` 和 `supervision/` 的旧评估可直接重算，不加载模型或重新推理：
+
+```bash
+"$S2" -m transparent_depth.rescore256 --input "$WORK/best-real-val" \
+  --input-manifest "$WORK/prepared/manifests/input_manifest.jsonl" \
+  --output "$WORK/best-real-val-rescored"
+```
+
+旧报告缺少cache_id，必须提供与原报告SHA256一致的原始input manifest来匹配文件；新报告已包含cache_id。
+输出写入新目录，保留旧报告。评测器源码参与训练contract：旧训练若需resume，须继续用其原始代码；
+不能修改contract或关闭哈希检查。已有checkpoint的最终评估仍执行原有模型源码检查，仅修正δ无需重训。
 
 ## 几何、缓存与历史兼容
 

@@ -1,6 +1,12 @@
 # 验证记录
 
-当前发布状态见 `publication_verification.json`、`publication_cpu_pytest.txt` 和
+2026-11-06 的256指标修正见 `metric_fix_verification.json`：δ阈值恢复为1.05、1.10、1.25，
+新字段为 `delta_1.05`、`delta_1.10`、`delta_1.25`（比例）；最终报告schema升级为v2。
+旧256的 `delta_1/2/3` 为1.25、1.5625、1.953125，不能改列名冒充新结果。
+本次保留所有历史报告、训练contract和来源快照。需用原预测与GT重新评分的目录及缺失项见该验证记录；
+离线重算命令见主README，不需要重新训练，也不改透明MAE选模。
+
+本次修正前的发布状态见 `publication_verification.json`、`publication_cpu_pytest.txt` 和
 `../provenance/publication_source_snapshot.json`。这不是Stage1预测seal，也不宣称真实GPU训练已通过。
 
 `cleargrasp256_acceptance.json`及其引用的source snapshot、测试日志保存的是先前固定末轮策略下的数据检查与GPU阻塞证据。

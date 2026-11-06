@@ -173,12 +173,29 @@ export WORK=/path/to/transcg256-full
   --output "$WORK/final-real-val"
 ```
 
-只在256网格上同时报告 P256 和 D256：all/transparent/background 的 MAE、RMSE（米）、AbsRel、
-δ1/δ2/δ3（`max(pred/GT,GT/pred)<1.25^k` 的比例）。先算每图每区域，再对非空图等权平均；
+只在256网格上同时报告 P256 和 D256：all/transparent/background 的 MAE、RMSE（米）、AbsRel（REL）、
+`delta_1.05`、`delta_1.10`、`delta_1.25`。每个δ统计 `max(pred/GT,GT/pred)<阈值` 的有效像素比例，
+采用严格小于；保存值为[0,1]，展示百分数时乘100。先算每图每区域，再对非空图等权平均；
 RMSE 也是逐图 RMSE 的平均。空区域不记为零误差，明确统计 nonempty/empty images 与 valid_pixels。
 按 dataset/scene/camera 分组并输出逐图明细。本 real-val 目录只提供 d435 文件夹，因此该目录作为
 可用 scene 分组，不猜测额外物理场景。两模型使用相同 GT、mask、有效区，不做 GT 尺度对齐或原尺寸上采样。
 单独保存预测和监督/coverage，图使用固定米制色标。
+
+旧256报告的 `delta_1/2/3` 阈值为1.25、1.5625、1.953125，只有旧 `delta_1` 对应当前 `delta_1.25`。
+不得把三列直接改名；δ1.05和δ1.10需用保存的预测、GT及相同有效掩码重新统计，不能从旧聚合值恢复。
+本次阈值修正不改变MAE/RMSE/AbsRel、训练损失或透明MAE选模，无需重新训练。
+
+若旧评估目录仍包含 `predictions/`、`supervision/` 和 `metrics.json`，可重算到新目录，不加载模型或重新推理：
+
+```bash
+"$S2" -m transparent_depth.rescore256 --input "$WORK/final-real-val" \
+  --input-manifest "$WORK/prepared/manifests/input_manifest.jsonl" \
+  --output "$WORK/final-real-val-rescored"
+```
+
+旧报告缺少cache_id，必须用与原报告SHA256一致的原始input manifest匹配预测与监督；新报告包含cache_id。
+旧报告保留不变。评测器源码参与训练contract，修正后不能直接resume旧训练；需续训时使用原始代码，
+不得修改contract或关闭哈希检查。已有checkpoint的最终评估仍执行原有模型源码检查，修正δ无需重训。
 
 导出使用 `transparent_depth.stage2.export_stage2_bundle(checkpoint, output, selection_metadata)`，
 其中 selection_metadata 必须说明上述内部 val 选模规则。bundle 保存 `input_hw`、preprocessing、

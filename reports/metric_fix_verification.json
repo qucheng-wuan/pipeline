@@ -1,0 +1,143 @@
+{
+  "schema": "pipeline_metric_fix_verification_v1",
+  "date": "2026-11-06",
+  "status": "validated_and_applied_on_5090",
+  "server_repository": "/home/QuchengZou/projects/pipeline-publication",
+  "base_commit": "4e6011bcbb84d3f1a1e2c190c27e36f887124b1b",
+  "reference": {
+    "repository": "cyberpunk6668/RGBOnly-Fusion-Laplacian-LIDF-SPVNAS",
+    "commit": "a5c91fa11ddc9a6b8bce52a014192ba68ce98234",
+    "native_geometry_sha256": "50b4558b4a6e42cc8f730f77b11db3181293116e4a7d3ab3ee6e1d765a520195",
+    "native_evaluation_sha256": "24a9a406d069e7ea5078e937f1f10409c63691ef7c4b8be4273833b0354c2d14",
+    "reference_native_files_byte_identical": true
+  },
+  "metrics": {
+    "delta_thresholds": [
+      1.05,
+      1.1,
+      1.25
+    ],
+    "delta_comparison": "strict_less_than",
+    "delta_storage": "fraction_0_to_1",
+    "MAE": "mean(abs(pred-gt)) in metres",
+    "RMSE": "sqrt(mean((pred-gt)^2)) in metres",
+    "REL": "mean(abs(pred-gt)/gt), dimensionless",
+    "aggregation": "unweighted nonempty-image macro; mean of per-image RMSE",
+    "native_comparison": "same six metric formulas and image-macro results after mm/m conversion; checked float32 and float64",
+    "invalid_supported_GT": "reject inconsistent support explicitly, never silently remove pixels"
+  },
+  "unchanged_protocol": [
+    "256x256 grid",
+    "GT valid-weighted INTER_AREA resize",
+    "coverage >= 0.5",
+    "configured depth range (default inclusive [0.1,2.0] metres)",
+    "transparent/background/all masks",
+    "P interpolation",
+    "split and dataset roster",
+    "all-image finite positive prediction requirement",
+    "empty regions excluded and counted",
+    "transparent_mae_m checkpoint selection",
+    "loss and model sources",
+    "checkpoint/source/producer checks"
+  ],
+  "remaining_differences_from_native": [
+    "native resolution vs 256 grid and GT preprocessing",
+    "metres vs millimetres",
+    "native also reports pixel_pooled; 256 retains image macro only",
+    "native rejects invalid predictions on GT support; 256 retains stricter whole-array validity"
+  ],
+  "tests": {
+    "full_cpu_suite": {
+      "passed": 175,
+      "environment": "rgbfusion-stage2-5090",
+      "log": "reports/metric_fix_cpu_pytest.txt",
+      "command": "CUDA_VISIBLE_DEVICES= TD_RUNTIME_PROFILE=blackwell-cu130 PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q tests"
+    },
+    "stage1_cpu_suite": {
+      "passed": 15,
+      "environment": "rgbfusion-stage1",
+      "log": "reports/metric_fix_stage1_pytest.txt"
+    },
+    "new_numerical_and_integration_cases": 34,
+    "new_rescore_cases": 13,
+    "rescore_cli_help": true,
+    "shell_syntax_check": true,
+    "external_warning": "Existing dash pytest hook deprecation; no failed tests"
+  },
+  "historical_results": {
+    "modified": false,
+    "production_256_rescoring_performed": false,
+    "metrics_json_found": 0,
+    "legacy_metric_json_hits": 0,
+    "search_scope": [
+      "/home/QuchengZou (excluding environments, datasets, .cache/.git/.codex/.vscode-server/node_modules)",
+      "/tmp depth<=3",
+      "legacy delta_1/metrics256/fullfield256_evaluation_v1 JSON/JSONL under projects and rgb-metric-depth"
+    ],
+    "reason": "No saved 256 prediction/supervision/report set was located. Prior acceptance records also disclose no completed production 256 GPU evaluation. This does not cover results kept on another server or unlisted mounted disks.",
+    "pending": [
+      "Any external old 256 evaluation directory needs original predictions/*.npz, supervision/*.npz and metrics.json; legacy reports also need the original hash-matching input manifest.",
+      "Historical training metrics256 records need their corresponding epoch predictions for rescoring; do not relabel old aggregate values."
+    ],
+    "rescore_command": "python -m transparent_depth.rescore256 --input OLD_EVAL_DIR --input-manifest ORIGINAL_INPUT_MANIFEST --output NEW_EVAL_DIR",
+    "legacy_mapping": "old delta_1 equals delta_1.25 only; old aggregate values cannot recover delta_1.05/1.10"
+  },
+  "not_run": [
+    "retraining",
+    "GPU model inference/end-to-end evaluation",
+    "real production historical rescoring (saved predictions absent)"
+  ],
+  "resume_note": "The original training contract hashes evaluate256.py and training_utils.py. Do not alter old contracts or disable checks; retain original code for old-run resume. Final evaluation retains existing model-source and cache checks.",
+  "github_pushed": false,
+  "other_dirty_source_checkout_modified": false,
+  "changed_files": {
+    "README.md": {
+      "before_sha256": "4f46c41ec5d3e59141ca5d48ce0fdd8c131aad38ea67a375346459fd4395bb06",
+      "after_sha256": "9ecf9a28152399ddaf87728afd1b2d94be76f76c7450c05273f7f3dc769eab98"
+    },
+    "tests/test_evaluate256_metrics.py": {
+      "before_sha256": null,
+      "after_sha256": "cec05725eb58212d1583f2169e0d90c02420a08829f2bcd8a2e98a1cd99ed3ac"
+    },
+    "tests/test_rescore256.py": {
+      "before_sha256": null,
+      "after_sha256": "40bada8c9bbee5290376abc69c911fba5589a2cd93a437395bfa1c07749a710e"
+    },
+    "docs/TRANSCG256_A100.zh-CN.md": {
+      "before_sha256": "7bf6a267b8c81a139f832ee8e6409f441b10f2b709ef466f147b131dece248f6",
+      "after_sha256": "825249e2dd180f587c06170c8d0141edd1cb6e1dec17da668e79fb677be37569"
+    },
+    "docs/CLEARGRASP256.zh-CN.md": {
+      "before_sha256": "307b93aadf7eca1286cc30708c7f2a945f71c45ff3f2c80888def1f5d7a33181",
+      "after_sha256": "82af0b7314f5ee8ecf742d7d94f32705bfc783920d7abdb48cbd84049fc6bb82"
+    },
+    "scripts/test_cpu.sh": {
+      "before_sha256": "5f48298cf34d6a743d0fb4ced98bb093f7d80bddc196b2cd2b3e775cbf9208d8",
+      "after_sha256": "3f3b417270e6eee8284bff932084000079177fe81c0dddd59d7f864ca3426891"
+    },
+    "reports/metric_fix_cpu_pytest.txt": {
+      "before_sha256": null,
+      "after_sha256": "1abe52d074bcd3dac6caaf9305a451ce0982af015d821af4d43236be5d41909f"
+    },
+    "reports/metric_fix_stage1_pytest.txt": {
+      "before_sha256": null,
+      "after_sha256": "9fdb786fdeb83a3cf26b183968a439aa074d43ce6164ce91f3aedbdf479984a1"
+    },
+    "reports/README.md": {
+      "before_sha256": "d1bd42b7b0fb888e309f374bd899c16c863c82344be2792fab3d6fa0374ac43b",
+      "after_sha256": "d540b5121b6586098d81380fec36ee19bf8ef0a818a17d94cb4b04dea6f71217"
+    },
+    "src/transparent_depth/evaluate256.py": {
+      "before_sha256": "cb719adab7e90b08965ae3a796f91ea67dbe3dfd8c66832bdcfc32f6f75a3769",
+      "after_sha256": "3d2e7cd08cc19309a14173d93d0566720db469f4183da754f5b076f2ee247ade"
+    },
+    "src/transparent_depth/rescore256.py": {
+      "before_sha256": null,
+      "after_sha256": "37a568caa86deca29753d1e2c03732a7f8e646953ad29d30ab985fe654cb90de"
+    },
+    "src/transparent_depth/training_utils.py": {
+      "before_sha256": "9ab60a997a4b2399bb301b557d8bfe6e8a91762ff85e8ae9da8051254c752a89",
+      "after_sha256": "dabb4484fffaa313c7817ff1e3325c0de7c5d261f23749a4749c57ecbf94dea0"
+    }
+  }
+}
